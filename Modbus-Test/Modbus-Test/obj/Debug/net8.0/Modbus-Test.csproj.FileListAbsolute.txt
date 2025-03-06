@@ -1,0 +1,17 @@
+E:\Modbus\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.exe
+E:\Modbus\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.deps.json
+E:\Modbus\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.runtimeconfig.json
+E:\Modbus\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.dll
+E:\Modbus\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.pdb
+E:\Modbus\Modbus-Test\Modbus-Test\bin\Debug\net8.0\NModbus.dll
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.csproj.AssemblyReference.cache
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.GeneratedMSBuildEditorConfig.editorconfig
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.AssemblyInfoInputs.cache
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.AssemblyInfo.cs
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.csproj.CoreCompileInputs.cache
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-T.6DAA91C1.Up2Date
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.dll
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\refint\Modbus-Test.dll
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.pdb
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.genruntimeconfig.cache
+E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\ref\Modbus-Test.dll

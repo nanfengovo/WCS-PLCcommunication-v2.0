@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vGGSCJpoVWPSklhl99r8rTfObwVpVaSOTbpc/+Eycp8=",
+  "Source": "PLCCommunicationAPI",
+  "BasePath": "_content/PLCCommunicationAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xMJSVo7WprA=",
+  "success": true,
+  "projectFilePath": "E:\\Modbus\\Modbus-Test\\Modbus-Test\\Modbus-Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\nmodbus\\3.0.81\\nmodbus.3.0.81.nupkg.sha512"
+  ],
+  "logs": []
+}
