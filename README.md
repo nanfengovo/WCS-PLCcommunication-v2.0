@@ -5,5 +5,7 @@
     ![image](https://github.com/user-attachments/assets/caa1df73-a1fc-4afd-9f60-b1f0e4cb554f)
 * PLCCommunicationAPI：计划用来放后端的代码
 * 其他的文件夹是过程中学习的记录
+       * Modbus-Test：使用NModbus库读写变量点
+  
 
      
