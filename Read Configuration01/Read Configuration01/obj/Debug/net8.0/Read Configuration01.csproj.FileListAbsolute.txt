@@ -1,0 +1,26 @@
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Read Configuration01.exe
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Read Configuration01.deps.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Read Configuration01.runtimeconfig.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Read Configuration01.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Read Configuration01.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.csproj.AssemblyReference.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.AssemblyInfoInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.AssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.csproj.CoreCompileInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.sourcelink.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Con.B4AD1F4A.Up2Date
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\refint\Read Configuration01.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\Read Configuration01.genruntimeconfig.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\obj\Debug\net8.0\ref\Read Configuration01.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration01\bin\Debug\net8.0\config.json
