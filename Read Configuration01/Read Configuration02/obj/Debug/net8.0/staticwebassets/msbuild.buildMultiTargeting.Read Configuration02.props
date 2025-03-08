@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Read Configuration02.props" />
+</Project>

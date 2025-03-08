@@ -1,0 +1,12 @@
+﻿{
+  "ConfigName": "Test",
+  "Context": {
+    "IP": "127.0.0.1",
+    "Port": "502",
+    "SlaveID":"1",
+    "FunctionCode": "1",
+    "Address": "1000",
+    "Query": "6"
+  }
+
+}

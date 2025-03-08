@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|solutionrelative:plccommunicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|solutionrelative:plccommunicationapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|solutionrelative:plccommunicationapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|solutionrelative:plccommunicationapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\plccommunicationapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|solutionrelative:plccommunicationapi\\plccommunicationapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunicationAPI.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,41 +50,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "PLCCommunicationAPI\\WeatherForecast.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\WeatherForecast.cs",
-              "RelativeToolTip": "PLCCommunicationAPI\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:07:02.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Program.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\Program.cs",
               "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Program.cs",
               "RelativeToolTip": "PLCCommunicationAPI\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T05:07:14.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:27:56.945Z",
               "EditorCaption": ""
             },
             {
@@ -97,8 +71,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T05:40:34.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T05:40:34.405Z"
             },
             {
               "$type": "Document",
@@ -110,7 +83,31 @@
               "RelativeToolTip": "PLCCommunicationAPI\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T05:40:37.378Z",
+              "WhenOpened": "2025-03-05T05:40:37.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\TestController.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\TestController.cs",
+              "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T05:24:59.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PLCCommunicationAPI",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PLCCommunicationAPI.csproj",
+              "RelativeDocumentMoniker": "PLCCommunicationAPI\\PLCCommunicationAPI.csproj",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PLCCommunicationAPI.csproj",
+              "RelativeToolTip": "PLCCommunicationAPI\\PLCCommunicationAPI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-08T05:26:38.056Z",
               "EditorCaption": ""
             }
           ]

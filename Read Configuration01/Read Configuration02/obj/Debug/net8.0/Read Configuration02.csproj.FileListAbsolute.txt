@@ -1,0 +1,42 @@
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\appsettings.Development.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Read Configuration02.staticwebassets.endpoints.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Read Configuration02.exe
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Read Configuration02.deps.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Read Configuration02.runtimeconfig.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Read Configuration02.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Read Configuration02.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.csproj.AssemblyReference.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.AssemblyInfoInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.AssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.csproj.CoreCompileInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.MvcApplicationPartsAssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.MvcApplicationPartsAssemblyInfo.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.sourcelink.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\scopedcss\bundle\Read Configuration02.styles.css
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets.build.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets.development.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets\msbuild.Read Configuration02.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets\msbuild.Read Configuration02.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets\msbuild.build.Read Configuration02.props
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Read Configuration02.props
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Read Configuration02.props
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets.pack.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Con.C97E1F4A.Up2Date
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\refint\Read Configuration02.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\Read Configuration02.genruntimeconfig.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\obj\Debug\net8.0\ref\Read Configuration02.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Read Configuration01\Read Configuration02\bin\Debug\net8.0\appsettings.json

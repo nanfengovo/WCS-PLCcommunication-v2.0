@@ -1,0 +1,6 @@
+@ModbusTcpAPI_HostAddress = http://localhost:5057
+
+GET {{ModbusTcpAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

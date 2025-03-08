@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B349763-79D3-4835-AE9B-ECA688F71B21}|Read Configuration01\\Read Configuration01.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B349763-79D3-4835-AE9B-ECA688F71B21}|Read Configuration01\\Read Configuration01.csproj|solutionrelative:read configuration01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B349763-79D3-4835-AE9B-ECA688F71B21}|Read Configuration01\\Read Configuration01.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration01\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0B349763-79D3-4835-AE9B-ECA688F71B21}|Read Configuration01\\Read Configuration01.csproj|solutionrelative:read configuration01\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\model\\myconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\model\\myconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\model\\dbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\model\\dbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\model\\smtpsettings .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\model\\smtpsettings .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration02\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{077357B3-9A4D-437A-AEF2-FDE0BBEF3E84}|Read Configuration02\\Read Configuration02.csproj|solutionrelative:read configuration02\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B349763-79D3-4835-AE9B-ECA688F71B21}|Read Configuration01\\Read Configuration01.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\read configuration01\\read configuration01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B349763-79D3-4835-AE9B-ECA688F71B21}|Read Configuration01\\Read Configuration01.csproj|solutionrelative:read configuration01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +66,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration01\\Program.cs",
-              "RelativeDocumentMoniker": "Read Configuration01\\Program.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration01\\Program.cs*",
-              "RelativeToolTip": "Read Configuration01\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "SmtpSettings .cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Model\\SmtpSettings .cs",
+              "RelativeDocumentMoniker": "Read Configuration02\\Model\\SmtpSettings .cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Model\\SmtpSettings .cs",
+              "RelativeToolTip": "Read Configuration02\\Model\\SmtpSettings .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:09:30.984Z",
+              "WhenOpened": "2025-03-08T03:53:53.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DbSettings.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Model\\DbSettings.cs",
+              "RelativeDocumentMoniker": "Read Configuration02\\Model\\DbSettings.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Model\\DbSettings.cs",
+              "RelativeToolTip": "Read Configuration02\\Model\\DbSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:51:20.254Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "config.json",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration01\\config.json",
-              "RelativeDocumentMoniker": "Read Configuration01\\config.json",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration01\\config.json",
-              "RelativeToolTip": "Read Configuration01\\config.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\appsettings.json",
+              "RelativeDocumentMoniker": "Read Configuration02\\appsettings.json",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\appsettings.json",
+              "RelativeToolTip": "Read Configuration02\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-06T14:10:49.396Z",
+              "WhenOpened": "2025-03-08T03:41:10.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Program.cs",
+              "RelativeDocumentMoniker": "Read Configuration02\\Program.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Program.cs*",
+              "RelativeToolTip": "Read Configuration02\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:07:32.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Read Configuration02\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Controllers\\WeatherForecastController.cs*",
+              "RelativeToolTip": "Read Configuration02\\Controllers\\WeatherForecastController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T05:46:53.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Demo.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Demo.cs",
+              "RelativeDocumentMoniker": "Read Configuration02\\Demo.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Demo.cs",
+              "RelativeToolTip": "Read Configuration02\\Demo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvw0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T03:58:16.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyConfig.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Model\\MyConfig.cs",
+              "RelativeDocumentMoniker": "Read Configuration02\\Model\\MyConfig.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\Model\\MyConfig.cs",
+              "RelativeToolTip": "Read Configuration02\\Model\\MyConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T06:22:45.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Read Configuration02\\WeatherForecast.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration02\\WeatherForecast.cs",
+              "RelativeToolTip": "Read Configuration02\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-08T04:07:29.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration01\\Program.cs",
+              "RelativeDocumentMoniker": "Read Configuration01\\Program.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\Read Configuration01\\Read Configuration01\\Program.cs",
+              "RelativeToolTip": "Read Configuration01\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:09:30.984Z",
               "EditorCaption": ""
             }
           ]

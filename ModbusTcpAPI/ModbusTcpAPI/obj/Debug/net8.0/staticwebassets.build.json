@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "IAqYZ6va+vlOs1JO7eByM3Uj2aOH3wjzgDGFGxQdbjQ=",
+  "Source": "ModbusTcpAPI",
+  "BasePath": "_content/ModbusTcpAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

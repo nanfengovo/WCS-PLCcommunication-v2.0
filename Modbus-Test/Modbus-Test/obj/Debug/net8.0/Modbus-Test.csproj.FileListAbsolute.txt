@@ -15,3 +15,30 @@ E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\refint\Modbus-Test.dll
 E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.pdb
 E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.genruntimeconfig.cache
 E:\Modbus\Modbus-Test\Modbus-Test\obj\Debug\net8.0\ref\Modbus-Test.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.exe
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.deps.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.runtimeconfig.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Modbus-Test.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\NModbus.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.csproj.AssemblyReference.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.AssemblyInfoInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.AssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.csproj.CoreCompileInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.sourcelink.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-T.6DAA91C1.Up2Date
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\refint\Modbus-Test.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\Modbus-Test.genruntimeconfig.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\obj\Debug\net8.0\ref\Modbus-Test.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\Modbus-Test\Modbus-Test\bin\Debug\net8.0\ModbusTcpConfig.json

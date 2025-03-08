@@ -34,3 +34,4 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommun
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunicationAPI.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunicationAPI.genruntimeconfig.cache
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\ref\PLCCommunicationAPI.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunicationAPI.sourcelink.json

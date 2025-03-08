@@ -1,0 +1,48 @@
+[
+  {
+    "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",
+    "Method": "ReadHoldingRegisters",
+    "RelativePath": "api/ModbusTCP/ReadHoldingRegisters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",
+    "Method": "Test",
+    "RelativePath": "api/ModbusTCP/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",
+    "Method": "WriteSingleRegister",
+    "RelativePath": "api/ModbusTCP/WriteSingleRegister",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.UInt16",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

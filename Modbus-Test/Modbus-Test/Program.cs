@@ -1,4 +1,6 @@
-﻿using NModbus;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.VisualBasic;
+using NModbus;
 using System.Net;
 using System.Net.Sockets;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -15,17 +17,50 @@ namespace Modbus_Test
                 #region 定义初始的变量
 
                 //ip
-                string IP = "127.0.0.1";
+                //string IP = "127.0.0.1";
                 //port
-                int Port = 502;
+                //int Port = 502;
                 //Slaveid
-                byte SlaveID = 1;
+                //byte SlaveID = 1;
                 //Function
-                int Function = 1;
+                //int Function = 1;
                 //Address
-                ushort Address = 1000;
+                //ushort Address = 1000;
                 //Query
-                ushort Query = 6;
+                //ushort Query = 6;
+                #endregion
+
+
+                #region 从配置文件获取Modbus配置信息
+                //ip
+                string IP = "";
+                //port
+                int Port = 0;
+                //Slaveid
+                byte SlaveID = 0;
+                //Function
+                int Function = 0;
+                //Address
+                ushort Address = 0;
+                //Query
+                ushort Query = 0;
+
+
+                ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
+                configurationBuilder.AddJsonFile("ModbusTcpConfig.json", optional: false, reloadOnChange: false);
+                IConfigurationRoot configurationRoot = configurationBuilder.Build();
+                string ConfigName = configurationRoot["ConfigName"];
+                Console.WriteLine($"配置名称 = {ConfigName}");
+                IP = configurationRoot.GetSection("Context:IP").Value;
+                Console.WriteLine($"IP={IP}");
+                Port = Convert.ToInt32(configurationRoot.GetSection("Context:Port").Value);
+                SlaveID = Convert.ToByte(configurationRoot.GetSection("Context:SlaveID").Value);
+                Function = Convert.ToInt32(configurationRoot.GetSection("Context:FunctionCode").Value);
+                Address = Convert.ToUInt16(configurationRoot.GetSection("Context:Address").Value);
+                Query = Convert.ToUInt16(configurationRoot.GetSection("Context:Query").Value);
+
+
+                #endregion
 
                 while (true)
                 {
@@ -75,7 +110,6 @@ namespace Modbus_Test
 
             });
 
-            #endregion
 
             #region Write
             //using (var Client = new TcpClient("127.0.0.1", 502))

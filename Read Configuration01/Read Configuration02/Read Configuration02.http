@@ -1,0 +1,6 @@
+@Read_Configuration02_HostAddress = http://localhost:5038
+
+GET {{Read_Configuration02_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
