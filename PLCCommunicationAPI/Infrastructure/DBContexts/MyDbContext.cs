@@ -20,7 +20,7 @@ namespace PLCCommunication_Infrastructure.DBContexts
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<ModbusTCPConfig>()
-        .HasNoKey(); // 指定这是一个无键实体
+        .HasKey(m => m.ConfigId); // 指定Id作为主键
 
             //把当前程序集中实现了IEntityTypeConfiguration接口的类加载进来，配置sql
             modelBuilder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);
