@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WCS管理系统",
+    "description": "Vue3+WebAPI",
+    "contact": {
+      "name": "nanfengovo",
+      "url": "https://github.com/nanfengovo"
+    },
+    "version": "V2.0"
+  },
+  "paths": {
+    "/api/Test/GetTestEnvironment": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

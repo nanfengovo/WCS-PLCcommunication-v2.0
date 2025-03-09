@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLCCommunicationAPI", "PLCCommunicationAPI\PLCCommunicationAPI.csproj", "{0486F954-0307-4897-90F6-3676EEC723C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLCCommunication_API", "PLCCommunicationAPI\PLCCommunication_API.csproj", "{0486F954-0307-4897-90F6-3676EEC723C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLCCommunication_Model", "Model\PLCCommunication_Model.csproj", "{34DA8562-9E8D-4435-9669-2F2DB6DDA7AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLCCommunication_Utility", "Utility\PLCCommunication_Utility.csproj", "{66477CC1-28EA-41D7-B363-5A517DCEA5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLCCommunication_Infrastructure", "Infrastructure\PLCCommunication_Infrastructure.csproj", "{0C94277D-D411-4E49-B34C-3FE7C61D0708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLCCommunication_DomainService", "DomainService\PLCCommunication_DomainService.csproj", "{A655692B-A2C7-48FB-9F9E-B2DE3D000472}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{028C9514-2BCF-42BF-8776-0C49C55E5664}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,22 @@ Global
 		{0486F954-0307-4897-90F6-3676EEC723C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0486F954-0307-4897-90F6-3676EEC723C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0486F954-0307-4897-90F6-3676EEC723C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34DA8562-9E8D-4435-9669-2F2DB6DDA7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DA8562-9E8D-4435-9669-2F2DB6DDA7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DA8562-9E8D-4435-9669-2F2DB6DDA7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DA8562-9E8D-4435-9669-2F2DB6DDA7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66477CC1-28EA-41D7-B363-5A517DCEA5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66477CC1-28EA-41D7-B363-5A517DCEA5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66477CC1-28EA-41D7-B363-5A517DCEA5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66477CC1-28EA-41D7-B363-5A517DCEA5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C94277D-D411-4E49-B34C-3FE7C61D0708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C94277D-D411-4E49-B34C-3FE7C61D0708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C94277D-D411-4E49-B34C-3FE7C61D0708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C94277D-D411-4E49-B34C-3FE7C61D0708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A655692B-A2C7-48FB-9F9E-B2DE3D000472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A655692B-A2C7-48FB-9F9E-B2DE3D000472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A655692B-A2C7-48FB-9F9E-B2DE3D000472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A655692B-A2C7-48FB-9F9E-B2DE3D000472}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

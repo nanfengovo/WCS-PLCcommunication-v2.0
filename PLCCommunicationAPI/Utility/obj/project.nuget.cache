@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "a/lWRDZQvJs=",
+  "success": true,
+  "projectFilePath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\PLCCommunication_Utility.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

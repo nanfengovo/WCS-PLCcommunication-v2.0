@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "vGGSCJpoVWPSklhl99r8rTfObwVpVaSOTbpc/+Eycp8=",
-  "Source": "PLCCommunicationAPI",
-  "BasePath": "_content/PLCCommunicationAPI",
+  "Hash": "uDx2BKSeKbQiohWbtruTgBIk14f3OBfubMPEx3tW+Ck=",
+  "Source": "PLCCommunication_API",
+  "BasePath": "_content/PLCCommunication_API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

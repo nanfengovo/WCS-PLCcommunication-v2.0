@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PLCCommunication_API</name>
+    </assembly>
+    <members>
+        <member name="T:PLCCommunication_Utility.PlugInUnit.SwaggerPlugInUnit">
+            <summary>
+            swagger插件
+            </summary>
+        </member>
+        <member name="M:PLCCommunication_Utility.PlugInUnit.SwaggerPlugInUnit.InitSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            初始化Swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PLCCommunication_Utility.PlugInUnit.SwaggerPlugInUnit.InitSwagger(Microsoft.AspNetCore.Builder.WebApplication)">
+            <summary>
+            swagger加入路由和管道
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>
