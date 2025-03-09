@@ -1,4 +1,6 @@
 
+using Microsoft.EntityFrameworkCore;
+using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Utility.PlugInUnit;
 
 namespace PLCCommunicationAPI
@@ -17,6 +19,10 @@ namespace PLCCommunicationAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // Add DbContext service
+            builder.Services.AddDbContext<MyDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -29,7 +35,6 @@ namespace PLCCommunicationAPI
             }
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 

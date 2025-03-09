@@ -1,0 +1,12 @@
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\bin\Debug\net8.0\PLCCommunication_Model.deps.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\bin\Debug\net8.0\PLCCommunication_Model.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\bin\Debug\net8.0\PLCCommunication_Model.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.AssemblyInfoInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.AssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.csproj.CoreCompileInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.sourcelink.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\refint\PLCCommunication_Model.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\ref\PLCCommunication_Model.dll
