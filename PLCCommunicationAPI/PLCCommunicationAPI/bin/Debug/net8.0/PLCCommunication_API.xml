@@ -9,12 +9,25 @@
             ModbusTCPController中是关于和支持MobusTCP协议通讯的
             </summary>
         </member>
-        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.CreateModbusTCPConfig(PLCCommunication_Model.Entities.ModbusTCPConfig)">
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.GetAllConfig">
             <summary>
-            创建ModbusTCP配置控制器
+            获取所有的Modbus配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.CreateModbusTCPConfig(System.String,System.String,System.Int32,System.Byte,System.Byte,System.UInt16,System.UInt16)">
+            <summary>
+            新建ModbusTCP配置
             </summary>
             <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
             <returns>A result indicating success or failure.</returns>
+        </member>
+        <member name="M:PLCCommunicationAPI.IdentityIOC.AddIdentityIOC(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            注入Identity
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
         </member>
         <member name="T:PLCCommunication_Utility.PlugInUnit.SwaggerPlugInUnit">
             <summary>

@@ -50,26 +50,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ModbusTCPConfig"
-                  }
+                  "$ref": "#/components/schemas/Result"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ModbusTCPConfig"
-                  }
+                  "$ref": "#/components/schemas/Result"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ModbusTCPConfig"
-                  }
+                  "$ref": "#/components/schemas/Result"
                 }
               }
             }
@@ -80,55 +71,18 @@
   },
   "components": {
     "schemas": {
-      "ModbusTCPConfig": {
+      "Result": {
         "type": "object",
         "properties": {
-          "configId": {
-            "type": "string",
-            "format": "uuid"
+          "code": {
+            "type": "integer",
+            "format": "int32"
           },
-          "proxyName": {
-            "type": "string",
-            "nullable": true
-          },
-          "ip": {
+          "msg": {
             "type": "string",
             "nullable": true
           },
-          "port": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "slaveID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "functionCode": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "startAddress": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "num": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "isOpen": {
-            "type": "boolean"
-          },
-          "isDeleted": {
-            "type": "boolean"
-          },
-          "createtime": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "lastModified": {
-            "type": "string",
-            "format": "date-time",
+          "data": {
             "nullable": true
           }
         },

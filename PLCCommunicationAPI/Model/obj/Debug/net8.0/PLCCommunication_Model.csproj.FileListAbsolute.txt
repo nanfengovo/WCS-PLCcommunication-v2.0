@@ -10,3 +10,4 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\refint\PLCCommunication_Model.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\ref\PLCCommunication_Model.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Model\obj\Debug\net8.0\PLCCommunication_Model.csproj.AssemblyReference.cache

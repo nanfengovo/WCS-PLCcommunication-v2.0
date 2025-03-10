@@ -1,8 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using PLCCommunication_DomainService.IService;
 using PLCCommunication_DomainService.Service;
+using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
 using PLCCommunication_Infrastructure.Respository;
+using PLCCommunication_Model.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,17 +16,26 @@ namespace PLCCommunication_Utility.Plug_ins
 {
     public static class IOCExtend
     {
+        /// <summary>
+        /// 注入自定义接口
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public static IServiceCollection AddCustomIOC(this IServiceCollection services)
         {
             //注入仓储层
             services.AddScoped<IModbusTCPConfigResposity, ModbusTCPConfigResposity>();
-
+            services.AddScoped<IUserRespository, UserRespository>();
 
 
             //注入服务层
             services.AddScoped<IModbusTCPConfigService, ModbusTCPConfigService>();
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }
+
+
+      
     }
 }

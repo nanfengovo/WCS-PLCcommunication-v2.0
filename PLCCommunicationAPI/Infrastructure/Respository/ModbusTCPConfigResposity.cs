@@ -24,7 +24,7 @@ namespace PLCCommunication_Infrastructure.Respository
 
         public override async Task<List<ModbusTCPConfig>> FindAllAsync()
         {
-            return await _dbContext.modbusTCPConfigs.Where(x=>x.FunctionCode==1).ToListAsync();
+            return await _dbContext.modbusTCPConfigs.Where(x => x.IsDeleted == false).ToListAsync();
         }
 
         public override Task<List<ModbusTCPConfig>> FindAllAsync(Expression<Func<ModbusTCPConfig, bool>> del)

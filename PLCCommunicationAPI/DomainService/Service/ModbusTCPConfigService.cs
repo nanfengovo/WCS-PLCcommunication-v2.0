@@ -20,6 +20,12 @@ namespace PLCCommunication_DomainService.Service
             _modbusTCPConfigResposity = modbusTCPConfigResposity;
         }
 
+
+        public async Task<List<ModbusTCPConfig>> GetAll()
+        {
+            return await base._respository.FindAllAsync();
+        }
+
         /// <summary>
         /// 创建ModbusTCP配置
         /// </summary>

@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PLCCommunication_Model.Entities;
+using PLCCommunication_Model.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PLCCommunication_Infrastructure.DBContexts
 {
-    public class MyDbContext : DbContext
+    public class MyDbContext : IdentityDbContext<User,Role,Guid>
     {
         public DbSet<ModbusTCPConfig> modbusTCPConfigs { get; set; }
 
@@ -20,7 +22,7 @@ namespace PLCCommunication_Infrastructure.DBContexts
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<ModbusTCPConfig>()
-        .HasKey(m => m.ConfigId); // 指定Id作为主键
+        .HasKey(m => m.Id); // 指定Id作为主键
 
             //把当前程序集中实现了IEntityTypeConfiguration接口的类加载进来，配置sql
             modelBuilder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);

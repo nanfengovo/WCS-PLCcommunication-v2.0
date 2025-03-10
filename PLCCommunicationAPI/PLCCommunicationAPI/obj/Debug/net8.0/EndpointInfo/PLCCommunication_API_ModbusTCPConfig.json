@@ -10,32 +10,98 @@
     "version": "V2.0"
   },
   "paths": {
+    "/api/ModbusTCP/GetAllConfig": {
+      "get": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "获取所有的Modbus配置",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/ModbusTCP/CreateModbusTCPConfig": {
       "post": {
         "tags": [
           "ModbusTCP"
         ],
-        "summary": "创建ModbusTCP配置控制器",
-        "requestBody": {
-          "description": "The Modbus TCP configuration to create.",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ModbusTCPConfig"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ModbusTCPConfig"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ModbusTCPConfig"
-              }
+        "summary": "新建ModbusTCP配置",
+        "parameters": [
+          {
+            "name": "proxyName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "port",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "SlaveID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "FunctionCode",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "StartAddress",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Num",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -63,60 +129,6 @@
   },
   "components": {
     "schemas": {
-      "ModbusTCPConfig": {
-        "type": "object",
-        "properties": {
-          "configId": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "proxyName": {
-            "type": "string",
-            "nullable": true
-          },
-          "ip": {
-            "type": "string",
-            "nullable": true
-          },
-          "port": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "slaveID": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "functionCode": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "startAddress": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "num": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "isOpen": {
-            "type": "boolean"
-          },
-          "isDeleted": {
-            "type": "boolean"
-          },
-          "createtime": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "lastModified": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "Result": {
         "type": "object",
         "properties": {

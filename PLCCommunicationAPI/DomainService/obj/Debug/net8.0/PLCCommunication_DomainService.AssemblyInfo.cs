@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PLCCommunication_DomainService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86775c42d51f696b3dbc2b3c5337fe8791593df2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eae91bfba2d24a30e8429ad15b7566f4c2ab30f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PLCCommunication_DomainService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PLCCommunication_DomainService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

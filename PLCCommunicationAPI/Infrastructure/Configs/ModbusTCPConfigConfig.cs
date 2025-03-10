@@ -14,7 +14,7 @@ namespace PLCCommunication_Infrastructure.Configs
         public void Configure(EntityTypeBuilder<ModbusTCPConfig> builder)
         {
             //配置表名
-            builder.ToTable("T_ModbusTCPConfig");
+            builder.ToTable("T_ModbusTCPConfigs");
 
             //软删除实现
             builder.HasQueryFilter(x => x.IsDeleted == false);

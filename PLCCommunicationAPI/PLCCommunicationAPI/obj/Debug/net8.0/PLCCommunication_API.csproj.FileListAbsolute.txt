@@ -17,7 +17,6 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommun
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.AssemblyInfoInputs.cache
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.AssemblyInfo.cs
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.csproj.CoreCompileInputs.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.MvcApplicationPartsAssemblyInfo.cs
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.MvcApplicationPartsAssemblyInfo.cache
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.sourcelink.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\scopedcss\bundle\PLCCommunication_API.styles.css
@@ -157,3 +156,10 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommun
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_Model.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_DomainService.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_DomainService.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\AutoMapper.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.MvcApplicationPartsAssemblyInfo.cs

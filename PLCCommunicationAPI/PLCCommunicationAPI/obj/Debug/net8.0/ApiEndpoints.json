@@ -8,11 +8,61 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "modbusTCPConfig",
-        "Type": "PLCCommunication_Model.Entities.ModbusTCPConfig",
-        "IsRequired": true
+        "Name": "proxyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ip",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "port",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SlaveID",
+        "Type": "System.Byte",
+        "IsRequired": false
+      },
+      {
+        "Name": "FunctionCode",
+        "Type": "System.Byte",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartAddress",
+        "Type": "System.UInt16",
+        "IsRequired": false
+      },
+      {
+        "Name": "Num",
+        "Type": "System.UInt16",
+        "IsRequired": false
       }
     ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
+    "Method": "GetAllConfig",
+    "RelativePath": "api/ModbusTCP/GetAllConfig",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "PLCCommunication_Utility.APIHelper.Result",
@@ -35,7 +85,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[PLCCommunication_Model.Entities.ModbusTCPConfig, PLCCommunication_Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
         "MediaTypes": [
           "text/plain",
           "application/json",

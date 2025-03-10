@@ -13,13 +13,13 @@ namespace PLCCommunication_Infrastructure.Migrations
         {
             migrationBuilder.AddColumn<DateTime>(
                 name: "Createtime",
-                table: "T_ModbusTCPConfig",
+                table: "T_ModbusTCPConfigs",
                 type: "datetime2",
                 nullable: true);
 
             migrationBuilder.AddColumn<DateTime>(
                 name: "LastModified",
-                table: "T_ModbusTCPConfig",
+                table: "T_ModbusTCPConfigs",
                 type: "datetime2",
                 nullable: true);
         }
@@ -29,11 +29,11 @@ namespace PLCCommunication_Infrastructure.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "Createtime",
-                table: "T_ModbusTCPConfig");
+                table: "T_ModbusTCPConfigs");
 
             migrationBuilder.DropColumn(
                 name: "LastModified",
-                table: "T_ModbusTCPConfig");
+                table: "T_ModbusTCPConfigs");
         }
     }
 }
