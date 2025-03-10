@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PLCCommunication_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10a619e2cf62878baf19a0568d893438e52dfec8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86775c42d51f696b3dbc2b3c5337fe8791593df2")]
 [assembly: System.Reflection.AssemblyProductAttribute("PLCCommunication_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PLCCommunication_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

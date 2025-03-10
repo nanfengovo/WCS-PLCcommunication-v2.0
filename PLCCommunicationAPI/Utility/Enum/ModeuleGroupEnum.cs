@@ -12,5 +12,7 @@ namespace PLCCommunication_Utility.Enum
     public enum ModeuleGroupEnum
     {
         SysMenu = 1,
+        Test = 2,
+        ModbusTCPConfig = 3,
     }
 }

@@ -28,6 +28,9 @@ namespace PLCCommunication_Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTime?>("Createtime")
+                        .HasColumnType("datetime2");
+
                     b.Property<byte>("FunctionCode")
                         .HasColumnType("tinyint");
 
@@ -40,6 +43,9 @@ namespace PLCCommunication_Infrastructure.Migrations
 
                     b.Property<bool>("IsOpen")
                         .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("Num")
                         .HasColumnType("int");

@@ -4,6 +4,18 @@
         <name>PLCCommunication_API</name>
     </assembly>
     <members>
+        <member name="T:PLCCommunication_API.Controllers.ModbusTCPController">
+            <summary>
+            ModbusTCPController中是关于和支持MobusTCP协议通讯的
+            </summary>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.CreateModbusTCPConfig(PLCCommunication_Model.Entities.ModbusTCPConfig)">
+            <summary>
+            创建ModbusTCP配置控制器
+            </summary>
+            <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
+            <returns>A result indicating success or failure.</returns>
+        </member>
         <member name="T:PLCCommunication_Utility.PlugInUnit.SwaggerPlugInUnit">
             <summary>
             swagger插件

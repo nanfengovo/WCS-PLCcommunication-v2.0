@@ -2,6 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Utility.PlugInUnit;
+using PLCCommunication_Utility.Plug_ins;
+using PLCCommunication_DomainService.IService;
+using PLCCommunication_DomainService.Service;
+using PLCCommunication_Infrastructure.IRespository;
+using PLCCommunication_Infrastructure.Respository;
 
 namespace PLCCommunicationAPI
 {
@@ -23,6 +28,17 @@ namespace PLCCommunicationAPI
             builder.Services.AddDbContext<MyDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            //自定义依赖注入
+            builder.Services.AddCustomIOC();
+
+            //只注入服务层同时需要注入仓储，服务层依赖于仓储层
+            //builder.Services.AddScoped<ModbusTCPConfigService>();
+            //builder.Services.AddScoped<IModbusTCPConfigService>();
+
+            //builder.Services.AddScoped<ModbusTCPConfigResposity>();
+            //builder.Services.AddScoped<IModbusTCPConfigResposity>();
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -39,6 +55,12 @@ namespace PLCCommunicationAPI
             app.MapControllers();
 
             app.Run();
+
+
+
+
+
         }
+
     }
 }

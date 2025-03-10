@@ -1,0 +1,139 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WCS管理系统",
+    "description": "Vue3+WebAPI",
+    "contact": {
+      "name": "nanfengovo",
+      "url": "https://github.com/nanfengovo"
+    },
+    "version": "V2.0"
+  },
+  "paths": {
+    "/api/Test/GetTestEnvironment": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Test/GetAllConfig": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModbusTCPConfig"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModbusTCPConfig"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ModbusTCPConfig"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ModbusTCPConfig": {
+        "type": "object",
+        "properties": {
+          "configId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "proxyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "port": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "slaveID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "functionCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startAddress": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "num": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isOpen": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "createtime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastModified": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

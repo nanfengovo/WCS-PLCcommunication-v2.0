@@ -20,7 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\PLCCommunication_Infrastructure.csproj" />
     <ProjectReference Include="..\Utility\PLCCommunication_Utility.csproj" />
   </ItemGroup>
 

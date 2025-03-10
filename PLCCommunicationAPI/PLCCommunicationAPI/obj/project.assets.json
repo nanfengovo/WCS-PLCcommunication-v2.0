@@ -1582,6 +1582,19 @@
           }
         }
       },
+      "PLCCommunication_DomainService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "PLCCommunication_Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PLCCommunication_DomainService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PLCCommunication_DomainService.dll": {}
+        }
+      },
       "PLCCommunication_Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1611,7 +1624,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+          "PLCCommunication_DomainService": "1.0.0",
+          "PLCCommunication_Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/PLCCommunication_Utility.dll": {}
@@ -4470,6 +4484,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "PLCCommunication_DomainService/1.0.0": {
+      "type": "project",
+      "path": "../DomainService/PLCCommunication_DomainService.csproj",
+      "msbuildProject": "../DomainService/PLCCommunication_DomainService.csproj"
+    },
     "PLCCommunication_Infrastructure/1.0.0": {
       "type": "project",
       "path": "../Infrastructure/PLCCommunication_Infrastructure.csproj",
@@ -4490,7 +4509,6 @@
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Design >= 8.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.13",
-      "PLCCommunication_Infrastructure >= 1.0.0",
       "PLCCommunication_Utility >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -4527,9 +4545,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\PLCCommunication_Infrastructure.csproj": {
-              "projectPath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\PLCCommunication_Infrastructure.csproj"
-            },
             "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\PLCCommunication_Utility.csproj": {
               "projectPath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\PLCCommunication_Utility.csproj"
             }

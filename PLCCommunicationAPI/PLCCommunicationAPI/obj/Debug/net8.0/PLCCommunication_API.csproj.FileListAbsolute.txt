@@ -155,3 +155,5 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommun
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_Model.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_Infrastructure.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_Model.pdb
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_DomainService.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_DomainService.pdb

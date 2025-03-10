@@ -1,5 +1,51 @@
 [
   {
+    "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
+    "Method": "CreateModbusTCPConfig",
+    "RelativePath": "api/ModbusTCP/CreateModbusTCPConfig",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modbusTCPConfig",
+        "Type": "PLCCommunication_Model.Entities.ModbusTCPConfig",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunicationAPI.Controllers.TestController",
+    "Method": "GetAllConfig",
+    "RelativePath": "api/Test/GetAllConfig",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PLCCommunication_Model.Entities.ModbusTCPConfig, PLCCommunication_Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PLCCommunicationAPI.Controllers.TestController",
     "Method": "GetTestEnvironment",
     "RelativePath": "api/Test/GetTestEnvironment",
