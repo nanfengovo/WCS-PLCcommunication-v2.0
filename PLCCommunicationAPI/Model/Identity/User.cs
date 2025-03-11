@@ -9,6 +9,7 @@ namespace PLCCommunication_Model.Identity
 {
     public class User:IdentityUser<Guid>
     {
+        public long JwtVersion { get; set; }
         public bool IsDeleted { get; set; }
     }
 }

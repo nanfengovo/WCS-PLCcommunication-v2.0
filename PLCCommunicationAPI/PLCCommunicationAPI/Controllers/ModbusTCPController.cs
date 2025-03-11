@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PLCCommunication_DomainService.IService;
@@ -33,6 +34,7 @@ namespace PLCCommunication_API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
+        [Authorize]
         public async Task<Result> GetAllConfig()
         {
             var data = await _modbusTCPConfigService.FindAllAsync();
@@ -45,6 +47,7 @@ namespace PLCCommunication_API.Controllers
         /// <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
         /// <returns>A result indicating success or failure.</returns>
         [HttpPost]
+        [Authorize]
         public async Task<Result> CreateModbusTCPConfig(string proxyName, string ip,int port,byte SlaveID,byte FunctionCode,ushort StartAddress,ushort Num)
         {
             ModbusTCPConfig modbusTCPConfig = new ModbusTCPConfig

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using PLCCommunication_API.PlugInUnit;
 using PLCCommunication_DomainService.IService;
 using PLCCommunication_Model.Identity;
 using PLCCommunication_Utility.APIHelper;
@@ -40,6 +41,7 @@ namespace PLCCommunication_API.Controllers
         /// <param name="info"></param>
         /// <returns></returns>
         [HttpPost]
+        [NotCheckJwtVersion]
         public async Task<Result> Login(CheckRequestInfo info)
         {
             var isExist = await _userService.FindEntityByAsync(x => x.UserName == info.userName);
@@ -61,12 +63,16 @@ namespace PLCCommunication_API.Controllers
                 //重置登录次数
                 await _userManager.ResetAccessFailedCountAsync(isExist);
 
+                isExist.JwtVersion++;
+                await _userManager.UpdateAsync(isExist);
+
                 //颁发令牌
                 //1、声明payload
                 //用户的Id和用户名
                 List<Claim> claims = new List<Claim>() {
                 new Claim(ClaimTypes.NameIdentifier,isExist.Id.ToString()),
-                new Claim(ClaimTypes.Name,isExist.UserName)
+                new Claim(ClaimTypes.Name,isExist.UserName),
+                new Claim("JwtVersion",isExist.JwtVersion.ToString())
                 };
 
                 //根据用户获取角色

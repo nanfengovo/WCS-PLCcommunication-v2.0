@@ -15,6 +15,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Mvc;
+using PLCCommunication_Infrastructure.Migrations;
+using PLCCommunication_API.PlugInUnit;
 
 namespace PLCCommunicationAPI
 {
@@ -82,14 +85,19 @@ namespace PLCCommunicationAPI
 
                     };
 
-                })
-                ;
+                });
 
 
 
             // Add DbContext service
             builder.Services.AddDbContext<MyDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            //注入filter服务
+            builder.Services.Configure<MvcOptions>(opt =>
+            {
+                opt.Filters.Add<JwtVersionCheckFilter>();
+            });
 
             //自定义依赖注入
             builder.Services.AddCustomIOC();
