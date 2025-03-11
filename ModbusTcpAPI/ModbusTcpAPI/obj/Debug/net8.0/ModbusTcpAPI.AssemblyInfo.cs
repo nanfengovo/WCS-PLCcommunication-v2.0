@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModbusTcpAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca96e0f2c71222300e180c56503b71001afc4bbe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+440c7fa768f2bd802aeceb88a300eb0bc76c2a77")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModbusTcpAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModbusTcpAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

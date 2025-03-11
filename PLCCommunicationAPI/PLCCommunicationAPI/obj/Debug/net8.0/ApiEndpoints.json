@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "PLCCommunication_API.Controllers.AuthorizeController",
+    "Method": "Login",
+    "RelativePath": "api/Authorize/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "info",
+        "Type": "PLCCommunication_Utility.Request.CheckRequestInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
     "Method": "CreateModbusTCPConfig",
     "RelativePath": "api/ModbusTCP/CreateModbusTCPConfig",
@@ -106,6 +132,32 @@
     "ReturnTypes": [
       {
         "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "api/User/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "info",
+        "Type": "PLCCommunication_Utility.Request.CheckRequestInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -16,7 +16,7 @@ namespace ModbusTcpAPI.Controllers
         private readonly ModbusTCPServer _modbusTCPServer;
         private readonly ILogger<ModbusTCPController> _logger;
 
-        public ModbusTCPController(IOptions<ModbusTCPConfig> modbusConfig,ModbusTCPServer modbusTCPServer, ILogger<ModbusTCPController> logger)
+        public ModbusTCPController(IOptions<ModbusTCPConfig> modbusConfig, ModbusTCPServer modbusTCPServer, ILogger<ModbusTCPController> logger)
         {
             _modbusConfig = modbusConfig.Value;
             _modbusTCPServer = modbusTCPServer;
@@ -40,14 +40,14 @@ namespace ModbusTcpAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> ReadHoldingRegisters()
         {
-            
-                var result = await _modbusTCPServer.ReadHoldingRegisters();
-                foreach (var item in result)
-                {
-                    _logger.LogInformation(item.ToString());
-                }
-                return Ok(result);
-            
+
+            var result = await _modbusTCPServer.ReadHoldingRegisters();
+            foreach (var item in result)
+            {
+                _logger.LogInformation(item.ToString());
+            }
+            return Ok(result);
+
         }
 
 
@@ -61,7 +61,7 @@ namespace ModbusTcpAPI.Controllers
         public async Task<IActionResult> WriteSingleRegister([FromBody] ushort value)
         {
             var result = await _modbusTCPServer.WriteSingleRegister(value);
-            if(result)
+            if (result)
             {
                 return Ok();
             }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PLCCommunication_Model.DTO
 {
-    internal class UserDTO
+    public class UserDTO
     {
+        public int Id { get; set; }
+        public string UserName { get; set; }
     }
 }

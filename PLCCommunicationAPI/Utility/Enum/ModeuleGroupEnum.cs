@@ -11,8 +11,11 @@ namespace PLCCommunication_Utility.Enum
     /// </summary>
     public enum ModeuleGroupEnum
     {
+        User = 0,
         SysMenu = 1,
-        Test = 2,
-        ModbusTCPConfig = 3,
+        Authorize = 2,
+        Test = 3,
+        ModbusTCPConfig = 4,
+        
     }
 }

@@ -163,3 +163,4 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommun
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.MvcApplicationPartsAssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PLCCommunication_DomainService.IService;
@@ -27,6 +28,7 @@ namespace PLCCommunicationAPI.Controllers
 
 
         [HttpGet]
+        [Authorize]
         public string GetTestEnvironment()
         {
             return Environment.GetEnvironmentVariable("test");

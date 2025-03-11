@@ -88,6 +88,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Authorization": {
+        "type": "apiKey",
+        "description": "Authorization header \r\n Example:'Bearer xxxxxx'",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Authorization": [ ]
+    }
+  ]
 }

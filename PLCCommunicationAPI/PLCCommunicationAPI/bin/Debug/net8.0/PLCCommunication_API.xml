@@ -4,6 +4,13 @@
         <name>PLCCommunication_API</name>
     </assembly>
     <members>
+        <member name="M:PLCCommunication_API.Controllers.AuthorizeController.Login(PLCCommunication_Utility.Request.CheckRequestInfo)">
+            <summary>
+            登录鉴权
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
         <member name="T:PLCCommunication_API.Controllers.ModbusTCPController">
             <summary>
             ModbusTCPController中是关于和支持MobusTCP协议通讯的
@@ -21,6 +28,22 @@
             </summary>
             <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
             <returns>A result indicating success or failure.</returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.UserController.#ctor(PLCCommunication_DomainService.IService.IUserService,AutoMapper.IMapper,Microsoft.AspNetCore.Identity.UserManager{PLCCommunication_Model.Identity.User},Microsoft.AspNetCore.Identity.RoleManager{PLCCommunication_Model.Identity.Role})">
+            <summary>
+            测试获取环境变量
+            </summary>
+            <param name="userService"></param>
+            <param name="mapper"></param>
+            <param name="userManager"></param>
+            <param name="roleManager"></param>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.UserController.CreateUser(PLCCommunication_Utility.Request.CheckRequestInfo)">
+            <summary>
+            测试Identity是否引入
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
         </member>
         <member name="M:PLCCommunicationAPI.IdentityIOC.AddIdentityIOC(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>

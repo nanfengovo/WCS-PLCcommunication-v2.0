@@ -10,5 +10,19 @@
     "version": "V2.0"
   },
   "paths": { },
-  "components": { }
+  "components": {
+    "securitySchemes": {
+      "Authorization": {
+        "type": "apiKey",
+        "description": "Authorization header \r\n Example:'Bearer xxxxxx'",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Authorization": [ ]
+    }
+  ]
 }

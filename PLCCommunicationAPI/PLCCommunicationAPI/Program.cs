@@ -10,6 +10,11 @@ using PLCCommunication_Infrastructure.Respository;
 using PLCCommunication_Utility.Mapper;
 using PLCCommunication_Model.Identity;
 using Microsoft.AspNetCore.Identity;
+using PLCCommunication_Utility.Overall_Auth;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace PLCCommunicationAPI
 {
@@ -25,10 +30,62 @@ namespace PLCCommunicationAPI
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+
+
+            //启用swagger鉴权组件
+            builder.Services.AddSwaggerGen(opt =>
+            {
+
+                var scheme = new OpenApiSecurityScheme()
+                {
+                    Description = $"Authorization header \r\n Example:'Bearer xxxxxx'",
+                    Reference = new OpenApiReference() { Type = ReferenceType.SecurityScheme, Id = "Authorization" },
+                    Scheme = "oauth2",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey
+                };
+
+                opt.AddSecurityDefinition("Authorization",scheme);
+                var requirement = new OpenApiSecurityRequirement();
+                requirement[scheme] = new List<string>();
+                opt.AddSecurityRequirement(requirement);
+            });
 
             //自定义Mapper注入
             builder.Services.AddAutoMapper(typeof(DTOMapper));
+
+            //读取配置文件中JWT的配置信息，然后通过Configuration配置系统注入到Controller层进行授权
+            builder.Services.Configure<JwtSetting>(builder.Configuration.GetSection("Jwt"));
+
+            //配置JWT 鉴权
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(opt =>
+                {
+                    var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSetting>();
+                    byte[] keyBytes = Encoding.UTF8.GetBytes(jwtSettings.SecKey);
+                    var seckey = new SymmetricSecurityKey(keyBytes);
+
+                    opt.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidateIssuer = true,
+                        ValidIssuer = jwtSettings.Issuer,//代表分发web令牌的web 程序
+
+                        ValidateAudience = true,
+                        ValidAudience = jwtSettings.Audience,//token的受理者
+
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = seckey,
+                        ClockSkew = TimeSpan.FromSeconds(jwtSettings.ExpireSeconds)
+
+
+                    };
+
+                })
+                ;
+
+
 
             // Add DbContext service
             builder.Services.AddDbContext<MyDbContext>(options =>
@@ -51,6 +108,12 @@ namespace PLCCommunicationAPI
                 app.InitSwagger();
             }
 
+            //添加到管道中，在app.UseAuthorization();前添加
+            //鉴权
+            app.UseAuthentication();
+
+
+            //授权
             app.UseAuthorization();
 
             app.MapControllers();
@@ -82,6 +145,8 @@ namespace PLCCommunicationAPI
                 opt.Password.RequireDigit = true; //密码必须要有数字
                 opt.Password.RequireNonAlphanumeric = false; //是否需要非数字非字母
                 opt.Password.RequiredLength = 6; //长度最少6位
+                opt.Password.RequireLowercase = false; //可以不包含小写字母
+                opt.Password.RequireUppercase = false; //可以不包含大写字母
 
 
                 opt.Lockout.MaxFailedAccessAttempts = 5; //最大登录失败次数

@@ -1,16 +1,19 @@
-﻿using PLCCommunication_Infrastructure.BaseRespository;
+﻿using Microsoft.EntityFrameworkCore;
+using PLCCommunication_Infrastructure.BaseRespository;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
+using PLCCommunication_Model.Entities;
 using PLCCommunication_Model.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PLCCommunication_Infrastructure.Respository
 {
-    public class UserRespository:BaseRespository<User>,IUserRespository
+    public class UserRespository : BaseRespository<User>, IUserRespository
     {
         private readonly MyDbContext _dbContext;
 
@@ -19,5 +22,29 @@ namespace PLCCommunication_Infrastructure.Respository
             base._ctx = dbContext;
             _dbContext = dbContext;
         }
+
+        public override async Task<List<User>> FindAllAsync()
+        {
+            return await _dbContext.Users.Where(x => x.IsDeleted == false).ToListAsync();
+        }
+
+        public override Task<List<User>> FindAllAsync(Expression<Func<User, bool>> del)
+        {
+            return base.FindAllAsync(del);
+        }
+
+        public override Task<User> FindEntityByAsync(Expression<Func<User, bool>> del)
+        {
+            return base.FindEntityByAsync(del);
+        }
+
+        public override Task<User> FindEntityByIdAsync(Guid id)
+        {
+            return base.FindEntityByIdAsync(id);
+        }
+
+
     }
+
+
 }
