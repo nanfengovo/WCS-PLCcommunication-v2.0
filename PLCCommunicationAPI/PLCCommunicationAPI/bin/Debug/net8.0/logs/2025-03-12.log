@@ -1,0 +1,174 @@
+2025-03-12 12:49:02.8327|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 12:49:02.8975|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 12:49:02.8975|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 12:49:02.8975|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 12:49:59.0780|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 12:49:59.1236|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 12:49:59.1236|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 12:49:59.1236|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 12:51:02.8693|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 12:51:02.9079|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 12:51:02.9079|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 12:51:02.9079|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 12:51:13.6303|INFO|PLCCommunicationAPI.Controllers.TestController|测试日志集成 
+2025-03-12 12:57:09.5683|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 12:57:09.6075|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 12:57:09.6075|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 12:57:09.6075|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 12:57:37.0651|INFO|PLCCommunicationAPI.Controllers.TestController|测试日志集成 
+2025-03-12 12:57:37.0651|WARN|PLCCommunicationAPI.Controllers.TestController|测试日志集成 
+2025-03-12 12:57:37.0651|ERROR|PLCCommunicationAPI.Controllers.TestController|测试日志集成 
+2025-03-12 18:36:00.6364|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 18:36:00.6720|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 18:36:00.6720|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 18:36:00.6720|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 19:10:08.0035|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 19:10:08.0519|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 19:10:08.0525|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 19:10:08.0525|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 19:10:19.5167|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 19:11:11.0629|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 19:11:15.8203|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: The AuthorizationPolicy named: 'Admin' was not found.
+   at Microsoft.AspNetCore.Authorization.AuthorizationPolicy.CombineAsync(IAuthorizationPolicyProvider policyProvider, IEnumerable`1 authorizeData, IEnumerable`1 policies)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 20:03:59.4464|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 20:03:59.4916|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 20:03:59.4916|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 20:03:59.4916|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 20:20:12.2339|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 20:20:12.2715|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 20:20:12.2715|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 20:20:12.2715|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 20:20:37.3033|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 20:20:37.3468|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 20:20:37.3468|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 20:20:37.3468|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 20:21:33.1277|WARN|PLCCommunication_API.Controllers.UserController|添加用户-添加用户失败System.Collections.Generic.List`1[Microsoft.AspNetCore.Identity.IdentityError] 
+2025-03-12 20:21:46.8033|INFO|PLCCommunication_API.Controllers.UserController|成功添加用户名为test的用户 
+2025-03-12 20:23:35.1989|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 20:23:35.2470|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 20:23:35.2470|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 20:23:35.2470|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 20:24:56.8758|WARN|PLCCommunication_API.Controllers.UserController|添加用户-添加用户失败！想要添加的用户已存在 
+2025-03-12 20:25:02.9517|INFO|PLCCommunication_API.Controllers.UserController|成功添加用户名为test1的用户 
+2025-03-12 20:30:05.2888|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 20:30:05.3258|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 20:30:05.3258|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 20:30:05.3258|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 20:31:22.0255|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Role USER does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at PLCCommunication_API.Controllers.UserController.UserToRole(UserToRole request) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\Controllers\UserController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 20:37:37.7731|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 20:37:37.8180|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 20:37:37.8180|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 20:37:37.8180|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 20:39:13.5982|WARN|PLCCommunication_API.Controllers.UserController|给用户分配角色- user角色不存在！ 
+2025-03-12 20:39:30.4384|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: User security stamp cannot be null.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetSecurityStampAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.ValidateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.UpdateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at PLCCommunication_API.Controllers.UserController.UserToRole(UserToRole request) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\Controllers\UserController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 20:44:15.8376|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: User security stamp cannot be null.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetSecurityStampAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.ValidateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.UpdateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at PLCCommunication_API.Controllers.UserController.UserToRole(UserToRole request) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\Controllers\UserController.cs:line 101
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-12 20:55:34.8639|INFO|PLCCommunication_API.Controllers.UserController|给用户分配角色-成功将用户test分配admin角色！ 
+2025-03-12 20:56:20.6820|INFO|PLCCommunication_API.Controllers.UserController|给用户分配角色-成功将用户admin分配admin角色！ 
+2025-03-12 21:04:20.1327|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 21:04:20.1880|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 21:04:20.1880|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 21:04:20.1880|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 21:35:00.3941|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 21:35:00.4604|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 21:35:00.4604|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 21:35:00.4604|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 21:40:58.3953|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 21:40:58.4353|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 21:40:58.4353|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 21:40:58.4353|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 21:51:45.3516|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 21:51:45.4013|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 21:51:45.4013|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 21:51:45.4013|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 23:19:10.3098|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 23:19:10.3509|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 23:19:10.3509|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 23:19:10.3509|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 23:20:17.2589|INFO|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-删除用户名为test的用户成功！ 
+2025-03-12 23:20:31.5246|WARN|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-要删除的用户名test22不存在 
+2025-03-12 23:20:40.4619|INFO|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-删除用户名为test1的用户成功！ 
+2025-03-12 23:20:56.7833|INFO|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-删除用户名为test1的用户成功！ 
+2025-03-12 23:21:44.5081|INFO|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-删除用户名为test1的用户成功！ 
+2025-03-12 23:22:22.9609|INFO|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-删除用户名为test1的用户成功！ 
+2025-03-12 23:28:23.1995|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 23:28:23.2376|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 23:28:23.2376|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 23:28:23.2376|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 23:41:57.4676|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2025-03-12 23:41:57.5077|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-12 23:41:57.5077|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-12 23:41:57.5077|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-12 23:43:21.4385|WARN|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-删除用户名为test的用户失败,该用户已经被删除！  
+2025-03-12 23:43:45.8297|WARN|PLCCommunication_API.Controllers.UserController|根据用户名删除用户-删除用户名为test1的用户失败,该用户已经被删除！  

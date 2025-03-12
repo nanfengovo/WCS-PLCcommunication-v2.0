@@ -4,6 +4,11 @@
         <name>PLCCommunication_API</name>
     </assembly>
     <members>
+        <member name="T:PLCCommunication_API.Controllers.AuthorizeController">
+            <summary>
+            鉴权模块
+            </summary>
+        </member>
         <member name="M:PLCCommunication_API.Controllers.AuthorizeController.Login(PLCCommunication_Utility.Request.CheckRequestInfo)">
             <summary>
             登录鉴权
@@ -29,20 +34,47 @@
             <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
             <returns>A result indicating success or failure.</returns>
         </member>
-        <member name="M:PLCCommunication_API.Controllers.UserController.#ctor(PLCCommunication_DomainService.IService.IUserService,AutoMapper.IMapper,Microsoft.AspNetCore.Identity.UserManager{PLCCommunication_Model.Identity.User},Microsoft.AspNetCore.Identity.RoleManager{PLCCommunication_Model.Identity.Role})">
+        <member name="T:PLCCommunication_API.Controllers.UserController">
             <summary>
-            测试获取环境变量
+            用户管理的模块
             </summary>
-            <param name="userService"></param>
-            <param name="mapper"></param>
-            <param name="userManager"></param>
-            <param name="roleManager"></param>
         </member>
-        <member name="M:PLCCommunication_API.Controllers.UserController.CreateUser(PLCCommunication_Utility.Request.CheckRequestInfo)">
+        <member name="M:PLCCommunication_API.Controllers.UserController.GetAllUsersAsync">
             <summary>
-            测试Identity是否引入
+            获取所有的用户
             </summary>
-            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.UserController.CreateUser(PLCCommunication_Model.APIModel.CreateUserRequest)">
+            <summary>
+            添加用户
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.UserController.UserToRole(PLCCommunication_Model.APIModel.UserToRole)">
+            <summary>
+            给用户分配角色
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.UserController.DelUserByUserName(System.String)">
+            <summary>
+            根据用户名删除用户
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PLCCommunicationAPI.Controllers.TestController">
+            <summary>
+            测试一些新加入系统的新功能
+            </summary>
+        </member>
+        <member name="M:PLCCommunicationAPI.Controllers.TestController.TestAuthorize">
+            <summary>
+            管理员才可以访问
+            </summary>
             <returns></returns>
         </member>
         <member name="M:PLCCommunicationAPI.IdentityIOC.AddIdentityIOC(Microsoft.Extensions.DependencyInjection.IServiceCollection)">

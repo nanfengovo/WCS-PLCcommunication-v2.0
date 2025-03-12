@@ -67,6 +67,36 @@
           }
         }
       }
+    },
+    "/api/Test/TestAuthorize": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "summary": "管理员才可以访问",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -101,6 +131,12 @@
   "security": [
     {
       "Authorization": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "Test",
+      "description": "测试一些新加入系统的新功能"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dQ1xMze6BaU=",
+  "dgSpecHash": "/TSuzdP/EYg=",
   "success": true,
   "projectFilePath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\PLCCommunication_DomainService.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,9 @@
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog\\5.4.0\\nlog.5.4.0.nupkg.sha512",
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.extensions.logging\\5.4.0\\nlog.extensions.logging.5.4.0.nupkg.sha512",
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.web.aspnetcore\\5.4.0\\nlog.web.aspnetcore.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",

@@ -18,6 +18,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using PLCCommunication_Infrastructure.Migrations;
 using PLCCommunication_API.PlugInUnit;
+using NLog.Web;
 
 namespace PLCCommunicationAPI
 {
@@ -34,6 +35,10 @@ namespace PLCCommunicationAPI
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
 
+            // 添加 NLog 服务
+            // 清除默认的日志提供程序
+            builder.Logging.ClearProviders();
+            builder.Host.UseNLog();
 
             //启用swagger鉴权组件
             builder.Services.AddSwaggerGen(opt =>

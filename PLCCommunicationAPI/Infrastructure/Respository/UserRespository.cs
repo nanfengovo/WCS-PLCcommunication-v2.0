@@ -2,6 +2,7 @@
 using PLCCommunication_Infrastructure.BaseRespository;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
+using PLCCommunication_Infrastructure.Migrations;
 using PLCCommunication_Model.Entities;
 using PLCCommunication_Model.Identity;
 using System;
@@ -21,6 +22,11 @@ namespace PLCCommunication_Infrastructure.Respository
         {
             base._ctx = dbContext;
             _dbContext = dbContext;
+        }
+
+        public override Task<bool> DeletedAsync(User entity)
+        {
+            return base.DeletedAsync(entity);
         }
 
         public override async Task<List<User>> FindAllAsync()
@@ -43,7 +49,20 @@ namespace PLCCommunication_Infrastructure.Respository
             return base.FindEntityByIdAsync(id);
         }
 
+        public override async Task<bool> UpdateAsync(User entity)
+        {
 
+           return await base.UpdateAsync(entity);
+            
+        }
+
+        public async Task<bool> DelByUserName(User user)
+        {
+            if(user.IsDeleted)
+                return false;
+            user.IsDeleted = false;
+            return await _ctx.SaveChangesAsync() > 0;
+        }
     }
 
 

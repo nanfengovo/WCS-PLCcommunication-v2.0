@@ -16,6 +16,9 @@ using System.Text;
 
 namespace PLCCommunication_API.Controllers
 {
+    /// <summary>
+    /// 鉴权模块
+    /// </summary>
     [Route("api/[controller]/[action]")]
     [ApiController]
     [ApiExplorerSettings(GroupName = nameof(ModeuleGroupEnum.Authorize))]

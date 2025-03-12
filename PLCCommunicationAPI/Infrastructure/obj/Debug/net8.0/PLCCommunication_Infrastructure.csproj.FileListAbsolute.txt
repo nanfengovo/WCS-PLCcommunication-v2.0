@@ -1,4 +1,5 @@
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\bin\Debug\net8.0\PLCCommunication_Infrastructure.deps.json
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\bin\Debug\net8.0\PLCCommunication_Infrastructure.runtimeconfig.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\bin\Debug\net8.0\PLCCommunication_Infrastructure.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\bin\Debug\net8.0\PLCCommunication_Infrastructure.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\bin\Debug\net8.0\PLCCommunication_Model.dll
@@ -13,6 +14,5 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastru
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\obj\Debug\net8.0\PLCCommunication_Infrastructure.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\obj\Debug\net8.0\refint\PLCCommunication_Infrastructure.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\obj\Debug\net8.0\PLCCommunication_Infrastructure.pdb
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\obj\Debug\net8.0\ref\PLCCommunication_Infrastructure.dll
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\bin\Debug\net8.0\PLCCommunication_Infrastructure.runtimeconfig.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\obj\Debug\net8.0\PLCCommunication_Infrastructure.genruntimeconfig.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\obj\Debug\net8.0\ref\PLCCommunication_Infrastructure.dll

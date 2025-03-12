@@ -19,5 +19,17 @@ namespace PLCCommunication_DomainService.Service
             base._respository = userrespository;
             _userrespository = userrespository;
         }
+        /// <summary>
+        /// 软删除
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public async Task<bool> DelByUserName(User user)
+        {
+            return await _userrespository.DelByUserName(user);
+        }
+
+        
+       
     }
 }

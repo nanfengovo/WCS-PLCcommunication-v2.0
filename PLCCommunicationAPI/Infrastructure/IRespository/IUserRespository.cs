@@ -10,5 +10,6 @@ namespace PLCCommunication_Infrastructure.IRespository
 {
     public interface IUserRespository:IBaseRespository<User>
     {
+        public Task<bool> DelByUserName(User user);
     }
 }

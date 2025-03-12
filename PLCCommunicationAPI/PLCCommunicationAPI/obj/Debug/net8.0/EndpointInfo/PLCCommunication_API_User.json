@@ -10,32 +10,101 @@
     "version": "V2.0"
   },
   "paths": {
+    "/api/User/GetAllUsers": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "获取所有的用户",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User/CreateUser": {
       "post": {
         "tags": [
           "User"
         ],
-        "summary": "测试Identity是否引入",
+        "summary": "添加用户",
         "requestBody": {
           "description": "",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CheckRequestInfo"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CheckRequestInfo"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CheckRequestInfo"
+                "$ref": "#/components/schemas/CreateUserRequest"
               }
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/UserToRole": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "给用户分配角色",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserToRole"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserToRole"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserToRole"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/DelUserByUserName": {
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "summary": "根据用户名删除用户",
+        "parameters": [
+          {
+            "name": "userName",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
@@ -63,16 +132,21 @@
   },
   "components": {
     "schemas": {
-      "CheckRequestInfo": {
+      "CreateUserRequest": {
+        "required": [
+          "password",
+          "userName"
+        ],
         "type": "object",
         "properties": {
           "userName": {
-            "type": "string",
-            "nullable": true
+            "minLength": 1,
+            "type": "string"
           },
-          "userPwd": {
+          "password": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "password"
           }
         },
         "additionalProperties": false
@@ -93,6 +167,24 @@
           }
         },
         "additionalProperties": false
+      },
+      "UserToRole": {
+        "required": [
+          "roleName",
+          "userName"
+        ],
+        "type": "object",
+        "properties": {
+          "userName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "roleName": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
       }
     },
     "securitySchemes": {
@@ -107,6 +199,12 @@
   "security": [
     {
       "Authorization": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "User",
+      "description": "用户管理的模块"
     }
   ]
 }

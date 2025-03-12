@@ -142,6 +142,26 @@
     ]
   },
   {
+    "ContainingType": "PLCCommunicationAPI.Controllers.TestController",
+    "Method": "TestAuthorize",
+    "RelativePath": "api/Test/TestAuthorize",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PLCCommunication_API.Controllers.UserController",
     "Method": "CreateUser",
     "RelativePath": "api/User/CreateUser",
@@ -150,9 +170,25 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "info",
-        "Type": "PLCCommunication_Utility.Request.CheckRequestInfo",
+        "Name": "request",
+        "Type": "PLCCommunication_Model.APIModel.CreateUserRequest",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.UserController",
+    "Method": "DelUserByUserName",
+    "RelativePath": "api/User/DelUserByUserName",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -166,5 +202,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.UserController",
+    "Method": "GetAllUsersAsync",
+    "RelativePath": "api/User/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.UserController",
+    "Method": "UserToRole",
+    "RelativePath": "api/User/UserToRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PLCCommunication_Model.APIModel.UserToRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

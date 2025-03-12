@@ -10,5 +10,6 @@ namespace PLCCommunication_DomainService.IService
 {
     public interface IUserService:IBaseService<User>
     {
+        public Task<bool> DelByUserName(User user);
     }
 }

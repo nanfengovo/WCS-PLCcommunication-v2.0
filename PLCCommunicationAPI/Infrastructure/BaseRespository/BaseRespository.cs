@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IBaseRespository;
+using PLCCommunication_Model.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace PLCCommunication_Infrastructure.BaseRespository
             return await _ctx.SaveChangesAsync()>0;
         }
 
-        public async Task<bool> DeletedAsync(TEntity entity)
+        public virtual async Task<bool> DeletedAsync(TEntity entity)
         {
             return await UpdateAsync(entity);
         }
@@ -49,7 +50,7 @@ namespace PLCCommunication_Infrastructure.BaseRespository
         public virtual async Task<bool> UpdateAsync(TEntity entity)
         {
             _ctx.Set<TEntity>().Update(entity);
-            return await _ctx.SaveChangesAsync()>0; 
+            return await _ctx.SaveChangesAsync() > 0;
         }
     }
 }

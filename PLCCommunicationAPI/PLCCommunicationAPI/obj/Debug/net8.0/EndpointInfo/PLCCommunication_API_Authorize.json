@@ -108,5 +108,11 @@
     {
       "Authorization": [ ]
     }
+  ],
+  "tags": [
+    {
+      "name": "Authorize",
+      "description": "鉴权模块"
+    }
   ]
 }
