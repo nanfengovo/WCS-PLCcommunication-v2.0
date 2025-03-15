@@ -102,6 +102,102 @@
     ]
   },
   {
+    "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
+    "Method": "AddS7Config",
+    "RelativePath": "api/S7/AddS7Config",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProxyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IP",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Port",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DBID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Remark",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsOpen",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
+    "Method": "GetAllS7Configs",
+    "RelativePath": "api/S7/GetAllS7Configs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[PLCCommunication_Model.Entities.S7Config, PLCCommunication_Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PLCCommunicationAPI.Controllers.TestController",
     "Method": "GetAllConfig",
     "RelativePath": "api/Test/GetAllConfig",

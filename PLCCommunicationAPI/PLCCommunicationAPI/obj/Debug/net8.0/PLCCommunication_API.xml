@@ -34,6 +34,24 @@
             <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
             <returns>A result indicating success or failure.</returns>
         </member>
+        <member name="T:PLCCommunication_API.Controllers.S7Controller">
+            <summary>
+            S7Controller用来处理和S7协议相关的
+            </summary>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.AddS7Config(PLCCommunication_Model.DTO.S7ConfigDTO)">
+            <summary>
+            新增S7配置
+            </summary>
+            <param name="s7ConfigDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.GetAllS7Configs">
+            <summary>
+            获取所有的S7配置
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:PLCCommunication_API.Controllers.UserController">
             <summary>
             用户管理的模块

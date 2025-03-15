@@ -141,7 +141,7 @@ namespace PLCCommunication_API.Controllers
             if(!result)
             {
                 _logger.LogWarning($"根据用户名删除用户-删除用户名为{userName}的用户失败,该用户已经被删除！ ");
-                return new Result { Code = 401, Msg = $"删除失败！删除用户名为{userName}的用户失败,该用户已经被删除！" };
+                return new Result { Code = 406, Msg = $"删除失败！删除用户名为{userName}的用户失败,该用户已经被删除！" };
             }
             _logger.LogInformation($"根据用户名删除用户-删除用户名为{userName}的用户成功！");
             return new Result { Code = 200 ,Msg = "删除成功" };

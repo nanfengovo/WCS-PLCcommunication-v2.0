@@ -1,0 +1,6 @@
+@S7Test_HostAddress = http://localhost:5189
+
+GET {{S7Test_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1047,6 +1047,19 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "S7netplus/0.20.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/S7.Net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/S7.Net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "type": "package",
         "dependencies": {
@@ -1712,7 +1725,8 @@
           "Microsoft.EntityFrameworkCore.Relational": "8.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
           "NLog.Web.AspNetCore": "5.4.0",
-          "PLCCommunication_Model": "1.0.0"
+          "PLCCommunication_Model": "1.0.0",
+          "S7netplus": "0.20.0"
         },
         "compile": {
           "bin/placeholder/PLCCommunication_Infrastructure.dll": {}
@@ -3497,6 +3511,31 @@
         "lib/netstandard2.0/NLog.Web.AspNetCore.xml",
         "nlog.web.aspnetcore.5.4.0.nupkg.sha512",
         "nlog.web.aspnetcore.nuspec"
+      ]
+    },
+    "S7netplus/0.20.0": {
+      "sha512": "XAubZ076bhWHQZlnBkzwQO4WxqF5ofwhrkDxfBhGbeD1JC1jBDn3EbWIqMLW6+G0RsxzxirSjLERCQZPfjwGdw==",
+      "type": "package",
+      "path": "s7netplus/0.20.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/S7.Net.dll",
+        "lib/net452/S7.Net.xml",
+        "lib/net462/S7.Net.dll",
+        "lib/net462/S7.Net.xml",
+        "lib/net5.0/S7.Net.dll",
+        "lib/net5.0/S7.Net.xml",
+        "lib/net6.0/S7.Net.dll",
+        "lib/net6.0/S7.Net.xml",
+        "lib/net7.0/S7.Net.dll",
+        "lib/net7.0/S7.Net.xml",
+        "lib/netstandard1.3/S7.Net.dll",
+        "lib/netstandard1.3/S7.Net.xml",
+        "lib/netstandard2.0/S7.Net.dll",
+        "lib/netstandard2.0/S7.Net.xml",
+        "s7netplus.0.20.0.nupkg.sha512",
+        "s7netplus.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.6.2": {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gy7JLjXebbg=",
+  "dgSpecHash": "lyLPKBoB9pM=",
   "success": true,
   "projectFilePath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PLCCommunication_API.csproj",
   "expectedPackageFiles": [
@@ -55,6 +55,7 @@
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog\\5.4.0\\nlog.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.extensions.logging\\5.4.0\\nlog.extensions.logging.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.web.aspnetcore\\5.4.0\\nlog.web.aspnetcore.5.4.0.nupkg.sha512",
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\s7netplus\\0.20.0\\s7netplus.0.20.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",

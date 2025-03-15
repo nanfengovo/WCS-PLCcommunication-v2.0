@@ -18,6 +18,7 @@ namespace PLCCommunication_Infrastructure.BaseRespository
 
         public async Task<bool> CreateAsync(TEntity entity)
         {
+            if (entity == null) throw new ArgumentNullException(nameof(entity));
             await _ctx.Set<TEntity>().AddAsync(entity);
             return await _ctx.SaveChangesAsync()>0;
         }

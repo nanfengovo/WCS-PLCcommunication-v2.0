@@ -172,6 +172,62 @@ namespace PLCCommunication_Infrastructure.Migrations
                     b.ToTable("T_ModbusTCPConfigs", (string)null);
                 });
 
+            modelBuilder.Entity("PLCCommunication_Model.Entities.S7Config", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("Createtime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("DBID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("IP")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsOpen")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Length")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Port")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProxyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("bit")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_S7Configs", (string)null);
+                });
+
             modelBuilder.Entity("PLCCommunication_Model.Identity.Role", b =>
                 {
                     b.Property<Guid>("Id")

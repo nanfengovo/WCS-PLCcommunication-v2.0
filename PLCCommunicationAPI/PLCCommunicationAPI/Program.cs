@@ -28,6 +28,9 @@ namespace PLCCommunicationAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // 强制指定 URL 和端口
+            builder.WebHost.UseUrls("http://localhost:8888", "https://localhost:8899");
+
             // Add services to the container.
             //自定义swagger中间件
             builder.Services.InitSwagger();

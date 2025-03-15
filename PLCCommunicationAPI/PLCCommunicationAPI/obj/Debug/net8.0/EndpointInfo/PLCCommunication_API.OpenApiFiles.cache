@@ -3,3 +3,4 @@ PLCCommunication_API_SysMenu.json
 PLCCommunication_API_Authorize.json
 PLCCommunication_API_Test.json
 PLCCommunication_API_ModbusTCPConfig.json
+PLCCommunication_API_S7Config.json

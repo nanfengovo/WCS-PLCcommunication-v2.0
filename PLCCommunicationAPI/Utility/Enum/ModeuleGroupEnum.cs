@@ -16,6 +16,7 @@ namespace PLCCommunication_Utility.Enum
         Authorize = 2,
         Test = 3,
         ModbusTCPConfig = 4,
+        S7Config = 5,
         
     }
 }

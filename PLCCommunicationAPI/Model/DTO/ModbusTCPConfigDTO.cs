@@ -38,6 +38,11 @@ namespace PLCCommunication_Model.DTO
         /// </summary>
         public byte FunctionCode { get; set; }
 
+        /// <summary>
+        /// 是否启用
+        /// </summary>
+        public bool IsOpen { get; set; }
+
 
         /// <summary>
         /// 变量地址

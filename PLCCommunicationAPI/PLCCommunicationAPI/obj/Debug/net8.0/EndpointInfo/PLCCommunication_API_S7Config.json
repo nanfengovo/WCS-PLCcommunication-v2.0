@@ -1,0 +1,269 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WCS管理系统",
+    "description": "Vue3+WebAPI",
+    "contact": {
+      "name": "nanfengovo",
+      "url": "https://github.com/nanfengovo"
+    },
+    "version": "V2.0"
+  },
+  "paths": {
+    "/api/S7/AddS7Config": {
+      "post": {
+        "tags": [
+          "S7"
+        ],
+        "summary": "新增S7配置",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ProxyName": {
+                    "type": "string"
+                  },
+                  "IP": {
+                    "type": "string"
+                  },
+                  "Port": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DBID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Address": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Length": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "bit": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Remark": {
+                    "type": "string"
+                  },
+                  "IsOpen": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "ProxyName": {
+                  "style": "form"
+                },
+                "IP": {
+                  "style": "form"
+                },
+                "Port": {
+                  "style": "form"
+                },
+                "DBID": {
+                  "style": "form"
+                },
+                "Address": {
+                  "style": "form"
+                },
+                "Type": {
+                  "style": "form"
+                },
+                "Length": {
+                  "style": "form"
+                },
+                "bit": {
+                  "style": "form"
+                },
+                "Remark": {
+                  "style": "form"
+                },
+                "IsOpen": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/S7/GetAllS7Configs": {
+      "get": {
+        "tags": [
+          "S7"
+        ],
+        "summary": "获取所有的S7配置",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/S7Config"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/S7Config"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/S7Config"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Result": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "msg": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "S7Config": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "proxyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "port": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dbid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "length": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          },
+          "isOpen": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "createtime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "lastModified": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Authorization": {
+        "type": "apiKey",
+        "description": "Authorization header \r\n Example:'Bearer xxxxxx'",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Authorization": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "S7",
+      "description": "S7Controller用来处理和S7协议相关的"
+    }
+  ]
+}
