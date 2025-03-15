@@ -28,6 +28,18 @@ namespace PLCCommunicationAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // 添加服务到容器
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin",
+                    policy =>
+                    {
+                        policy.WithOrigins("http://127.0.0.1:8889", "https://sub.example.com")
+                              .AllowAnyHeader()
+                              .AllowAnyMethod();
+                    });
+            });
+
             // 强制指定 URL 和端口
             builder.WebHost.UseUrls("http://localhost:8888", "https://localhost:8899");
 
@@ -128,6 +140,8 @@ namespace PLCCommunicationAPI
             //鉴权
             app.UseAuthentication();
 
+            // 使用 CORS 策略
+            app.UseCors("AllowSpecificOrigin");
 
             //授权
             app.UseAuthorization();
