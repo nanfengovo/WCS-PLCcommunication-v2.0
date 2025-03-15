@@ -1,0 +1,34 @@
+<template>
+  <div class="userSearch">
+    <!-- <el-card shadow=hover> -->
+    <el-form>
+      <el-row>
+        <el-col :span="12">
+          <el-form-item label="用户名:" style="width: 100%;">
+            <input type="text" placeholder="请输入用户名" size="small">
+          </el-form-item>
+        </el-col>
+        <el-col :span="12">
+          <el-form-item label="角色">
+            <el-select placeholder="请选择角色">
+              <el-option label="Zone one" value="shanghai" />
+              <el-option label="Zone two" value="beijing" />
+            </el-select>
+          </el-form-item>
+        </el-col>
+      </el-row>
+
+    </el-form>
+    <!-- </el-card> -->
+  </div>
+</template>
+<script setup lang="ts">
+</script>
+
+<style lang="less" scoped>
+.userSearch {
+  width: 100%;
+  padding: 10px;
+  border-radius: 200;
+}
+</style>

@@ -60,7 +60,7 @@ namespace PLCCommunication_Infrastructure.Respository
         {
             if(user.IsDeleted)
                 return false;
-            user.IsDeleted = false;
+            user.IsDeleted = true;
             return await _ctx.SaveChangesAsync() > 0;
         }
     }
