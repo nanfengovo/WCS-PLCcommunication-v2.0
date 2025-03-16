@@ -315,7 +315,7 @@ const deleteSelectedRows = async () => {
     try {
         isDeleting.value = true;
         const response = await axios.delete('http://localhost:8888/api/S7/DeleteById', {
-            data: ids,
+            data: { ids },
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
             },

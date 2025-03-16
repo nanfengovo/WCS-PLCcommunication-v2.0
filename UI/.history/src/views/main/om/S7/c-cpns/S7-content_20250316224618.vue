@@ -4,7 +4,7 @@
             <div class="content-top-left">
                 <el-button type="primary" icon="Refresh" @click="refresh">刷新</el-button>
                 <el-button type="primary" icon="Plus" @click="dialogOverflowVisible = true">添加</el-button>
-                <el-button type="danger" icon="delete" @click="deleteSelectedRows">删除</el-button>
+                <el-button type="danger" icon="delete" @click="deleteS7">删除</el-button>
             </div>
             <div class="content-top-right">
                 <el-button type="success" icon="Upload">导入</el-button>
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="content">
-            <el-table border style="width: 100%" stripe="true" fit="true" :data="S7List" ref="multipleTableRef">
+            <el-table border style="width: 100%" stripe="true" fit="true" :data="S7List">
                 <el-table-column align="center" type="selection" width="40px" />
                 <el-table-column align="center" label="操作" width="320">
                     <template #default>
@@ -22,7 +22,7 @@
                         <el-button type="success" size="small" text icon="EditPen">写入</el-button>
                     </template>
                 </el-table-column>
-                <el-table-column align="center" prop="result" label="读写详情" width="400px" />
+                <el-table-column align="center" prop="result" label="读写详情" width="40px" />
                 <el-table-column align="center" type="index" label="序号" width="60px" />
                 <el-table-column align="center" prop="proxyName" label="配置名" width="180" />
                 <el-table-column align="center" prop="ip" label="ip" width="150" />
@@ -114,7 +114,7 @@
 import axios from 'axios';
 import { nextTick, onMounted, reactive, ref } from 'vue';
 import { formatTime } from '@/utils/format'
-import { ElMessage, ElMessageBox, ElTable } from 'element-plus';
+import { ElMessage } from 'element-plus';
 
 const isMounted = ref(true);
 const loading = ref(false)
@@ -289,50 +289,9 @@ const addS7Config = () => {
 //#endregion
 
 //#region ---删除配置
-const multipleTableRef = ref<InstanceType<typeof ElTable>>(); // 明确组件类型
-const isDeleting = ref(false);
+const deleteS7 = (id: number) => {
 
-const deleteSelectedRows = async () => {
-    try {
-        await ElMessageBox.confirm('确定删除选中项吗？', '警告', { type: 'warning' });
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
-        return; // 用户取消
-    }
-
-    if (!multipleTableRef.value) {
-        ElMessage.warning('表格未加载');
-        return;
-    }
-
-    const selectedRows = multipleTableRef.value.getSelectionRows();
-    if (selectedRows.length === 0) {
-        ElMessage.warning('请至少选择一行数据');
-        return;
-    }
-
-    const ids = selectedRows.map((row: { id: any; }) => row.id);
-    try {
-        isDeleting.value = true;
-        const response = await axios.delete('http://localhost:8888/api/S7/DeleteById', {
-            data: ids,
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem('token')}`,
-            },
-        });
-
-        if (response.data?.code === 200) { // 根据实际接口调整
-            ElMessage.success('删除成功');
-            S7List.splice(0, S7List.length, ...S7List.filter(item => !ids.includes(item.id)));
-        } else {
-            throw new Error(response.data?.message || '删除失败');
-        }
-    } catch (error: any) {
-        ElMessage.error(error.message || '删除请求失败');
-    } finally {
-        isDeleting.value = false;
-    }
-};
+}
 //#endregion
 
 </script>

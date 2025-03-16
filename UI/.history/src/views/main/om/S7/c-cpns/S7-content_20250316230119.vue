@@ -114,7 +114,7 @@
 import axios from 'axios';
 import { nextTick, onMounted, reactive, ref } from 'vue';
 import { formatTime } from '@/utils/format'
-import { ElMessage, ElMessageBox, ElTable } from 'element-plus';
+import { ElMessage } from 'element-plus';
 
 const isMounted = ref(true);
 const loading = ref(false)
@@ -289,48 +289,41 @@ const addS7Config = () => {
 //#endregion
 
 //#region ---删除配置
-const multipleTableRef = ref<InstanceType<typeof ElTable>>(); // 明确组件类型
-const isDeleting = ref(false);
-
+const multipleTableRef = ref(null); // 引用表格组件
 const deleteSelectedRows = async () => {
-    try {
-        await ElMessageBox.confirm('确定删除选中项吗？', '警告', { type: 'warning' });
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (error) {
-        return; // 用户取消
-    }
-
     if (!multipleTableRef.value) {
         ElMessage.warning('表格未加载');
         return;
     }
-
-    const selectedRows = multipleTableRef.value.getSelectionRows();
+    const selectedRows = (multipleTableRef.value as any).getSelectionRows();
     if (selectedRows.length === 0) {
         ElMessage.warning('请至少选择一行数据');
         return;
     }
 
+    // 假设每行数据都有一个唯一的 id 属性
     const ids = selectedRows.map((row: { id: any; }) => row.id);
+
     try {
-        isDeleting.value = true;
+        // 发送删除请求到后端
         const response = await axios.delete('http://localhost:8888/api/S7/DeleteById', {
-            data: ids,
             headers: {
-                Authorization: `Bearer ${localStorage.getItem('token')}`,
+                Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
+
+                'Content-Type': 'application/json'
+
             },
         });
-
-        if (response.data?.code === 200) { // 根据实际接口调整
+        if (response.data.success) {
             ElMessage.success('删除成功');
+            // 删除成功后，从 S7List 中移除这些项
             S7List.splice(0, S7List.length, ...S7List.filter(item => !ids.includes(item.id)));
         } else {
-            throw new Error(response.data?.message || '删除失败');
+            ElMessage.error('删除失败');
         }
-    } catch (error: any) {
-        ElMessage.error(error.message || '删除请求失败');
-    } finally {
-        isDeleting.value = false;
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (error) {
+        ElMessage.error('删除请求失败');
     }
 };
 //#endregion
