@@ -14,13 +14,6 @@
         <div class="content">
             <el-table border style="width: 100%" stripe="true" fit="true" :data="S7List">
                 <el-table-column align="center" type="selection" width="40px" />
-                <el-table-column align="center" label="操作" width="280">
-                    <template #default>
-                        <el-button type="primary" size="small" text>编辑</el-button>
-                        <el-button type="primary" size="small" text>启用</el-button>
-                        <el-button type="success" size="small" text>读取</el-button>
-                    </template>
-                </el-table-column>
                 <el-table-column align="center" type="index" label="序号" width="60px" />
                 <el-table-column align="center" prop="proxyName" label="配置名" width="180" />
                 <el-table-column align="center" prop="ip" label="ip" width="150" />
@@ -31,15 +24,16 @@
                 <el-table-column align="center" prop="length" label="数据长度" width="180" />
                 <el-table-column align="center" prop="bit" label="位地址" width="80" />
                 <el-table-column align="center" prop="remark" label="备注" width="80" />
-                <el-table-column align="center" prop="isOpen" label="是否启用" width="100">
-                    <!-- 作用域插槽 -->
-                    <template #default="scope">
-                        <el-switch v-model=scope.row.isOpen active-color="#13ce66" inactive-color="#ff4949" disabled />
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="isOpen" label="是否启用" width="100" />
                 <el-table-column align="center" prop="createtime" label="创建时间" width="250" />
                 <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
-
+                <el-table-column align="center" label="操作" width="180">
+                    <template>
+                        <el-button type="primary" size="small" text>编辑</el-button>
+                        <el-button type="primary" size="small" text>启用</el-button>
+                        <el-button type="danger" size="small">删除</el-button>
+                    </template>
+                </el-table-column>
             </el-table>
         </div>
     </div>
@@ -101,7 +95,6 @@ const loading = ref(false)
 const refresh = () => {
     isMounted.value = false;
     setTimeout(() => {
-        fetchData();
         loading.value = false; // 2秒后显示内容
     }, 500);
     loading.value = true;
@@ -113,7 +106,7 @@ const refresh = () => {
 
 
 
-//#region  ---显示数据 
+//#region  ---显示数据
 // 定义一个响应式的数组来存储后端返回的数据
 interface S7Item {
     id: number;
@@ -127,39 +120,29 @@ interface S7Item {
     bit: number;
     remark: string;
     isOpen: boolean;
-    isDeleted: boolean;
-    createtime: Date;
-    lastModified: Date;
+    //isDeleted: boolean;
+    createtime: string;
+    lastModified: string;
 }
 
 const S7List = reactive<S7Item[]>([]);
-const error = ref<Error | null>(null);
-// 从后端获取数据
+
+// 假设你有一个函数来从后端获取数据
 async function fetchData() {
-    loading.value = true;
-    error.value = null;
     try {
-        const response = await axios.get('http://127.0.0.1:8888/api/S7/GetAllS7Configs', {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
-            },
-        });
-        //console.log("@@" + response.data);
-        const data: S7Item[] = response.data;
-        S7List.length = 0;
+        // 使用 fetch API 或其他 HTTP 客户端库（如 axios）来获取数据
+        const response = await axios('http://localhost:8888/api/S7/GetAllS7Configs');
+        const data = await response.data;
+        // 将获取到的数据赋值给 S7List
         S7List.push(...data);
-    } catch (err) {
-        error.value = err instanceof Error ? err : new Error('请求失败');
-        console.error('Error fetching data:', err);
-    } finally {
-        loading.value = false;
+    } catch (error) {
+        console.error('Error fetching data:', error);
     }
 }
 
 // 在组件挂载后调用 fetchData 函数
 onMounted(fetchData);
 
-//测试数据
 // const S7List = [
 //     {
 //         "id": 1,

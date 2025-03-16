@@ -13,6 +13,7 @@
         </div>
         <div class="content">
             <el-table border style="width: 100%" stripe="true" fit="true" :data="S7List">
+
                 <el-table-column align="center" type="selection" width="40px" />
                 <el-table-column align="center" label="操作" width="280">
                     <template #default>
@@ -31,12 +32,7 @@
                 <el-table-column align="center" prop="length" label="数据长度" width="180" />
                 <el-table-column align="center" prop="bit" label="位地址" width="80" />
                 <el-table-column align="center" prop="remark" label="备注" width="80" />
-                <el-table-column align="center" prop="isOpen" label="是否启用" width="100">
-                    <!-- 作用域插槽 -->
-                    <template #default="scope">
-                        <el-switch v-model=scope.row.isOpen active-color="#13ce66" inactive-color="#ff4949" disabled />
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="isOpen" label="是否启用" width="100" />
                 <el-table-column align="center" prop="createtime" label="创建时间" width="250" />
                 <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
 
@@ -101,7 +97,6 @@ const loading = ref(false)
 const refresh = () => {
     isMounted.value = false;
     setTimeout(() => {
-        fetchData();
         loading.value = false; // 2秒后显示内容
     }, 500);
     loading.value = true;

@@ -1,5 +1,5 @@
 <template>
-    <div class="s7-content" v-if="isMounted" v-loading="loading">
+    <div class="s7-content" v-if="isMounted">
         <div class="content-top">
             <div class="content-top-left">
                 <el-button type="primary" icon="Refresh" @click="refresh">刷新</el-button>
@@ -14,13 +14,6 @@
         <div class="content">
             <el-table border style="width: 100%" stripe="true" fit="true" :data="S7List">
                 <el-table-column align="center" type="selection" width="40px" />
-                <el-table-column align="center" label="操作" width="280">
-                    <template #default>
-                        <el-button type="primary" size="small" text>编辑</el-button>
-                        <el-button type="primary" size="small" text>启用</el-button>
-                        <el-button type="success" size="small" text>读取</el-button>
-                    </template>
-                </el-table-column>
                 <el-table-column align="center" type="index" label="序号" width="60px" />
                 <el-table-column align="center" prop="proxyName" label="配置名" width="180" />
                 <el-table-column align="center" prop="ip" label="ip" width="150" />
@@ -31,15 +24,16 @@
                 <el-table-column align="center" prop="length" label="数据长度" width="180" />
                 <el-table-column align="center" prop="bit" label="位地址" width="80" />
                 <el-table-column align="center" prop="remark" label="备注" width="80" />
-                <el-table-column align="center" prop="isOpen" label="是否启用" width="100">
-                    <!-- 作用域插槽 -->
-                    <template #default="scope">
-                        <el-switch v-model=scope.row.isOpen active-color="#13ce66" inactive-color="#ff4949" disabled />
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="isOpen" label="是否启用" width="100" />
                 <el-table-column align="center" prop="createtime" label="创建时间" width="250" />
                 <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
-
+                <el-table-column align="center" label="操作" width="180">
+                    <template>
+                        <el-button type="primary" size="small" text>编辑</el-button>
+                        <el-button type="primary" size="small" text>启用</el-button>
+                        <el-button type="danger" size="small">删除</el-button>
+                    </template>
+                </el-table-column>
             </el-table>
         </div>
     </div>
@@ -91,95 +85,37 @@
     </el-dialog>
 </template>
 <script setup lang="ts">
-import axios from 'axios';
-import { nextTick, onMounted, reactive, ref } from 'vue';
+import { nextTick, ref } from 'vue';
 
-const isMounted = ref(true);
-const loading = ref(false)
-//#region ---刷新
-
+const isMounted = ref(false);
+//刷新
 const refresh = () => {
     isMounted.value = false;
-    setTimeout(() => {
-        fetchData();
-        loading.value = false; // 2秒后显示内容
-    }, 500);
-    loading.value = true;
     nextTick(() => {
         isMounted.value = true;
     });
 }
-//#endregion
 
 
 
-//#region  ---显示数据 
-// 定义一个响应式的数组来存储后端返回的数据
-interface S7Item {
-    id: number;
-    proxyName: string;
-    ip: string;
-    port: number;
-    dbid: number;
-    address: string;
-    type: string;
-    length: number;
-    bit: number;
-    remark: string;
-    isOpen: boolean;
-    isDeleted: boolean;
-    createtime: Date;
-    lastModified: Date;
-}
-
-const S7List = reactive<S7Item[]>([]);
-const error = ref<Error | null>(null);
-// 从后端获取数据
-async function fetchData() {
-    loading.value = true;
-    error.value = null;
-    try {
-        const response = await axios.get('http://127.0.0.1:8888/api/S7/GetAllS7Configs', {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
-            },
-        });
-        //console.log("@@" + response.data);
-        const data: S7Item[] = response.data;
-        S7List.length = 0;
-        S7List.push(...data);
-    } catch (err) {
-        error.value = err instanceof Error ? err : new Error('请求失败');
-        console.error('Error fetching data:', err);
-    } finally {
-        loading.value = false;
+const S7List = [
+    {
+        "id": 1,
+        "proxyName": "Test",
+        "ip": "127.0.0.1",
+        "port": 102,
+        "dbid": 100,
+        "address": "1",
+        "type": "int",
+        "length": 1,
+        "bit": 0,
+        "remark": "测试",
+        "isOpen": true,
+        "isDeleted": false,
+        "createtime": "2025-03-15T20:32:05.2548312",
+        "lastModified": "2025-03-15T20:32:05.3059042"
     }
-}
-
-// 在组件挂载后调用 fetchData 函数
-onMounted(fetchData);
-
-//测试数据
-// const S7List = [
-//     {
-//         "id": 1,
-//         "proxyName": "Test",
-//         "ip": "127.0.0.1",
-//         "port": 102,
-//         "dbid": 100,
-//         "address": "1",
-//         "type": "int",
-//         "length": 1,
-//         "bit": 0,
-//         "remark": "测试",
-//         "isOpen": true,
-//         "isDeleted": false,
-//         "createtime": "2025-03-15T20:32:05.2548312",
-//         "lastModified": "2025-03-15T20:32:05.3059042"
-//     }
-// ]
-//#endregion
-
+]
 
 const form = ref({
     proxyName: '',

@@ -16,7 +16,6 @@ import { type FormRules, type ElForm, ElMessage, ElNotification } from 'element-
 import router from '@/router';
 import cache from '@/utils/cache';
 import axios from 'axios';
-//import { accountLoginRequest } from '@/service/Login/login';
 // import useLoginStore from '@/store/login/login';
 
 
@@ -53,10 +52,6 @@ function loginAction(isRemPassword: boolean) {
                 userName: name,
                 userPwd: password
             })
-                // accountLoginRequest({
-                //     userName: name,
-                //     userPwd: password
-                // })
                 .then(response => {
                     // 处理登录成功的响应
                     console.log(response.data);
@@ -64,7 +59,7 @@ function loginAction(isRemPassword: boolean) {
                     if (response.data.code === 200)
                     //if (name === 'admin' && password === '123456')
                     {
-                        const token = response.data.data
+                        const token = 'admin-token'
                         localStorage.setItem('token', token)
                         // localStorage.setItem('name', name)
                         cache.setCache('username', name)

@@ -16,7 +16,6 @@ import { type FormRules, type ElForm, ElMessage, ElNotification } from 'element-
 import router from '@/router';
 import cache from '@/utils/cache';
 import axios from 'axios';
-//import { accountLoginRequest } from '@/service/Login/login';
 // import useLoginStore from '@/store/login/login';
 
 
@@ -49,14 +48,14 @@ function loginAction(isRemPassword: boolean) {
             const name = account.userName
             const password = account.userPwd
             // 2. 发送网络请求
-            axios.post('http://localhost:8888/api/Authorize/Login', {
+            // axios.post('http://localhost:8888/api/Authorize/Login', {
+            //     userName: name,
+            //     userPwd: password
+            // })
+            accountLoginRequest({
                 userName: name,
                 userPwd: password
             })
-                // accountLoginRequest({
-                //     userName: name,
-                //     userPwd: password
-                // })
                 .then(response => {
                     // 处理登录成功的响应
                     console.log(response.data);

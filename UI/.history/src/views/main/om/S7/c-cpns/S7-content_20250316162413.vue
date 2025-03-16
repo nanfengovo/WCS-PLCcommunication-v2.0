@@ -14,13 +14,6 @@
         <div class="content">
             <el-table border style="width: 100%" stripe="true" fit="true" :data="S7List">
                 <el-table-column align="center" type="selection" width="40px" />
-                <el-table-column align="center" label="操作" width="280">
-                    <template #default>
-                        <el-button type="primary" size="small" text>编辑</el-button>
-                        <el-button type="primary" size="small" text>启用</el-button>
-                        <el-button type="success" size="small" text>读取</el-button>
-                    </template>
-                </el-table-column>
                 <el-table-column align="center" type="index" label="序号" width="60px" />
                 <el-table-column align="center" prop="proxyName" label="配置名" width="180" />
                 <el-table-column align="center" prop="ip" label="ip" width="150" />
@@ -31,15 +24,16 @@
                 <el-table-column align="center" prop="length" label="数据长度" width="180" />
                 <el-table-column align="center" prop="bit" label="位地址" width="80" />
                 <el-table-column align="center" prop="remark" label="备注" width="80" />
-                <el-table-column align="center" prop="isOpen" label="是否启用" width="100">
-                    <!-- 作用域插槽 -->
-                    <template #default="scope">
-                        <el-switch v-model=scope.row.isOpen active-color="#13ce66" inactive-color="#ff4949" disabled />
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="isOpen" label="是否启用" width="100" />
                 <el-table-column align="center" prop="createtime" label="创建时间" width="250" />
                 <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
-
+                <el-table-column align="center" label="操作" width="280">
+                    <template #default>
+                        <el-button type="primary" size="small" text>编辑</el-button>
+                        <el-button type="primary" size="small" text>启用</el-button>
+                        <el-button type="success" size="small" text>读取</el-button>
+                    </template>
+                </el-table-column>
             </el-table>
         </div>
     </div>
@@ -49,6 +43,14 @@
     <!-- 添加 -->
     <el-dialog v-model="dialogOverflowVisible" title="添加S7数据点运维" width="500" draggable overflow>
         <el-form v-model="form" label-width="100px">
+            <template #footer>
+                <div class="dialog-footer">
+                    <el-button @click="dialogOverflowVisible = false">重置</el-button>
+                    <el-button type="primary" @click="dialogOverflowVisible = false">
+                        添加
+                    </el-button>
+                </div>
+            </template>
             <el-form-item label="配置名">
                 <el-input v-model="form.proxyName" placeholder="请输入配置名" />
             </el-form-item>
@@ -80,14 +82,7 @@
                 <el-switch v-model="form.isOpen" active-color="#13ce66" inactive-color="#ff4949" />
             </el-form-item>
         </el-form>
-        <template #footer>
-            <div class="dialog-footer">
-                <el-button @click="dialogOverflowVisible = false">重置</el-button>
-                <el-button type="primary" @click="dialogOverflowVisible = false">
-                    添加
-                </el-button>
-            </div>
-        </template>
+
     </el-dialog>
 </template>
 <script setup lang="ts">
@@ -101,7 +96,6 @@ const loading = ref(false)
 const refresh = () => {
     isMounted.value = false;
     setTimeout(() => {
-        fetchData();
         loading.value = false; // 2秒后显示内容
     }, 500);
     loading.value = true;

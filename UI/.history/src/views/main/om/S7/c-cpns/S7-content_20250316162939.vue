@@ -31,12 +31,7 @@
                 <el-table-column align="center" prop="length" label="数据长度" width="180" />
                 <el-table-column align="center" prop="bit" label="位地址" width="80" />
                 <el-table-column align="center" prop="remark" label="备注" width="80" />
-                <el-table-column align="center" prop="isOpen" label="是否启用" width="100">
-                    <!-- 作用域插槽 -->
-                    <template #default="scope">
-                        <el-switch v-model=scope.row.isOpen active-color="#13ce66" inactive-color="#ff4949" disabled />
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="isOpen" label="是否启用" width="100" />
                 <el-table-column align="center" prop="createtime" label="创建时间" width="250" />
                 <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
 
@@ -101,7 +96,6 @@ const loading = ref(false)
 const refresh = () => {
     isMounted.value = false;
     setTimeout(() => {
-        fetchData();
         loading.value = false; // 2秒后显示内容
     }, 500);
     loading.value = true;
@@ -144,7 +138,7 @@ async function fetchData() {
                 Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
             },
         });
-        //console.log("@@" + response.data);
+        console.log("@@" + response.data);
         const data: S7Item[] = response.data;
         S7List.length = 0;
         S7List.push(...data);
