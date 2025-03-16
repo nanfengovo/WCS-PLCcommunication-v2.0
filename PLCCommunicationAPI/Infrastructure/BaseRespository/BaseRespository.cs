@@ -48,6 +48,11 @@ namespace PLCCommunication_Infrastructure.BaseRespository
             return await _ctx.Set<TEntity>().FindAsync(id);
         }
 
+        public virtual async Task<TEntity> FindEntityByIdAsync(int  id)
+        {
+            return await _ctx.Set<TEntity>().FindAsync(id);
+        }
+
         public virtual async Task<bool> UpdateAsync(TEntity entity)
         {
             _ctx.Set<TEntity>().Update(entity);

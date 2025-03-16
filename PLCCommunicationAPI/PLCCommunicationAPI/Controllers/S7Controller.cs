@@ -8,6 +8,7 @@ using PLCCommunication_Model.DTO;
 using PLCCommunication_Model.Entities;
 using PLCCommunication_Utility.APIHelper;
 using PLCCommunication_Utility.Enum;
+using System.Data;
 
 namespace PLCCommunication_API.Controllers
 {
@@ -79,6 +80,40 @@ namespace PLCCommunication_API.Controllers
         {
             _logger.LogInformation($"获取所有的S7配置-获取一次所有的S7配置{DateAndTime.Now}");
             return await _s7ConfigService.FindAllAsync();
+        }
+
+        /// <summary>
+        /// 根据id删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        public async Task<Result> DeleteById(List<int> ids)
+        {
+            foreach (var id in ids)
+            {
+                var isExist = await _s7ConfigService.FindEntityByIdAsync(id);
+                if (isExist == null)
+                {
+                    _logger.LogWarning($"根据id删除-删除失败，不存在id为{id}的S7配置");
+                    // 如果您希望一旦遇到不存在的 ID 就返回错误，可以在这里返回
+                    // return new Result { Code = 404, Msg = $"根据id删除-删除失败，不存在id为{id}的S7配置" };
+                    continue; // 否则，继续处理下一个 ID
+                }
+
+                var result = await _s7ConfigService.DeletedAsync(isExist);
+                if (!result)
+                {
+                    _logger.LogWarning($"根据id删除-删除配置名为{isExist.ProxyName}的S7配置失败！");
+                    // 如果您希望一旦删除失败就返回错误，可以在这里返回
+                     return new Result { Code = 407, Msg = $"删除配置名为{isExist.ProxyName}的S7配置失败！" };
+                    continue; // 否则，继续处理下一个 ID
+                }
+                _logger.LogInformation($"删除配置名为{isExist.ProxyName}的S7配置成功！");
+            }
+
+            // 如果所有 ID 都处理成功，返回成功结果
+            return new Result { Code = 200, Msg = "所有指定的S7配置删除成功！" };
         }
     }
 }

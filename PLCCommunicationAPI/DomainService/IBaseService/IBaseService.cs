@@ -50,7 +50,7 @@ namespace PLCCommunication_DomainService.IBaseService
         /// <returns></returns>
         public Task<TEntity> FindEntityByIdAsync(Guid id);
 
-
+        public Task<TEntity> FindEntityByIdAsync(int id);
         /// <summary>
         /// 根据特定的条件查询所有
         /// </summary>

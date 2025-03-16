@@ -2,6 +2,7 @@
 using PLCCommunication_DomainService.BaseService;
 using PLCCommunication_DomainService.IService;
 using PLCCommunication_Infrastructure.IRespository;
+using PLCCommunication_Infrastructure.Migrations;
 using PLCCommunication_Model.Entities;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,17 @@ namespace PLCCommunication_DomainService.Service
         }
 
         /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<bool> DeletedAsync(S7Config entity)
+        {
+            return await _s7ConfigResposity.DeletedAsync(entity);
+        }
+
+        /// <summary>
         /// 根据配置名判断现有的配置是否存在
         /// </summary>
         /// <param name="proxyName"></param>
@@ -34,5 +46,7 @@ namespace PLCCommunication_DomainService.Service
         {
             return await _s7ConfigResposity.FindEntityByNameAsync(proxyName);
         }
+
+
     }
 }

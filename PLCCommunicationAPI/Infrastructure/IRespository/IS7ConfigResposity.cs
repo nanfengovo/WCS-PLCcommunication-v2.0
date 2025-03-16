@@ -11,5 +11,8 @@ namespace PLCCommunication_Infrastructure.IRespository
     public interface IS7ConfigResposity : IBaseRespository<S7Config>
     {
         public Task<bool> FindEntityByNameAsync(string proxyName);
+
+
+        public Task<bool> DeletedAsync(S7Config entity);
     }
 }

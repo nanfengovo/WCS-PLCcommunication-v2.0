@@ -52,6 +52,13 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.DeleteById(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            根据id删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:PLCCommunication_API.Controllers.UserController">
             <summary>
             用户管理的模块

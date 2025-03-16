@@ -309,7 +309,7 @@ const addS7Config = () => {
 }
 
 .pagination {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-end;
 }

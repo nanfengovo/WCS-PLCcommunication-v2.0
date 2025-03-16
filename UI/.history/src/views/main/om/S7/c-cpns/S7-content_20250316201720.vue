@@ -52,12 +52,13 @@
                     </template>
                 </el-table-column>
             </el-table>
-        </div>
-        <!-- 分页 -->
-        <div class="pagination">
-            <el-pagination v-model:current-page="currentPage" v-model:page-size="pageSize"
-                :page-sizes="[10, 20, 30, 40, 50, 100]" background layout="total, sizes, prev, pager, next, jumper"
-                :total=S7List.length @size-change="handleSizeChange" @current-change="handleCurrentChange" />
+            <!-- 分页 -->
+            <div class="pagination">
+                <el-pagination v-model:current-page="currentPage" v-model:page-size="pageSize"
+                    :page-sizes="[10, 20, 30, 40, 50, 100]" background layout="total, sizes, prev, pager, next, jumper"
+                    :total=S7List.length @size-change="handleSizeChange" @current-change="handleCurrentChange" />
+            </div>
+
         </div>
 
 
@@ -309,7 +310,7 @@ const addS7Config = () => {
 }
 
 .pagination {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: flex-end;
 }

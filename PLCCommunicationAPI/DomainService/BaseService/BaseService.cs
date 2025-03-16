@@ -44,6 +44,11 @@ namespace PLCCommunication_DomainService.BaseService
             return await _respository.FindEntityByIdAsync(id);
         }
 
+        public async Task<TEntity> FindEntityByIdAsync(int id)
+        {
+            return await _respository.FindEntityByIdAsync(id);
+        }
+
         public async Task<bool> UpdateAsync(TEntity entity)
         {
             return await _respository.UpdateAsync(entity);
