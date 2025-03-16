@@ -39,17 +39,8 @@
                         </el-button>
                     </template>
                 </el-table-column>
-                <el-table-column align="center" prop="createtime" label="创建时间" width="250">
-                    <!-- 作用域插槽进行时间格式化(使用Day.js) -->
-                    <template #default="scope">
-                        {{ formatTime(scope.row.createtime) }}
-                    </template>
-                </el-table-column>
-                <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250">
-                    <template #default="scope">
-                        {{ formatTime(scope.row.lastModified) }}
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="createtime" label="创建时间" width="250" />
+                <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
 
             </el-table>
         </div>
@@ -104,7 +95,6 @@
 <script setup lang="ts">
 import axios from 'axios';
 import { nextTick, onMounted, reactive, ref } from 'vue';
-import { formatTime } from '@/utils/format'
 
 const isMounted = ref(true);
 const loading = ref(false)

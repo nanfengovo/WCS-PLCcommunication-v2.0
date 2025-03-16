@@ -45,11 +45,7 @@
                         {{ formatTime(scope.row.createtime) }}
                     </template>
                 </el-table-column>
-                <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250">
-                    <template #default="scope">
-                        {{ formatTime(scope.row.lastModified) }}
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
 
             </el-table>
         </div>

@@ -3,7 +3,7 @@
         <div class="content-top">
             <div class="content-top-left">
                 <el-button type="primary" icon="Refresh" @click="refresh">刷新</el-button>
-                <el-button type="primary" icon="Plus" @click="dialogOverflowVisible = true">添加</el-button>
+                <el-button type="primary" icon="Plus" plain @click="dialogOverflowVisible = true">添加</el-button>
                 <el-button type="danger" icon="delete">删除</el-button>
             </div>
             <div class="content-top-right">
@@ -34,22 +34,13 @@
                 <el-table-column align="center" prop="isOpen" label="状态" width="100">
                     <!-- 作用域插槽 -->
                     <template #default="scope">
-                        <el-button size="small" :type="scope.row.isOpen ? 'success' : 'danger'" plain>
+                        <el-button size="small" :type="scope.row.isOpen ? 'success' : 'danger'">
                             {{ scope.row.isOpen ? '启用' : '禁用' }}
                         </el-button>
                     </template>
                 </el-table-column>
-                <el-table-column align="center" prop="createtime" label="创建时间" width="250">
-                    <!-- 作用域插槽进行时间格式化(使用Day.js) -->
-                    <template #default="scope">
-                        {{ formatTime(scope.row.createtime) }}
-                    </template>
-                </el-table-column>
-                <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250">
-                    <template #default="scope">
-                        {{ formatTime(scope.row.lastModified) }}
-                    </template>
-                </el-table-column>
+                <el-table-column align="center" prop="createtime" label="创建时间" width="250" />
+                <el-table-column align="center" prop="lastModified" label="最后修改时间" width="250" />
 
             </el-table>
         </div>
@@ -104,7 +95,6 @@
 <script setup lang="ts">
 import axios from 'axios';
 import { nextTick, onMounted, reactive, ref } from 'vue';
-import { formatTime } from '@/utils/format'
 
 const isMounted = ref(true);
 const loading = ref(false)
