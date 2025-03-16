@@ -67,7 +67,7 @@
 
     <!-- 添加 -->
     <el-dialog v-model="dialogOverflowVisible" title="添加S7数据点运维" width="500" draggable overflow center>
-        <el-form v-model="form" label-width="100px">
+        <el-form v-model="S7Configform" label-width="100px">
             <el-form-item label="配置名:">
                 <el-input v-model="form.proxyName" placeholder="请输入配置名" />
             </el-form-item>
@@ -232,7 +232,7 @@ function handleCurrentChange(newPage: number) {
 
 //#endregion
 
-const form = ref({
+const S7Configform = ref({
     proxyName: '',
     ip: '',
     port: 102,
@@ -251,38 +251,32 @@ const dialogOverflowVisible = ref(false)
 
 //#region  添加新的配置
 const addS7Config = () => {
-    const response = axios.post('http://127.0.0.1:8888/api/S7/AddS7Config', form.value, {
+    const response = axios.post('http://127.0.0.1:8888/api/S7/AddS7Config', S7Configform.value, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
-
-            'Content-Type': 'application/x-www-form-urlencoded'
-
         },
-    }).then(response => {
-        if (response.data.code === 200) {
-            dialogOverflowVisible.value = false;
-            form.value = {
-                proxyName: '',
-                ip: '',
-                port: 102,
-                dbid: 100,
-                address: '',
-                type: '',
-                length: 0,
-                bit: 0,
-                remark: '',
-                isOpen: true,
-            }
-            ElMessage({
-                message: '添加成功',
-                type: 'success',
-                plain: true,
-            })
-            refresh();
-        }
     })
-
-
+    if (response.code === 200) {
+        dialogOverflowVisible.value = false;
+        S7Configform.value = {
+            proxyName: '',
+            ip: '',
+            port: 102,
+            dbid: 100,
+            address: '',
+            type: '',
+            length: 0,
+            bit: 0,
+            remark: '',
+            isOpen: true,
+        }
+        ElMessage({
+            message: '添加成功',
+            type: 'success',
+            plain: true,
+        })
+        refresh();
+    }
 }
 //#endregion
 

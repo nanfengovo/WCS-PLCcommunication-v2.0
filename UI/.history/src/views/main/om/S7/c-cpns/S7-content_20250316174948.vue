@@ -102,7 +102,7 @@
         <template #footer>
             <div class="dialog-footer">
                 <el-button @click="dialogOverflowVisible = false">重置</el-button>
-                <el-button type="primary" @click="addS7Config">
+                <el-button type="primary" @click="dialogOverflowVisible = false">
                     添加
                 </el-button>
             </div>
@@ -113,7 +113,6 @@
 import axios from 'axios';
 import { nextTick, onMounted, reactive, ref } from 'vue';
 import { formatTime } from '@/utils/format'
-import { ElMessage } from 'element-plus';
 
 const isMounted = ref(true);
 const loading = ref(false)
@@ -246,46 +245,6 @@ const form = ref({
 })
 
 const dialogOverflowVisible = ref(false)
-
-
-
-//#region  添加新的配置
-const addS7Config = () => {
-    const response = axios.post('http://127.0.0.1:8888/api/S7/AddS7Config', form.value, {
-        headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
-
-            'Content-Type': 'application/x-www-form-urlencoded'
-
-        },
-    }).then(response => {
-        if (response.data.code === 200) {
-            dialogOverflowVisible.value = false;
-            form.value = {
-                proxyName: '',
-                ip: '',
-                port: 102,
-                dbid: 100,
-                address: '',
-                type: '',
-                length: 0,
-                bit: 0,
-                remark: '',
-                isOpen: true,
-            }
-            ElMessage({
-                message: '添加成功',
-                type: 'success',
-                plain: true,
-            })
-            refresh();
-        }
-    })
-
-
-}
-//#endregion
-
 
 </script>
 

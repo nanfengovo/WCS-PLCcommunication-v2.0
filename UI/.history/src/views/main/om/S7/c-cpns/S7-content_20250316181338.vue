@@ -259,30 +259,30 @@ const addS7Config = () => {
 
         },
     }).then(response => {
-        if (response.data.code === 200) {
-            dialogOverflowVisible.value = false;
-            form.value = {
-                proxyName: '',
-                ip: '',
-                port: 102,
-                dbid: 100,
-                address: '',
-                type: '',
-                length: 0,
-                bit: 0,
-                remark: '',
-                isOpen: true,
-            }
-            ElMessage({
-                message: '添加成功',
-                type: 'success',
-                plain: true,
-            })
-            refresh();
-        }
+        console.log(response.data);
     })
 
-
+    if (response.code === 200) {
+        dialogOverflowVisible.value = false;
+        form.value = {
+            proxyName: '',
+            ip: '',
+            port: 102,
+            dbid: 100,
+            address: '',
+            type: '',
+            length: 0,
+            bit: 0,
+            remark: '',
+            isOpen: true,
+        }
+        ElMessage({
+            message: '添加成功',
+            type: 'success',
+            plain: true,
+        })
+        refresh();
+    }
 }
 //#endregion
 

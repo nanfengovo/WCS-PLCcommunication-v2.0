@@ -66,43 +66,43 @@
 
 
     <!-- 添加 -->
-    <el-dialog v-model="dialogOverflowVisible" title="添加S7数据点运维" width="500" draggable overflow center>
+    <el-dialog v-model="dialogOverflowVisible" title="添加S7数据点运维" width="500" draggable overflow>
         <el-form v-model="form" label-width="100px">
-            <el-form-item label="配置名:">
+            <el-form-item label="配置名">
                 <el-input v-model="form.proxyName" placeholder="请输入配置名" />
             </el-form-item>
-            <el-form-item label="ip:">
+            <el-form-item label="ip">
                 <el-input v-model="form.ip" placeholder="请输入ip" />
             </el-form-item>
-            <el-form-item label="端口:">
+            <el-form-item label="端口">
                 <el-input v-model="form.port" placeholder="请输入端口" />
             </el-form-item>
-            <el-form-item label="DB块id:">
+            <el-form-item label="DB块id">
                 <el-input v-model="form.dbid" placeholder="请输入DB块id" />
             </el-form-item>
-            <el-form-item label="地址偏移:">
+            <el-form-item label="地址偏移">
                 <el-input v-model="form.address" placeholder="请输入地址偏移" />
             </el-form-item>
-            <el-form-item label="数据类型:">
+            <el-form-item label="数据类型">
                 <el-input v-model="form.type" placeholder="请输入数据类型" />
             </el-form-item>
-            <el-form-item label="数据长度:">
+            <el-form-item label="数据长度">
                 <el-input v-model="form.length" placeholder="请输入数据长度" />
             </el-form-item>
-            <el-form-item label="位地址:">
+            <el-form-item label="位地址">
                 <el-input v-model="form.bit" placeholder="请输入位地址" />
             </el-form-item>
-            <el-form-item label="备注:">
+            <el-form-item label="备注">
                 <el-input v-model="form.remark" placeholder="请输入备注" />
             </el-form-item>
-            <el-form-item label="是否启用:">
+            <el-form-item label="是否启用">
                 <el-switch v-model="form.isOpen" active-color="#13ce66" inactive-color="#ff4949" />
             </el-form-item>
         </el-form>
         <template #footer>
             <div class="dialog-footer">
                 <el-button @click="dialogOverflowVisible = false">重置</el-button>
-                <el-button type="primary" @click="addS7Config">
+                <el-button type="primary" @click="dialogOverflowVisible = false">
                     添加
                 </el-button>
             </div>
@@ -113,7 +113,6 @@
 import axios from 'axios';
 import { nextTick, onMounted, reactive, ref } from 'vue';
 import { formatTime } from '@/utils/format'
-import { ElMessage } from 'element-plus';
 
 const isMounted = ref(true);
 const loading = ref(false)
@@ -246,46 +245,6 @@ const form = ref({
 })
 
 const dialogOverflowVisible = ref(false)
-
-
-
-//#region  添加新的配置
-const addS7Config = () => {
-    const response = axios.post('http://127.0.0.1:8888/api/S7/AddS7Config', form.value, {
-        headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
-
-            'Content-Type': 'application/x-www-form-urlencoded'
-
-        },
-    }).then(response => {
-        if (response.data.code === 200) {
-            dialogOverflowVisible.value = false;
-            form.value = {
-                proxyName: '',
-                ip: '',
-                port: 102,
-                dbid: 100,
-                address: '',
-                type: '',
-                length: 0,
-                bit: 0,
-                remark: '',
-                isOpen: true,
-            }
-            ElMessage({
-                message: '添加成功',
-                type: 'success',
-                plain: true,
-            })
-            refresh();
-        }
-    })
-
-
-}
-//#endregion
-
 
 </script>
 

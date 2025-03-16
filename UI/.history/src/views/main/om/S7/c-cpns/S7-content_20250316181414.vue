@@ -259,7 +259,7 @@ const addS7Config = () => {
 
         },
     }).then(response => {
-        if (response.data.code === 200) {
+        if (response.code === 200) {
             dialogOverflowVisible.value = false;
             form.value = {
                 proxyName: '',
