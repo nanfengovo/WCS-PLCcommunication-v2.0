@@ -312,7 +312,7 @@
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\S7Controller.cs",
               "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7Controller.cs",
               "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\S7Controller.cs",
-              "ViewState": "AgIAAHAAAAComZmZmZkbwH0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAzczMzMwtwBQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T09:59:42.096Z",
               "EditorCaption": ""
@@ -327,8 +327,7 @@
               "RelativeToolTip": "DomainService\\Service\\S7ConfigService.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAewD8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:20:17.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:20:17.109Z"
             },
             {
               "$type": "Document",
@@ -340,8 +339,7 @@
               "RelativeToolTip": "Infrastructure\\Respository\\S7ConfigResposity.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAAAIwFsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:25:08.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:25:08.033Z"
             },
             {
               "$type": "Document",
@@ -353,8 +351,7 @@
               "RelativeToolTip": "DomainService\\BaseService\\BaseService.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAewDEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:32:17.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T10:32:17.671Z"
             },
             {
               "$type": "Document",
@@ -366,8 +363,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\PlugInUnit\\JwtVersionCheckFilter.cs",
               "ViewState": "AgIAAB4AAABAMzMzMzMiwD4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T13:15:13.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T13:15:13.226Z"
             },
             {
               "$type": "Document",
@@ -379,8 +375,7 @@
               "RelativeToolTip": "Infrastructure\\IRespository\\IS7ConfigResposity.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAASwBIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:23:14.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:23:14.912Z"
             },
             {
               "$type": "Document",
@@ -392,8 +387,7 @@
               "RelativeToolTip": "Infrastructure\\BaseRespository\\BaseRespository.cs",
               "ViewState": "AgIAACgAAAAAAAAAAIA2wDUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:02:17.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T09:02:17.196Z"
             },
             {
               "$type": "Document",
@@ -405,8 +399,7 @@
               "RelativeToolTip": "DomainService\\IService\\IS7ConfigService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAawB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:18:57.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:18:57.684Z"
             },
             {
               "$type": "Document",
@@ -418,8 +411,7 @@
               "RelativeToolTip": "DomainService\\IBaseService\\IBaseService.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAA8wDQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:32:38.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T10:32:38.448Z"
             },
             {
               "$type": "Document",
@@ -431,8 +423,7 @@
               "RelativeToolTip": "Utility\\APIHelper\\Result.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAuwBcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T13:48:28.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T13:48:28.704Z"
             },
             {
               "$type": "Document",
@@ -444,8 +435,7 @@
               "RelativeToolTip": "Utility\\Enum\\Code.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:01:35.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T11:01:35.519Z"
             },
             {
               "$type": "Document",
@@ -457,8 +447,7 @@
               "RelativeToolTip": "Model\\Entities\\S7Config.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAASwFMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T09:40:51.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T09:40:51.979Z"
             },
             {
               "$type": "Document",
@@ -470,8 +459,7 @@
               "RelativeToolTip": "Infrastructure\\DBContexts\\MyDbContext.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAwBMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T07:26:59.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T07:26:59.787Z"
             },
             {
               "$type": "Document",
@@ -483,8 +471,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\Program.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAIwHEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:07:14.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T05:07:14.831Z"
             },
             {
               "$type": "Document",
@@ -496,8 +483,7 @@
               "RelativeToolTip": "Infrastructure\\IBaseRespository\\IBaseRespository.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAqwDQAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:02:34.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T09:02:34.007Z"
             },
             {
               "$type": "Document",
@@ -509,8 +495,7 @@
               "RelativeToolTip": "Infrastructure\\Respository\\UserRespository.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAkwCIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T14:00:00.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T14:00:00.02Z"
             },
             {
               "$type": "Document",
@@ -522,8 +507,7 @@
               "RelativeToolTip": "Infrastructure\\Configs\\S7ConfigConfig.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:03:15.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:03:15.006Z"
             },
             {
               "$type": "Document",
@@ -535,8 +519,7 @@
               "RelativeToolTip": "DomainService\\IService\\IModbusTCPConfigService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:48:47.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T10:48:47.653Z"
             },
             {
               "$type": "Document",
@@ -548,8 +531,7 @@
               "RelativeToolTip": "Model\\DTO\\S7ConfigDTO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:34:30.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:34:30.382Z"
             },
             {
               "$type": "Document",
@@ -561,8 +543,7 @@
               "RelativeToolTip": "Utility\\Plug-ins\\IOCExtend.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAjwCIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T11:06:37.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T11:06:37.071Z"
             },
             {
               "$type": "Document",
@@ -574,8 +555,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-05T05:40:34.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-05T05:40:34.405Z"
             },
             {
               "$type": "Document",
@@ -587,8 +567,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\PlugInUnit\\SwaggerPlugInUnit.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAowDEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T06:31:10.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T06:31:10.34Z"
             },
             {
               "$type": "Document",
@@ -600,8 +579,7 @@
               "RelativeToolTip": "DomainService\\Service\\UserService.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA+wBIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T14:03:33.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T14:03:33.153Z"
             },
             {
               "$type": "Document",
@@ -613,8 +591,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\UserController.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAAAI8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T15:11:34.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T15:11:34.745Z"
             },
             {
               "$type": "Document",
@@ -626,8 +603,7 @@
               "RelativeToolTip": "Infrastructure\\Respository\\ModbusTCPConfigResposity.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAADwvxoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:42:39.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T09:42:39.986Z"
             },
             {
               "$type": "Document",
@@ -639,8 +615,7 @@
               "RelativeToolTip": "Infrastructure\\Configs\\ModbusTCPConfigConfig.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T07:15:53.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T07:15:53.224Z"
             },
             {
               "$type": "Document",
@@ -652,8 +627,7 @@
               "RelativeToolTip": "Infrastructure\\IRespository\\IModbusTCPConfigResposity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:41:20.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T09:41:20.277Z"
             },
             {
               "$type": "Document",
@@ -665,8 +639,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\ModbusTCPController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T13:46:21.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T13:46:21.699Z"
             },
             {
               "$type": "Document",
@@ -678,8 +651,7 @@
               "RelativeToolTip": "DomainService\\IService\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T14:02:35.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T14:02:35.407Z"
             },
             {
               "$type": "Document",
@@ -691,8 +663,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\TestController.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAuwBAAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T05:24:59.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-08T05:24:59.377Z"
             },
             {
               "$type": "Document",
@@ -704,8 +675,7 @@
               "RelativeToolTip": "Utility\\Enum\\ModeuleGroupEnum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T06:26:14.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T06:26:14.479Z"
             },
             {
               "$type": "Document",
@@ -717,8 +687,7 @@
               "RelativeToolTip": "Infrastructure\\IRespository\\IUserRespository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T13:58:29.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T13:58:29.972Z"
             },
             {
               "$type": "Document",
@@ -730,8 +699,7 @@
               "RelativeToolTip": "Model\\DTO\\ModbusTCPConfigDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T02:35:51.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T02:35:51.88Z"
             },
             {
               "$type": "Document",
@@ -743,21 +711,19 @@
               "RelativeToolTip": "Model\\Entities\\ModbusTCPConfig.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAwD4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T06:45:28.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T06:45:28.553Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "PLCCommunication_Model",
+              "Title": "PLCCommunication_Model.csproj",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\PLCCommunication_Model.csproj",
               "RelativeDocumentMoniker": "Model\\PLCCommunication_Model.csproj",
               "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\PLCCommunication_Model.csproj",
               "RelativeToolTip": "Model\\PLCCommunication_Model.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-15T10:26:31.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:26:31.401Z"
             },
             {
               "$type": "Document",
@@ -769,8 +735,7 @@
               "RelativeToolTip": "DomainService\\Service\\ModbusTCPConfigService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:49:09.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T10:49:09.563Z"
             },
             {
               "$type": "Document",
@@ -782,8 +747,7 @@
               "RelativeToolTip": "Infrastructure\\Migrations\\20250315100838_S7Entity.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAACMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:08:39.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-15T10:08:39.17Z"
             },
             {
               "$type": "Document",
@@ -1130,8 +1094,7 @@
               "RelativeToolTip": "DomainService\\PLCCommunication_DomainService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-09T08:17:10.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T08:17:10.569Z"
             },
             {
               "$type": "Document",
@@ -1142,8 +1105,7 @@
               "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PLCCommunication_API.csproj",
               "RelativeToolTip": "PLCCommunicationAPI\\PLCCommunication_API.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-09T06:37:39.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T06:37:39.136Z"
             },
             {
               "$type": "Document",
@@ -1155,8 +1117,7 @@
               "RelativeToolTip": "PLCCommunicationAPI\\PLCCommunication_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-09T06:32:49.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T06:32:49.623Z"
             },
             {
               "$type": "Document",

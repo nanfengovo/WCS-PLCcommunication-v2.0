@@ -342,7 +342,7 @@ const deleteSelectedRows = async () => {
 //#region  --启用/禁用
 const handleClick = async (row: any) => {
     if (row.isOpen) {
-        await axios.put(`http://localhost:8888/api/S7/Disable?id=${row.id}`, null, {
+        await axios.put(`http://localhost:8888/api/S7/Disable?id=${row.id}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
             }
@@ -359,7 +359,7 @@ const handleClick = async (row: any) => {
         })
     }
     else {
-        await axios.put(`http://localhost:8888/api/S7/Enable?id=${row.id}`, null, {
+        await axios.put(`http://localhost:8888/api/S7/Enable?id=${row.id}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
             },

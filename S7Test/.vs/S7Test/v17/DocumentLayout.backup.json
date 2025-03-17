@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{69457425-061D-4811-910F-5B254DFE4890}|S7TestConsole\\S7TestConsole.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\s7test\\s7testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69457425-061D-4811-910F-5B254DFE4890}|S7TestConsole\\S7TestConsole.csproj|solutionrelative:s7testconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\s7test\\s7test\\domainservice\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|solutionrelative:s7test\\domainservice\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\s7test\\s7test\\model\\plcsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|solutionrelative:s7test\\model\\plcsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\s7test\\s7test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|solutionrelative:s7test\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\s7test\\s7test\\controllers\\s7readwritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|solutionrelative:s7test\\controllers\\s7readwritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\s7test\\s7test\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D638BA28-751F-4A46-B1CC-375C10A60E34}|S7Test\\S7Test.csproj|solutionrelative:s7test\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,9 +60,74 @@
               "RelativeDocumentMoniker": "S7TestConsole\\Program.cs",
               "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7TestConsole\\Program.cs*",
               "RelativeToolTip": "S7TestConsole\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwBgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T08:06:39.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "S7ReadWriteController.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\Controllers\\S7ReadWriteController.cs",
+              "RelativeDocumentMoniker": "S7Test\\Controllers\\S7ReadWriteController.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\Controllers\\S7ReadWriteController.cs",
+              "RelativeToolTip": "S7Test\\Controllers\\S7ReadWriteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T07:23:52.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\appsettings.json",
+              "RelativeDocumentMoniker": "S7Test\\appsettings.json",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\appsettings.json",
+              "RelativeToolTip": "S7Test\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T08:50:07.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlcSettings.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\Model\\PlcSettings.cs",
+              "RelativeDocumentMoniker": "S7Test\\Model\\PlcSettings.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\Model\\PlcSettings.cs",
+              "RelativeToolTip": "S7Test\\Model\\PlcSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T08:53:36.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "S7Test\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "S7Test\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T07:23:16.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlcService.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\domainService\\PlcService.cs",
+              "RelativeDocumentMoniker": "S7Test\\domainService\\PlcService.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7Test\\domainService\\PlcService.cs",
+              "RelativeToolTip": "S7Test\\domainService\\PlcService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T08:57:31.51Z",
               "EditorCaption": ""
             }
           ]

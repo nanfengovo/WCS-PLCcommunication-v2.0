@@ -340,42 +340,28 @@ const deleteSelectedRows = async () => {
 
 
 //#region  --启用/禁用
-const handleClick = async (row: any) => {
+const handleClick = (row: any) => {
     if (row.isOpen) {
-        await axios.put(`http://localhost:8888/api/S7/Disable?id=${row.id}`, null, {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem('token')}`,
-            }
-        }).then((response) => {
-            if (response.data.code === 200) {
-                ElMessage.success('禁用成功');
-                row.isOpen = false;
-            } else {
-                ElMessage.error('禁用失败');
-            }
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        }).catch((error) => {
-            ElMessage.error('禁用失败');
-        })
+
     }
-    else {
-        await axios.put(`http://localhost:8888/api/S7/Enable?id=${row.id}`, null, {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem('token')}`, // 替换为实际 Token
-            },
-        }).then((response) => {
-            if (response.data.code === 200) {
-                ElMessage.success('启用成功');
-                row.isOpen = true;
-            } else {
-                ElMessage.error('启用失败');
-            }
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        }).catch((error) => {
-            ElMessage.error('启用失败');
-        })
-    }
-};
+    axios.put(`http://localhost:8888/api/S7/UpdateById`, {
+        id: row.id,
+        isOpen: !row.isOpen,
+    }, {
+        headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+    }).then(response => {
+        if (response.data.code === 200) {
+            ElMessage({
+                message: '修改成功',
+                type: 'success',
+                plain: true,
+            })
+            refresh();
+        }
+    })
+}
 //#endregion
 
 //#region  --修改

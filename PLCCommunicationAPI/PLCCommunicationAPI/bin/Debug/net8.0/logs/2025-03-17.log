@@ -50,3 +50,45 @@
 2025-03-17 10:30:22.5048|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
 2025-03-17 10:31:30.1774|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 10:31:30 
 2025-03-17 10:32:19.9212|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 10:32:19 
+2025-03-17 15:00:59.5042|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 15:00:59.5206|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 15:00:59.5608|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 15:00:59.5608|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 15:00:59.5608|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 15:02:56.5814|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 15:14:02.9984|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 15:15:02.2413|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:15:02 
+2025-03-17 15:19:14.9960|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:19:14 
+2025-03-17 15:35:45.6783|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:35:45 
+2025-03-17 15:36:22.6787|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:36:22 
+2025-03-17 15:41:06.4214|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:41:06 
+2025-03-17 15:43:33.6480|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:43:33 
+2025-03-17 15:46:39.3656|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:46:39 
+2025-03-17 15:50:48.3850|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:50:48 
+2025-03-17 15:51:30.2984|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:51:30 
+2025-03-17 15:57:34.3268|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:57:34 
+2025-03-17 15:59:24.0754|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:59:24 
+2025-03-17 15:59:31.3714|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 15:59:31 
+2025-03-17 16:00:14.4917|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 16:00:14 
+2025-03-17 16:00:21.1263|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:00:23.6174|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:00:27.4088|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:00:34.9611|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 16:00:34 
+2025-03-17 16:04:17.8666|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:18.6411|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:19.9851|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:21.2648|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:22.5396|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:23.5306|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:26.5511|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:39.8630|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:04:56.3036|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为1的配置成功！ 
+2025-03-17 16:05:06.9790|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 16:05:06 
+2025-03-17 16:35:33.9257|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 16:35:33 
+2025-03-17 16:35:42.2549|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 16:35:42 
+2025-03-17 16:36:30.3239|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
+2025-03-17 16:36:30.9668|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
+2025-03-17 16:36:31.4576|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
+2025-03-17 16:36:33.9577|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
+2025-03-17 16:36:34.4365|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
+2025-03-17 16:36:58.4803|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 16:36:58 
