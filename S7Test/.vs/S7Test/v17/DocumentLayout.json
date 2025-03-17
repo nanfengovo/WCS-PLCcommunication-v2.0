@@ -58,9 +58,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7TestConsole\\Program.cs",
               "RelativeDocumentMoniker": "S7TestConsole\\Program.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7TestConsole\\Program.cs",
-              "RelativeToolTip": "S7TestConsole\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBIAAAAaAAAAAAAAAA==",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\S7Test\\S7TestConsole\\Program.cs*",
+              "RelativeToolTip": "S7TestConsole\\Program.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T08:06:39.803Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "S7Test\\Controllers\\S7ReadWriteController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T07:23:52.419Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T07:23:52.419Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "S7Test\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-17T08:50:07.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T08:50:07.461Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "S7Test\\Model\\PlcSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T08:53:36.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T08:53:36.402Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "S7Test\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T07:23:16.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T07:23:16.475Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "S7Test\\domainService\\PlcService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAIwCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T08:57:31.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T08:57:31.51Z"
             }
           ]
         }

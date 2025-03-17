@@ -177,17 +177,17 @@ namespace PLCCommunication_API.Controllers
             //var state = await _s7ConfigService.Getstate(id);
             if (!isExist.IsOpen)
             {
-                _logger.LogWarning($"启用配置-启用id为{id}的S7配置失败！，因为已经是禁用状态！");
-                return new Result { Code = 408, Msg = $"启用id为{id}的S7配置失败！，因为已经是禁用状态！" };
+                _logger.LogWarning($"禁用配置-禁用id为{id}的S7配置失败！，因为已经是禁用状态！");
+                return new Result { Code = 408, Msg = $"禁用id为{id}的S7配置失败！，因为已经是禁用状态！" };
             }
             var result = await _s7ConfigService.Disable(id);
             if (!result)
             {
-                _logger.LogWarning($"启用配置-启用id为{id}的S7配置失败！");
-                return new Result { Code = 407, Msg = $"启用id为{id}的S7配置失败！" };
+                _logger.LogWarning($"禁用配置-禁用id为{id}的S7配置失败！");
+                return new Result { Code = 407, Msg = $"禁用id为{id}的S7配置失败！" };
             }
-            _logger.LogInformation($"启用id为{id}的配置成功！");
-            return new Result { Code = 200, Msg = $"启用id为{id}的配置成功！" };
+            _logger.LogInformation($"禁用id为{id}的配置成功！");
+            return new Result { Code = 200, Msg = $"禁用id为{id}的配置成功！" };
         }
 
     }

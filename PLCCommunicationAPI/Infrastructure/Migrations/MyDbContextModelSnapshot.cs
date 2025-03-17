@@ -228,6 +228,39 @@ namespace PLCCommunication_Infrastructure.Migrations
                     b.ToTable("T_S7Configs", (string)null);
                 });
 
+            modelBuilder.Entity("PLCCommunication_Model.Entities.S7ReadWriteRecord", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ExceptionInfo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ProxyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Remark")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("result")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_S7ReadWriteRecords", (string)null);
+                });
+
             modelBuilder.Entity("PLCCommunication_Model.Identity.Role", b =>
                 {
                     b.Property<Guid>("Id")

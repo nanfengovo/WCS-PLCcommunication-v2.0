@@ -276,6 +276,32 @@
     ]
   },
   {
+    "ContainingType": "PLCCommunication_API.Controllers.S7ReadWriteController",
+    "Method": "Read",
+    "RelativePath": "api/S7ReadWrite/Read",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "PLCCommunicationAPI.Controllers.TestController",
     "Method": "GetAllConfig",
     "RelativePath": "api/Test/GetAllConfig",

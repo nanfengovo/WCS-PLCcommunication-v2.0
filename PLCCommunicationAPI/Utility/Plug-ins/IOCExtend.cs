@@ -27,12 +27,14 @@ namespace PLCCommunication_Utility.Plug_ins
             services.AddScoped<IModbusTCPConfigResposity, ModbusTCPConfigResposity>();
             services.AddScoped<IUserRespository, UserRespository>();
             services.AddScoped<IS7ConfigResposity, S7ConfigResposity>();
+            services.AddScoped<IS7ReadWriteResposity, S7ReadWriteResposity>();
 
 
             //注入服务层
             services.AddScoped<IModbusTCPConfigService, ModbusTCPConfigService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IS7ConfigService, S7ConfigService>();
+            services.AddScoped<IS7ReadWriteService, S7ReadWriteService>();
 
             return services;
         }

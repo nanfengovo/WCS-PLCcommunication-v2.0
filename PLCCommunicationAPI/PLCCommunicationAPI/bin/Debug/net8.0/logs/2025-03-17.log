@@ -92,3 +92,87 @@
 2025-03-17 16:36:33.9577|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
 2025-03-17 16:36:34.4365|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
 2025-03-17 16:36:58.4803|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 16:36:58 
+2025-03-17 18:41:26.0889|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 18:41:26.1033|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 18:41:26.1367|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 18:41:26.1367|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 18:41:26.1367|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 19:12:34.2256|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 19:12:34.2462|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 19:12:34.2776|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 19:12:34.2776|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 19:12:34.2776|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 19:12:49.0464|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:12:49 
+2025-03-17 19:12:50.5364|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:12:50 
+2025-03-17 19:13:07.6555|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:13:07 
+2025-03-17 19:13:43.0431|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:13:43 
+2025-03-17 19:13:44.4170|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:13:44 
+2025-03-17 19:13:45.4764|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 19:13:46.4993|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 19:13:48.8947|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 19:13:50.0224|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 19:15:01.1702|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
+2025-03-17 19:15:03.2888|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为2的配置成功！ 
+2025-03-17 19:15:15.0229|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为8的配置成功！ 
+2025-03-17 19:15:15.8367|INFO|PLCCommunication_API.Controllers.S7Controller|禁用id为8的配置成功！ 
+2025-03-17 19:15:16.6388|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为8的配置成功！ 
+2025-03-17 19:15:17.1030|INFO|PLCCommunication_API.Controllers.S7Controller|禁用id为8的配置成功！ 
+2025-03-17 19:23:14.5629|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 19:23:14.5768|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 19:23:14.6133|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 19:23:14.6133|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 19:23:14.6133|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 19:23:26.5635|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:23:26 
+2025-03-17 19:27:24.8780|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:27:24 
+2025-03-17 19:41:30.2166|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:41:30 
+2025-03-17 19:41:31.3466|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:41:31 
+2025-03-17 19:42:26.0753|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:42:26 
+2025-03-17 19:42:27.1641|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:42:27 
+2025-03-17 19:42:33.0675|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:42:33 
+2025-03-17 19:42:34.3403|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:42:34 
+2025-03-17 19:44:09.1563|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:44:09 
+2025-03-17 19:44:10.7158|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 19:44:10 
+2025-03-17 20:11:22.3827|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 20:11:22 
+2025-03-17 20:11:30.8270|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为test2的S7配置成功！ 
+2025-03-17 20:11:30.8333|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为test1的S7配置成功！ 
+2025-03-17 20:11:30.8333|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为1的S7配置成功！ 
+2025-03-17 20:11:30.8333|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为5的S7配置成功！ 
+2025-03-17 20:12:21.7348|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 20:12:21 
+2025-03-17 20:16:28.3774|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 20:16:28 
+2025-03-17 20:17:06.6499|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 20:17:06 
+2025-03-17 20:19:48.4892|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 20:19:48.5088|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 20:19:48.5386|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 20:19:48.5386|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 20:19:48.5386|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 20:20:15.8098|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 20:20:15 
+2025-03-17 22:35:04.6236|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 22:35:04.6444|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 22:35:04.9279|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 22:35:04.9279|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 22:35:04.9279|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 22:43:42.7199|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'PLCCommunication_DomainService.IService.IS7ReadWriteService' while attempting to activate 'PLCCommunication_API.Controllers.S7ReadWriteController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method217(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-17 23:06:18.2516|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 23:06:18.2680|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 23:06:18.3118|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 23:06:18.3118|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 23:06:18.3118|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 23:08:28.2119|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-17 23:09:47.8755|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:09:34于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
+2025-03-17 23:12:47.3072|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:12:34于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
+2025-03-17 23:13:40.0601|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:13:05于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
