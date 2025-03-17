@@ -131,3 +131,9 @@
 2025-03-16 23:22:14.2804|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为3的S7配置成功！ 
 2025-03-16 23:22:14.2804|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为测试的S7配置成功！ 
 2025-03-16 23:22:14.2972|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为5的S7配置成功！ 
+2025-03-16 23:26:18.2562|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/16 23:26:18 
+2025-03-16 23:33:11.7333|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/16 23:33:11 
+2025-03-16 23:33:45.7743|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/16 23:33:45 
+2025-03-16 23:33:50.7613|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/16 23:33:50 
+2025-03-16 23:36:26.3547|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/16 23:36:26 
+2025-03-16 23:36:35.0824|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为5的S7配置成功！ 

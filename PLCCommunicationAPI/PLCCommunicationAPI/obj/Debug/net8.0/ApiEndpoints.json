@@ -205,6 +205,58 @@
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
+    "Method": "Disable",
+    "RelativePath": "api/S7/Disable",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
+    "Method": "Enable",
+    "RelativePath": "api/S7/Enable",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
     "Method": "GetAllS7Configs",
     "RelativePath": "api/S7/GetAllS7Configs",
     "HttpMethod": "GET",

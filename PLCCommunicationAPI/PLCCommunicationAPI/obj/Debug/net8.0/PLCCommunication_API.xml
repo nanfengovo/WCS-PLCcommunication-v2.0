@@ -59,6 +59,20 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.Enable(System.Int32)">
+            <summary>
+            启用配置
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.Disable(System.Int32)">
+            <summary>
+            禁用
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:PLCCommunication_API.Controllers.UserController">
             <summary>
             用户管理的模块

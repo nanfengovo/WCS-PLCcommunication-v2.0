@@ -1,0 +1,52 @@
+2025-03-17 00:58:46.7589|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 00:58:46.7828|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 00:58:46.8496|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 00:58:46.8496|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 00:58:46.8496|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 01:05:05.1549|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at PLCCommunication_Infrastructure.Respository.S7ConfigResposity.Getstate(Int32 id) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Infrastructure\Respository\S7ConfigResposity.cs:line 72
+   at PLCCommunication_DomainService.Service.S7ConfigService.Getstate(Int32 id) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\DomainService\Service\S7ConfigService.cs:line 57
+   at PLCCommunication_API.Controllers.S7Controller.Enable(Int32 id) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\Controllers\S7Controller.cs:line 128
+   at lambda_method212(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-03-17 01:08:00.9018|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 01:08:00.9207|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 01:08:00.9764|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 01:08:00.9764|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 01:08:00.9764|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 01:08:21.0261|WARN|PLCCommunication_API.Controllers.S7Controller|启用配置-启用id为1的S7配置失败！，因为还在启动状态！ 
+2025-03-17 01:08:53.0087|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 1:08:53 
+2025-03-17 10:12:49.0315|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 10:12:49.0507|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 10:12:49.3806|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 10:12:49.3806|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 10:12:49.3806|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 10:13:39.4168|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 10:13:39 
+2025-03-17 10:16:15.3974|WARN|PLCCommunication_API.Controllers.S7Controller|id为8的S7配置不存在！ 
+2025-03-17 10:16:30.4730|WARN|PLCCommunication_API.Controllers.S7Controller|启用配置-启用id为8的S7配置失败！，因为已经是禁用状态！ 
+2025-03-17 10:16:41.1113|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 10:17:38.4090|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 10:17:38 
+2025-03-17 10:19:30.9739|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 10:20:52.4621|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 10:22:50.5290|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 10:28:47.8004|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-17 10:28:47.8275|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-17 10:28:47.8792|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-17 10:28:47.8792|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-17 10:28:47.8792|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-17 10:30:22.5048|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为3的配置成功！ 
+2025-03-17 10:31:30.1774|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 10:31:30 
+2025-03-17 10:32:19.9212|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 10:32:19 

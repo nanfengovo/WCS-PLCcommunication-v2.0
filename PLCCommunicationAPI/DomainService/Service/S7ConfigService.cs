@@ -47,6 +47,25 @@ namespace PLCCommunication_DomainService.Service
             return await _s7ConfigResposity.FindEntityByNameAsync(proxyName);
         }
 
+        /// <summary>
+        /// 查询当前状态
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public async Task<bool> Getstate(int id)
+        {
+            return await _s7ConfigResposity.Getstate( id);
+        }
 
+
+        public async Task<bool> Enable(int id)
+        {
+            return await _s7ConfigResposity.Enable(id);
+        }
+
+        public async Task<bool> Disable(int id)
+        {
+            return await _s7ConfigResposity.Disable(id);
+        }
     }
 }

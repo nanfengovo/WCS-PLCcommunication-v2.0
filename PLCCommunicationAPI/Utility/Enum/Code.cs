@@ -17,5 +17,6 @@ namespace PLCCommunication_Utility.Enum
         IsExist = 405,//存在，不能重复
         IsDeleted = 406,//要删除的已经被删除
         UnKnown = 407,//未知的错误
+        Statues = 408 //状态重复
     }
 }

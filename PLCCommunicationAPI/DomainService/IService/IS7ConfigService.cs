@@ -19,5 +19,14 @@ namespace PLCCommunication_DomainService.IService
         /// <param name="entity"></param>
         /// <returns></returns>
         public Task<bool> DeletedAsync(S7Config entity);
+
+        /// <summary>
+        /// 查询当前状态
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Task<bool> Getstate(int id);
+        public Task<bool> Enable(int id);
+        public Task<bool> Disable(int id);
     }
 }

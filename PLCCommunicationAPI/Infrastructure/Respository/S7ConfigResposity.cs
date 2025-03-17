@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PLCCommunication_Infrastructure.BaseRespository;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
@@ -57,11 +58,39 @@ namespace PLCCommunication_Infrastructure.Respository
 
             // 将IsDeleted属性设置为false
             existingEntity.IsDeleted = true;
+            existingEntity.LastModified = DateTime.Now;         
 
             // 保存更改到数据库
             var result = await _dbContext.SaveChangesAsync() > 0;
 
             return result; // 如果成功保存更改，则返回true，否则返回false
         }
+
+        public async Task<bool> Getstate( int id)
+        {
+            var s7config = await _dbContext.s7Configs.FirstOrDefaultAsync(x => x.Id == id);
+
+                return s7config.IsOpen;
+
+            
+        }
+
+
+        public async Task<bool> Enable(int id)
+        {
+            var s7Config= await _dbContext.s7Configs.FirstOrDefaultAsync(x => x.Id == id);
+            s7Config.IsOpen = true;
+            s7Config.LastModified = DateTime.Now;
+            return await _dbContext.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> Disable(int id)
+        {
+            var s7Config = await _dbContext.s7Configs.FirstOrDefaultAsync(x => x.Id == id);
+            s7Config.IsOpen = false;
+            s7Config.LastModified = DateTime.Now;
+            return await _dbContext.SaveChangesAsync() > 0;
+        }
+
     }
 }

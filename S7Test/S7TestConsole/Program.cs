@@ -1,20 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using S7.Net;
 
-using(Plc plc = new Plc(CpuType.S71200,"111.111.111.111",0,0))
+using(Plc plc = new Plc(CpuType.S71200,"127.0.0.1",0,0))
 {
 	try
 	{
         // 2. 打开连接
         plc.Open();
-        if(plc.IsConnected)
-        {
-            Console.WriteLine("PLC连接成功！！");
-        }
-        else
-        {
-            Console.WriteLine("PLC连接失败！！");
-        }
         // 3. 写入 DB10.1 的布尔值
         plc.Write("DB10.DBX1.0", true); // 写入 True 到 DB10.DBX1.0
 

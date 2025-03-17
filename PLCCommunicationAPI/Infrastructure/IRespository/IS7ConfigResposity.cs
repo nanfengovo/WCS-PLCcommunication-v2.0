@@ -14,5 +14,9 @@ namespace PLCCommunication_Infrastructure.IRespository
 
 
         public Task<bool> DeletedAsync(S7Config entity);
+        public Task<bool> Getstate( int id);
+
+        public Task<bool> Enable(int  id);
+        public Task<bool> Disable(int id);
     }
 }

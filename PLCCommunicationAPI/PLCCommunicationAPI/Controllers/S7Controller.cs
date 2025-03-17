@@ -115,5 +115,83 @@ namespace PLCCommunication_API.Controllers
             // 如果所有 ID 都处理成功，返回成功结果
             return new Result { Code = 200, Msg = "所有指定的S7配置删除成功！" };
         }
+
+        /// <summary>
+        /// 启用配置
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<Result> Enable(int id)
+        {
+            var isExist = await _s7ConfigService.FindEntityByIdAsync(id);
+            if (isExist == null)
+            {
+                _logger.LogWarning($"id为{id}的S7配置不存在！");
+                return new Result { Code = 404, Msg = $"id为{id}的S7配置不存在！" };
+            }
+            if(isExist.IsDeleted)
+            {
+                _logger.LogWarning($"id为{id}的S7配置不存在！");
+                return new Result { Code = 404, Msg = $"id为{id}的S7配置不存在！" };
+            }
+            
+            //根据id查当前的状态
+            //var state = await _s7ConfigService.Getstate(id);
+            if (isExist.IsOpen)
+            {
+                _logger.LogWarning($"启用配置-启用id为{id}的S7配置失败！，因为还在启动状态！");
+                return new Result { Code = 408, Msg = $"启用id为{id}的S7配置失败！，因为还在启动状态！" };
+            }
+            var result = await _s7ConfigService.Enable(id);
+            if (!result)
+            {
+                _logger.LogWarning($"启用配置-启用id为{id}的S7配置失败！");
+                return new Result { Code = 407, Msg = $"启用id为{id}的S7配置失败！" };
+            }
+            _logger.LogInformation($"启用id为{id}的配置成功！");
+            return new Result { Code = 200, Msg = $"启用id为{id}的配置成功！" };
+        }
+
+        /// <summary>
+        /// 禁用
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<Result> Disable(int id)
+        {
+            var isExist = await _s7ConfigService.FindEntityByIdAsync(id);
+            if (isExist == null)
+            {
+                _logger.LogWarning($"id为{id}的S7配置不存在！");
+                return new Result { Code = 404, Msg = $"id为{id}的S7配置不存在！" };
+            }
+            if (isExist.IsDeleted)
+            {
+                _logger.LogWarning($"id为{id}的S7配置不存在！");
+                return new Result { Code = 404, Msg = $"id为{id}的S7配置不存在！" };
+            }
+
+            //根据id查当前的状态
+            //var state = await _s7ConfigService.Getstate(id);
+            if (!isExist.IsOpen)
+            {
+                _logger.LogWarning($"启用配置-启用id为{id}的S7配置失败！，因为已经是禁用状态！");
+                return new Result { Code = 408, Msg = $"启用id为{id}的S7配置失败！，因为已经是禁用状态！" };
+            }
+            var result = await _s7ConfigService.Disable(id);
+            if (!result)
+            {
+                _logger.LogWarning($"启用配置-启用id为{id}的S7配置失败！");
+                return new Result { Code = 407, Msg = $"启用id为{id}的S7配置失败！" };
+            }
+            _logger.LogInformation($"启用id为{id}的配置成功！");
+            return new Result { Code = 200, Msg = $"启用id为{id}的配置成功！" };
+        }
+
     }
+
+
+
 }
