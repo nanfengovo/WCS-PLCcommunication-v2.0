@@ -1,0 +1,117 @@
+2025-03-18 00:05:12.0165|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 0:05:12 
+2025-03-18 09:06:12.1884|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-18 09:06:12.2040|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-18 09:06:12.2476|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-18 09:06:12.2476|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-18 09:06:12.2476|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-18 09:09:31.5055|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 9:09:31 
+2025-03-18 09:11:09.0312|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 09:11:57.6581|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 9:11:57 
+2025-03-18 09:12:01.1810|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 09:12:07.6433|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 09:12:15.8433|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 09:12:30.8199|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:11:38.0553|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:11:38 
+2025-03-18 10:11:42.8348|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:11:51.8895|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:11:52.7303|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:12:17.2983|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:12:17 
+2025-03-18 10:12:20.8361|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:12:29.2628|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:13:13.0946|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:13:13 
+2025-03-18 10:13:16.0811|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:14:15.8730|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:14:15 
+2025-03-18 10:14:19.6005|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:17:51.5929|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:17:51 
+2025-03-18 10:17:54.7341|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:18:03.2265|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:18:04.8292|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:18:48.2370|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:18:48 
+2025-03-18 10:18:51.7086|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:18:55.2083|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:19:02.4891|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:19:50.7319|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:19:50 
+2025-03-18 10:29:45.0587|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:29:45 
+2025-03-18 10:29:48.2599|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:30:27.6155|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:30:27 
+2025-03-18 10:30:30.7540|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:30:31.9396|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:39:34.5470|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:39:34 
+2025-03-18 10:39:39.1421|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:39:45.4225|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:40:11.3008|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:40:11 
+2025-03-18 10:40:15.7343|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:43:38.1224|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:43:38 
+2025-03-18 10:43:41.2284|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 10:50:18.9859|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 10:50:18 
+2025-03-18 11:12:06.0620|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 11:12:06 
+2025-03-18 11:12:10.2454|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:12:11.6310|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:12:12.3306|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:12:13.7119|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:25.2228|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 11:18:25 
+2025-03-18 11:18:28.9301|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:29.6995|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:29.9803|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:30.1820|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:30.3543|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:30.6081|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:30.9942|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:31.7850|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 11:18:32.0625|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 12:15:18.4853|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-18 12:15:18.5079|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-18 12:15:18.5488|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-18 12:15:18.5488|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-18 12:15:18.5488|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-18 12:16:04.0374|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 12:16:04 
+2025-03-18 12:16:07.7395|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 12:16:29.5520|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 12:16:29 
+2025-03-18 12:16:32.7181|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 12:19:48.8217|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 12:19:48 
+2025-03-18 12:19:50.3316|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/18 4:19:50于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
+2025-03-18 12:19:53.8065|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-18 12:23:29.6382|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 12:23:29 
+2025-03-18 12:25:49.8607|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/18 12:25:49 
+2025-03-18 12:25:51.5378|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/18 4:25:51于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 

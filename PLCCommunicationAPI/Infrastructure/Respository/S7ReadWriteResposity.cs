@@ -55,7 +55,7 @@ namespace PLCCommunication_Infrastructure.Respository
             var type = isExist.Type;
             var dbid = isExist.DBID;
             var address = isExist.Address;
-            using (Plc _plc = new Plc(CpuType.S71200, ip, rack, slot))
+            using (Plc _plc = new Plc(CpuType.S71200, ip,port, rack, slot))
             {
                 //int、short -> DBD, bool -> DBX
                 try
@@ -64,34 +64,35 @@ namespace PLCCommunication_Infrastructure.Respository
                     {
                         _plc.Open();
                         _logger.LogInformation($"{Now}于配置名为：{isExist.ProxyName}的PLC建立连接:");
-                        return "连接成功！";
-                    }
-                    if (type == "int" || type == "short")
-                    {
-                        var result = await _plc.ReadAsync("DB" + dbid + ".DBD" + address);
-                        if (result! == null)
+                        if (type == "int" || type == "short")
                         {
-                            _logger.LogInformation($"DB块读取：对配置名为：{isExist.ProxyName}DB块进行读取，结果为{result}");
+                            var result = await _plc.ReadAsync("DB" + dbid + ".DBD" + address);
+                            if (result! == null)
+                            {
+                                _logger.LogInformation($"DB块读取：对配置名为：{isExist.ProxyName}DB块进行读取，结果为{result}");
+                                return result;
+                            }
                             return result;
-                        }
-                        return result;
 
-                    }
-                    if (type == "bool")
-                    {
-                        var result = await _plc.ReadAsync("DB" + dbid + ".DBX" + address);
-                        if (result! == null)
+                        }
+                        if (type == "bool")
                         {
-                            _logger.LogInformation($"DB块读取：对配置名为：{isExist.ProxyName}DB块进行读取，结果为{result}");
+                            var result = await _plc.ReadAsync("DB" + dbid + ".DBX" + address);
+                            if (result! == null)
+                            {
+                                _logger.LogInformation($"DB块读取：对配置名为：{isExist.ProxyName}DB块进行读取，结果为{result}");
+                                return result;
+                            }
                             return result;
                         }
-                        return result;
+                        else
+                        {
+                            _logger.LogWarning($"{Now}对配置名为{isExist.ProxyName}进行读取暂时不支持{type}类型！！");
+                            return 404;
+                        }
                     }
-                    else
-                    {
-                        _logger.LogWarning($"{Now}对配置名为{isExist.ProxyName}进行读取暂时不支持{type}类型！！");
-                        return 404;
-                    }
+                    return "连接失败";
+                   
                 }
                 catch (Exception ex)
                 {

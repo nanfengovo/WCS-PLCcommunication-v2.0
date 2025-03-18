@@ -322,3 +322,15 @@
 2025-03-17 23:06:17.7704 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
 2025-03-17 23:06:17.7704 Info Validating config: TargetNames=logfile, console, ConfigItems=28, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
 2025-03-17 23:06:17.7905 Info Configuration initialized.
+2025-03-18 09:06:11.5002 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-18 09:06:11.5159 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-18 09:06:11.5203 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-18 09:06:11.5203 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 09:06:11.5203 Info Validating config: TargetNames=logfile, console, ConfigItems=28, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-18 09:06:11.5489 Info Configuration initialized.
+2025-03-18 12:15:17.8200 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-18 12:15:17.8423 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-18 12:15:17.8481 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-18 12:15:17.8481 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-18 12:15:17.8481 Info Validating config: TargetNames=logfile, console, ConfigItems=28, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-18 12:15:17.8688 Info Configuration initialized.

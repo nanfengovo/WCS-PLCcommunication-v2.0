@@ -176,3 +176,32 @@ Message: 由于目标计算机积极拒绝，无法连接。
 2025-03-17 23:09:47.8755|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:09:34于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
 2025-03-17 23:12:47.3072|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:12:34于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
 2025-03-17 23:13:40.0601|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:13:05于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
+2025-03-17 23:26:06.2637|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 23:26:06 
+2025-03-17 23:32:35.9105|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 23:32:35 
+2025-03-17 23:32:44.7833|INFO|PLCCommunication_API.Controllers.S7Controller|禁用id为9的配置成功！ 
+2025-03-17 23:32:45.4669|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为9的配置成功！ 
+2025-03-17 23:35:46.6075|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 23:35:46 
+2025-03-17 23:35:54.0686|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-17 23:36:22.1484|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 23:36:22 
+2025-03-17 23:36:24.5842|INFO|PLCCommunication_API.Controllers.S7Controller|禁用id为9的配置成功！ 
+2025-03-17 23:36:27.2609|INFO|PLCCommunication_API.Controllers.S7Controller|启用id为9的配置成功！ 
+2025-03-17 23:36:28.1525|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:36:28于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
+2025-03-17 23:38:25.1069|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 23:38:25 
+2025-03-17 23:38:27.3368|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:38:27于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:38:30.0082|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:38:29于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:38:30.8505|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:38:30于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:38:31.1307|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:38:31于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:38:31.4020|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:38:31于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:38:31.5837|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:38:31于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:40:04.8827|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 23:40:04 
+2025-03-17 23:40:09.3230|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:40:09于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:40:14.4015|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:40:14于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:40:15.0753|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:40:15于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:40:43.6424|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/17 23:40:43 
+2025-03-17 23:40:46.0086|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:40:45于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:40:47.0944|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:40:47于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:40:47.6978|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:40:47于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:40:48.1542|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:40:48于配置名为：粉料提升机-1001-起始位置-写的PLC建立连接: 
+2025-03-17 23:41:05.3860|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:41:05于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
+2025-03-17 23:41:15.3589|INFO|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|2025/3/17 15:41:15于配置名为：粉料提升机-1001-任务号-写的PLC建立连接: 
