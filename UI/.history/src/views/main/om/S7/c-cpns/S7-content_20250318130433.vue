@@ -435,9 +435,9 @@ const WriteS7 = async (row: any) => {
         },
     }).then((response) => {
         if (response.data.code === 200) {
-            ElMessage.success('写入成功');
+            ElMessage.success('读取成功');
         } else {
-            ElMessage.error('写入失败');
+            ElMessage.error('读取失败');
         }
     })
 }

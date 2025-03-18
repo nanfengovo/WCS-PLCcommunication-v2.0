@@ -48,5 +48,20 @@ namespace PLCCommunication_API.Controllers
 
             return new Result { Code = 200,Data = result };
         }
+
+
+        /// <summary>
+        /// 写入
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<Result> Write(int id,string input)
+        {
+            var result = await _s7ReadWriteService.WriteSingleAsync(id,input);
+            return new Result { Code = 200, Data = result };
+
+        }
     }
 }

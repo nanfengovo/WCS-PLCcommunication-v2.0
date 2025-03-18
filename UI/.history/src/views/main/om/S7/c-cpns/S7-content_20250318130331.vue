@@ -429,15 +429,15 @@ const ReadS7 = async (row: any) => {
 
 //#region --写入
 const WriteS7 = async (row: any) => {
-    await axios.post(`http://localhost:8888/api/S7ReadWrite/Write?id=${row.id}&input=${row.result}`, null, {
+    await axios.post(`http://localhost:8888/api/S7ReadWrite/Write?id=${row.id}&value=${row.result}`, null, {
         headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
     }).then((response) => {
         if (response.data.code === 200) {
-            ElMessage.success('写入成功');
+            ElMessage.success('读取成功');
         } else {
-            ElMessage.error('写入失败');
+            ElMessage.error('读取失败');
         }
     })
 }

@@ -12,5 +12,6 @@ namespace PLCCommunication_Infrastructure.IRespository
     public interface IS7ReadWriteResposity : IBaseRespository<S7Config>
     {
        public  Task<object> Read(int id);
+       public  Task<object> Write(int id,string input);
     }
 }

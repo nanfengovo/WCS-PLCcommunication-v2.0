@@ -24,7 +24,17 @@ using(Plc plc = new Plc(CpuType.S71200,"127.0.0.1",100,0,0))
                 #endregion
 
                 #region 写int型
-                plc.Write("DB100.DBD0", 1);
+                try
+                {
+                    plc.Write("DB10.DBD1", 1);
+                }
+                catch (Exception ex)
+                {
+
+                    Console.WriteLine(ex.Message);
+                }
+                
+                
                 #endregion
 
 

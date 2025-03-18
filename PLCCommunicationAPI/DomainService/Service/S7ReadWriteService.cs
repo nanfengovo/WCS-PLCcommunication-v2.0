@@ -27,5 +27,10 @@ namespace PLCCommunication_DomainService.Service
         {
             return await _s7ReadWriteResposity.Read(id);
         }
+
+        public async Task<object> WriteSingleAsync(int id,string input)
+        {
+            return await _s7ReadWriteResposity.Write(id, input);
+        }
     }
 }

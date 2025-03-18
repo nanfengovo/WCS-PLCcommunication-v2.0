@@ -11,5 +11,6 @@ namespace PLCCommunication_DomainService.IService
     public interface IS7ReadWriteService : IBaseService<S7Config>
     {
        public Task<object> ReadSingleAsync(int id);
+       public Task<object> WriteSingleAsync(int id,string input);
     }
 }
