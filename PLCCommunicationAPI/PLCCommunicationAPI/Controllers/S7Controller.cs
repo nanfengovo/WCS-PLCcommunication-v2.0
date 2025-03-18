@@ -190,6 +190,44 @@ namespace PLCCommunication_API.Controllers
             return new Result { Code = 200, Msg = $"禁用id为{id}的配置成功！" };
         }
 
+        /// <summary>
+        /// 编辑/修改S7数据点
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="s7ConfigDTO"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<Result> EditS7ById(int id, [FromForm] S7ConfigDTO s7ConfigDTO)
+        {
+            //根据id找到需要修改的对象
+            var isExist = await _s7ConfigService.FindEntityByIdAsync(id);
+            if (isExist == null)
+            {
+                _logger.LogWarning($"需要修改的id为{id}的对象不存在！！请检查传入的id");
+                return new Result { Code = 404, Msg = $"需要修改的id为{id}的对象不存在！！请检查传入的id" };
+            }
+
+            //DTO转实体
+            var s7Config = new S7Config
+            {
+                ProxyName = s7ConfigDTO.ProxyName,
+                IP = s7ConfigDTO.IP,
+                Port = s7ConfigDTO.Port,
+                DBID = s7ConfigDTO.DBID,
+                Address = s7ConfigDTO.Address,
+                Type = s7ConfigDTO.Type,
+                Length = s7ConfigDTO.Length,
+                bit = s7ConfigDTO.bit,
+                Remark = s7ConfigDTO.Remark,
+                IsOpen = s7ConfigDTO.IsOpen,
+                LastModified = DateTime.Now,
+            };
+
+            //赋值完成修改
+            var result = await _s7ConfigService.UpdateAsync(isExist,s7Config);
+            return new Result { Code = 200, Msg = "修改成功！" };
+        }
+
     }
 
 

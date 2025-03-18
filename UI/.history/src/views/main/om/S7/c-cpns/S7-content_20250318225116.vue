@@ -166,7 +166,7 @@
         </el-form>
         <template #footer>
             <div class="dialog-footer">
-                <el-button @click="editDialogVisible = false">重置</el-button>
+                <el-button @click="dialogOverflowVisible = false">重置</el-button>
                 <el-button type="primary" @click="saveS7Config">
                     保存
                 </el-button>
@@ -412,7 +412,6 @@ const handleClick = async (row: any) => {
             if (response.data.code === 200) {
                 ElMessage.success('禁用成功');
                 row.isOpen = false;
-                refresh();
             } else {
                 ElMessage.error('禁用失败');
             }
@@ -430,7 +429,6 @@ const handleClick = async (row: any) => {
             if (response.data.code === 200) {
                 ElMessage.success('启用成功');
                 row.isOpen = true;
-                refresh();
             } else {
                 ElMessage.error('启用失败');
             }
@@ -465,9 +463,6 @@ const EditForm = ref({
     isOpen: true,
 })
 
-const saveS7Config = async () => {
-
-}
 
 
 

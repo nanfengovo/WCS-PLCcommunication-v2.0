@@ -1,0 +1,10 @@
+2025-03-19 00:10:47.1058|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 00:10:47.1287|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 00:10:47.1775|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 00:10:47.1775|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 00:10:47.1775|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 00:18:13.3673|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 00:18:13.3847|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 00:18:13.4294|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 00:18:13.4303|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 00:18:13.4303|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 

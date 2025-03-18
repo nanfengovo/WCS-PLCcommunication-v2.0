@@ -127,46 +127,46 @@
 
 
     <!-- 编辑 -->
-    <el-dialog v-model="editDialogVisible" :title=title width="500" draggable overflow center>
-        <el-form v-model="EditForm" label-width="100px">
+    <el-dialog v-model="editDialogVisible" title={{title}} width="500" draggable overflow center>
+        <el-form v-model="Editform" label-width="100px">
             <el-form-item label="配置名:">
-                <el-input v-model="EditForm.proxyName" placeholder="请输入配置名" />
+                <el-input v-model="form.proxyName" placeholder="请输入配置名" />
             </el-form-item>
             <el-form-item label="ip:">
-                <el-input v-model="EditForm.ip" placeholder="请输入ip" />
+                <el-input v-model="form.ip" placeholder="请输入ip" />
             </el-form-item>
             <el-form-item label="端口:">
-                <el-input v-model="EditForm.port" placeholder="请输入端口" />
+                <el-input v-model="form.port" placeholder="请输入端口" />
             </el-form-item>
             <el-form-item label="DB块id:">
-                <el-input v-model="EditForm.dbid" placeholder="请输入DB块id" />
+                <el-input v-model="form.dbid" placeholder="请输入DB块id" />
             </el-form-item>
             <el-form-item label="地址偏移:">
-                <el-input v-model="EditForm.address" placeholder="请输入地址偏移" />
+                <el-input v-model="form.address" placeholder="请输入地址偏移" />
             </el-form-item>
             <el-form-item label="数据类型:">
-                <el-select v-model="EditForm.type" placeholder="请选择数据类型">
+                <el-select v-model="form.type" placeholder="请选择数据类型">
                     <el-option label="int" value="int" />
                     <el-option label="short" value="short" />
                     <el-option label="bool" value="bool" />
                 </el-select>
             </el-form-item>
             <el-form-item label="数据长度:">
-                <el-input v-model="EditForm.length" placeholder="请输入数据长度" />
+                <el-input v-model="form.length" placeholder="请输入数据长度" />
             </el-form-item>
             <el-form-item label="位地址:">
-                <el-input v-model="EditForm.bit" placeholder="请输入位地址" />
+                <el-input v-model="form.bit" placeholder="请输入位地址" />
             </el-form-item>
             <el-form-item label="备注:">
-                <el-input v-model="EditForm.remark" placeholder="请输入备注" />
+                <el-input v-model="form.remark" placeholder="请输入备注" />
             </el-form-item>
             <el-form-item label="是否启用:">
-                <el-switch v-model="EditForm.isOpen" active-color="#13ce66" inactive-color="#ff4949" />
+                <el-switch v-model="form.isOpen" active-color="#13ce66" inactive-color="#ff4949" />
             </el-form-item>
         </el-form>
         <template #footer>
             <div class="dialog-footer">
-                <el-button @click="editDialogVisible = false">重置</el-button>
+                <el-button @click="dialogOverflowVisible = false">重置</el-button>
                 <el-button type="primary" @click="saveS7Config">
                     保存
                 </el-button>
@@ -412,7 +412,6 @@ const handleClick = async (row: any) => {
             if (response.data.code === 200) {
                 ElMessage.success('禁用成功');
                 row.isOpen = false;
-                refresh();
             } else {
                 ElMessage.error('禁用失败');
             }
@@ -430,7 +429,6 @@ const handleClick = async (row: any) => {
             if (response.data.code === 200) {
                 ElMessage.success('启用成功');
                 row.isOpen = true;
-                refresh();
             } else {
                 ElMessage.error('启用失败');
             }
@@ -447,27 +445,21 @@ const title = ref('');
 const editDialogVisible = ref(false);
 
 const EditS7 = (row: any) => {
+    title.value = '修改';
     editDialogVisible.value = true;
-    EditForm.value = { ...row };
-    title.value = EditForm.value.proxyName;
+    editForm.value = { ...row };
 }
 
-const EditForm = ref({
-    proxyName: '',
-    ip: '',
-    port: 102,
-    dbid: 100,
-    address: '',
+const editForm = ref({
+    id: 0,
+    name: '',
     type: '',
     length: 0,
     bit: 0,
     remark: '',
     isOpen: true,
-})
+});
 
-const saveS7Config = async () => {
-
-}
 
 
 

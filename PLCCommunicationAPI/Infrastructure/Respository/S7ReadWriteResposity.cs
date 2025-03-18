@@ -150,7 +150,7 @@ namespace PLCCommunication_Infrastructure.Respository
                         {
                             try
                             {
-                                await _plc.WriteAsync("DB" + dbid + ".DBD" + address, input);
+                                await _plc.WriteAsync("DB" + dbid + ".DBD" + address, int.Parse(input));
                                 _logger.LogInformation($"根据id写入S7数据点-对配置名为{isExist.ProxyName}的S7数据点写入{input}");
                                 return true;
                             }

@@ -92,5 +92,21 @@ namespace PLCCommunication_Infrastructure.Respository
             return await _dbContext.SaveChangesAsync() > 0;
         }
 
+        public async Task<bool> UpdateAsync(S7Config isExist, S7Config s7Config)
+        {
+            isExist.ProxyName = s7Config.ProxyName;
+            isExist.IP = s7Config.IP;
+            isExist.Port = s7Config.Port;
+            isExist.DBID = s7Config.DBID;
+            isExist.Address = s7Config.Address;
+            isExist.Type = s7Config.Type;
+            isExist.Length = s7Config.Length;
+            isExist.bit = s7Config.bit;
+            isExist.Remark = s7Config.Remark;
+            isExist.IsOpen = s7Config.IsOpen;
+            isExist.LastModified = DateTime.Now;
+
+            return await _dbContext.SaveChangesAsync() > 0;
+        }
     }
 }

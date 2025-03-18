@@ -166,7 +166,7 @@
         </el-form>
         <template #footer>
             <div class="dialog-footer">
-                <el-button @click="editDialogVisible = false">重置</el-button>
+                <el-button @click="dialogOverflowVisible = false">重置</el-button>
                 <el-button type="primary" @click="saveS7Config">
                     保存
                 </el-button>
@@ -465,9 +465,6 @@ const EditForm = ref({
     isOpen: true,
 })
 
-const saveS7Config = async () => {
-
-}
 
 
 

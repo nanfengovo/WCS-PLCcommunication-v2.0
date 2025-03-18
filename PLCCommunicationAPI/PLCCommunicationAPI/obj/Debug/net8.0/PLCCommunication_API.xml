@@ -73,6 +73,14 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.EditS7ById(System.Int32,PLCCommunication_Model.DTO.S7ConfigDTO)">
+            <summary>
+            编辑/修改S7数据点
+            </summary>
+            <param name="id"></param>
+            <param name="s7ConfigDTO"></param>
+            <returns></returns>
+        </member>
         <member name="M:PLCCommunication_API.Controllers.S7ReadWriteController.Read(System.Int32)">
             <summary>
             读取

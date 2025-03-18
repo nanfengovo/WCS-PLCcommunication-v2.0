@@ -3,52 +3,84 @@
   "WorkspaceRootPath": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\controllers\\s7readwritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|solutionrelative:plccommunicationapi\\controllers\\s7readwritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\pluginunit\\jwtversioncheckfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|solutionrelative:plccommunicationapi\\pluginunit\\jwtversioncheckfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\service\\s7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\service\\s7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\respository\\s7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\respository\\s7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\dbcontexts\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\dbcontexts\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|solutionrelative:plccommunicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\respository\\s7configresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\respository\\s7configresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\utility\\plug-ins\\iocextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|solutionrelative:utility\\plug-ins\\iocextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\irespository\\is7configresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\irespository\\is7configresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\iservice\\is7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\iservice\\is7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\service\\s7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\service\\s7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\irespository\\is7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\irespository\\is7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\iservice\\is7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\iservice\\is7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\controllers\\s7controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|solutionrelative:plccommunicationapi\\controllers\\s7controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\respository\\s7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\respository\\s7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\baserespository\\baserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\baserespository\\baserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\ibaserespository\\ibaserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\ibaserespository\\ibaserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\baseservice\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\baseservice\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\ibaseservice\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\ibaseservice\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|solutionrelative:plccommunicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\pluginunit\\jwtversioncheckfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|solutionrelative:plccommunicationapi\\pluginunit\\jwtversioncheckfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\plccommunicationapi\\controllers\\s7readwritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0486F954-0307-4897-90F6-3676EEC723C1}|PLCCommunicationAPI\\PLCCommunication_API.csproj|solutionrelative:plccommunicationapi\\controllers\\s7readwritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\service\\s7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\service\\s7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\irespository\\is7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\irespository\\is7readwriteresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\configs\\s7readwriterecordconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\configs\\s7readwriterecordconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\configs\\s7configconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\configs\\s7configconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\iservice\\is7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\iservice\\is7readwriteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\dbcontexts\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\dbcontexts\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\utility\\plug-ins\\iocextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|solutionrelative:utility\\plug-ins\\iocextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\configs\\modbustcpconfigconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,40 +107,12 @@
       "RelativeMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|solutionrelative:utility\\overall auth\\jwtsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\irespository\\is7configresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\irespository\\is7configresposity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\service\\s7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\service\\s7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\baseservice\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\baseservice\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\baserespository\\baserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\baserespository\\baserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\iservice\\is7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\iservice\\is7configservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\domainservice\\ibaseservice\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A655692B-A2C7-48FB-9F9E-B2DE3D000472}|DomainService\\PLCCommunication_DomainService.csproj|solutionrelative:domainservice\\ibaseservice\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\utility\\apihelper\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|solutionrelative:utility\\apihelper\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\utility\\enum\\code.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66477CC1-28EA-41D7-B363-5A517DCEA5A5}|Utility\\PLCCommunication_Utility.csproj|solutionrelative:utility\\enum\\code.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\ibaserespository\\ibaserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\ibaserespository\\ibaserespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\respository\\userrespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -307,10 +311,6 @@
       "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20250317133212_adds7rwrecordentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\infrastructure\\configs\\s7readwriterecordconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C94277D-D411-4E49-B34C-3FE7C61D0708}|Infrastructure\\PLCCommunication_Infrastructure.csproj|solutionrelative:infrastructure\\configs\\s7readwriterecordconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{34DA8562-9E8D-4435-9669-2F2DB6DDA7AB}|Model\\PLCCommunication_Model.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\plccommunicationapi\\model\\entities\\s7readwriterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34DA8562-9E8D-4435-9669-2F2DB6DDA7AB}|Model\\PLCCommunication_Model.csproj|solutionrelative:model\\entities\\s7readwriterecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -326,7 +326,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -346,19 +346,241 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "S7ConfigResposity.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ConfigResposity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Respository\\S7ConfigResposity.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ConfigResposity.cs*",
+              "RelativeToolTip": "Infrastructure\\Respository\\S7ConfigResposity.cs*",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAwGwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:25:08.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "S7Controller.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7Controller.cs",
+              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\S7Controller.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7Controller.cs*",
+              "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\S7Controller.cs*",
+              "ViewState": "AgIAAMcAAAAAAAAAAAA8wOIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T09:59:42.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IS7ConfigService.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ConfigService.cs",
+              "RelativeDocumentMoniker": "DomainService\\IService\\IS7ConfigService.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ConfigService.cs*",
+              "RelativeToolTip": "DomainService\\IService\\IS7ConfigService.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwB8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:18:57.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "S7ConfigService.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ConfigService.cs",
+              "RelativeDocumentMoniker": "DomainService\\Service\\S7ConfigService.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ConfigService.cs*",
+              "RelativeToolTip": "DomainService\\Service\\S7ConfigService.cs*",
+              "ViewState": "AgIAADYAAAAAAAAAAIA3wEgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:20:17.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "IS7ConfigResposity.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ConfigResposity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\IRespository\\IS7ConfigResposity.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ConfigResposity.cs*",
+              "RelativeToolTip": "Infrastructure\\IRespository\\IS7ConfigResposity.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:23:14.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "S7ReadWriteResposity.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ReadWriteResposity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Respository\\S7ReadWriteResposity.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ReadWriteResposity.cs",
+              "RelativeToolTip": "Infrastructure\\Respository\\S7ReadWriteResposity.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAlwMEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:07:07.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseRespository.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\BaseRespository\\BaseRespository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\BaseRespository\\BaseRespository.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\BaseRespository\\BaseRespository.cs",
+              "RelativeToolTip": "Infrastructure\\BaseRespository\\BaseRespository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAawDcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:02:17.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IBaseRespository.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IBaseRespository\\IBaseRespository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\IBaseRespository\\IBaseRespository.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IBaseRespository\\IBaseRespository.cs",
+              "RelativeToolTip": "Infrastructure\\IBaseRespository\\IBaseRespository.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAewB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T09:02:34.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IBaseService\\IBaseService.cs",
+              "RelativeDocumentMoniker": "DomainService\\IBaseService\\IBaseService.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IBaseService\\IBaseService.cs",
+              "RelativeToolTip": "DomainService\\IBaseService\\IBaseService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAewB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:32:38.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Program.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Program.cs",
+              "RelativeToolTip": "PLCCommunicationAPI\\Program.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAvwHEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T05:07:14.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\BaseService\\BaseService.cs",
+              "RelativeDocumentMoniker": "DomainService\\BaseService\\BaseService.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\BaseService\\BaseService.cs",
+              "RelativeToolTip": "DomainService\\BaseService\\BaseService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAawDUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T10:32:17.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "JwtVersionCheckFilter.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PlugInUnit\\JwtVersionCheckFilter.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\PlugInUnit\\JwtVersionCheckFilter.cs",
               "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PlugInUnit\\JwtVersionCheckFilter.cs",
               "RelativeToolTip": "PLCCommunicationAPI\\PlugInUnit\\JwtVersionCheckFilter.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAnwD4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAlwD4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T13:15:13.226Z"
+              "WhenOpened": "2025-03-11T13:15:13.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
+              "Title": "S7ReadWriteService.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ReadWriteService.cs",
+              "RelativeDocumentMoniker": "DomainService\\Service\\S7ReadWriteService.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ReadWriteService.cs",
+              "RelativeToolTip": "DomainService\\Service\\S7ReadWriteService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:07:07.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "S7ReadWriteController.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
+              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
+              "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwEAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:07:06.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "S7ReadWriteRecordConfig.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
+              "RelativeToolTip": "Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:25:19.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "S7ConfigConfig.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ConfigConfig.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configs\\S7ConfigConfig.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ConfigConfig.cs",
+              "RelativeToolTip": "Infrastructure\\Configs\\S7ConfigConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T10:03:15.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IS7ReadWriteResposity.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
+              "RelativeToolTip": "Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAawA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:07:07.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IS7ReadWriteService.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ReadWriteService.cs",
+              "RelativeDocumentMoniker": "DomainService\\IService\\IS7ReadWriteService.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ReadWriteService.cs",
+              "RelativeToolTip": "DomainService\\IService\\IS7ReadWriteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T13:07:07.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "MyDbContext.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\DBContexts\\MyDbContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DBContexts\\MyDbContext.cs",
@@ -370,68 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "S7ReadWriteResposity.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ReadWriteResposity.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Respository\\S7ReadWriteResposity.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ReadWriteResposity.cs",
-              "RelativeToolTip": "Infrastructure\\Respository\\S7ReadWriteResposity.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAjwGsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:07:07.855Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "S7ReadWriteService.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ReadWriteService.cs",
-              "RelativeDocumentMoniker": "DomainService\\Service\\S7ReadWriteService.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ReadWriteService.cs",
-              "RelativeToolTip": "DomainService\\Service\\S7ReadWriteService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAADwvxwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:07:07.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "S7ReadWriteController.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
-              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
-              "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\S7ReadWriteController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAhwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:07:06.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Program.cs",
-              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Program.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Program.cs",
-              "RelativeToolTip": "PLCCommunicationAPI\\Program.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAIwHEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T05:07:14.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "S7ConfigResposity.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ConfigResposity.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Respository\\S7ConfigResposity.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\S7ConfigResposity.cs",
-              "RelativeToolTip": "Infrastructure\\Respository\\S7ConfigResposity.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwFsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:25:08.033Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "IOCExtend.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\Plug-ins\\IOCExtend.cs",
               "RelativeDocumentMoniker": "Utility\\Plug-ins\\IOCExtend.cs",
@@ -443,43 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IS7ReadWriteResposity.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
-              "RelativeToolTip": "Infrastructure\\IRespository\\IS7ReadWriteResposity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:07:07.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IS7ReadWriteService.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ReadWriteService.cs",
-              "RelativeDocumentMoniker": "DomainService\\IService\\IS7ReadWriteService.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ReadWriteService.cs",
-              "RelativeToolTip": "DomainService\\IService\\IS7ReadWriteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:07:07.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "S7Controller.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7Controller.cs",
-              "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\S7Controller.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\S7Controller.cs",
-              "RelativeToolTip": "PLCCommunicationAPI\\Controllers\\S7Controller.cs",
-              "ViewState": "AgIAABwAAAAAzczMzMwrwBQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T09:59:42.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "ModbusTCPConfigConfig.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\ModbusTCPConfigConfig.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Configs\\ModbusTCPConfigConfig.cs",
@@ -491,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "20250317133212_AddS7RWRecordEntity.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250317133212_AddS7RWRecordEntity.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250317133212_AddS7RWRecordEntity.cs",
@@ -500,30 +625,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T13:32:12.497Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "S7ConfigConfig.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ConfigConfig.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Configs\\S7ConfigConfig.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ConfigConfig.cs",
-              "RelativeToolTip": "Infrastructure\\Configs\\S7ConfigConfig.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:03:15.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "S7ReadWriteRecordConfig.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
-              "RelativeToolTip": "Infrastructure\\Configs\\S7ReadWriteRecordConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T13:25:19.163Z"
             },
             {
               "$type": "Document",
@@ -539,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "S7Config.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\Entities\\S7Config.cs",
               "RelativeDocumentMoniker": "Model\\Entities\\S7Config.cs",
@@ -551,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "JwtSetting.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\Overall Auth\\JwtSetting.cs",
               "RelativeDocumentMoniker": "Utility\\Overall Auth\\JwtSetting.cs",
@@ -563,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "internal-nlog.txt",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\internal-nlog.txt",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\internal-nlog.txt",
@@ -575,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\appsettings.json",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\appsettings.json",
@@ -587,79 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IS7ConfigResposity.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ConfigResposity.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\IRespository\\IS7ConfigResposity.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IS7ConfigResposity.cs",
-              "RelativeToolTip": "Infrastructure\\IRespository\\IS7ConfigResposity.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAIAzwBIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:23:14.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BaseService.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\BaseService\\BaseService.cs",
-              "RelativeDocumentMoniker": "DomainService\\BaseService\\BaseService.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\BaseService\\BaseService.cs",
-              "RelativeToolTip": "DomainService\\BaseService\\BaseService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAewDEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:32:17.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "S7ConfigService.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ConfigService.cs",
-              "RelativeDocumentMoniker": "DomainService\\Service\\S7ConfigService.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\S7ConfigService.cs",
-              "RelativeToolTip": "DomainService\\Service\\S7ConfigService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAewD8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:20:17.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BaseRespository.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\BaseRespository\\BaseRespository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\BaseRespository\\BaseRespository.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\BaseRespository\\BaseRespository.cs",
-              "RelativeToolTip": "Infrastructure\\BaseRespository\\BaseRespository.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAawDUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:02:17.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IS7ConfigService.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ConfigService.cs",
-              "RelativeDocumentMoniker": "DomainService\\IService\\IS7ConfigService.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IS7ConfigService.cs",
-              "RelativeToolTip": "DomainService\\IService\\IS7ConfigService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAawB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T10:18:57.684Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "IBaseService.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IBaseService\\IBaseService.cs",
-              "RelativeDocumentMoniker": "DomainService\\IBaseService\\IBaseService.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IBaseService\\IBaseService.cs",
-              "RelativeToolTip": "DomainService\\IBaseService\\IBaseService.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAowDQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T10:32:38.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Result.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\APIHelper\\Result.cs",
               "RelativeDocumentMoniker": "Utility\\APIHelper\\Result.cs",
@@ -671,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Code.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\Enum\\Code.cs",
               "RelativeDocumentMoniker": "Utility\\Enum\\Code.cs",
@@ -683,19 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IBaseRespository.cs",
-              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IBaseRespository\\IBaseRespository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\IBaseRespository\\IBaseRespository.cs",
-              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IBaseRespository\\IBaseRespository.cs",
-              "RelativeToolTip": "Infrastructure\\IBaseRespository\\IBaseRespository.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAqwDQAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T09:02:34.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "UserRespository.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\UserRespository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Respository\\UserRespository.cs",
@@ -707,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "IModbusTCPConfigService.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IModbusTCPConfigService.cs",
               "RelativeDocumentMoniker": "DomainService\\IService\\IModbusTCPConfigService.cs",
@@ -719,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "S7ConfigDTO.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\DTO\\S7ConfigDTO.cs",
               "RelativeDocumentMoniker": "Model\\DTO\\S7ConfigDTO.cs",
@@ -731,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "SwaggerPlugInUnit.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PlugInUnit\\SwaggerPlugInUnit.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\PlugInUnit\\SwaggerPlugInUnit.cs",
@@ -743,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "UserService.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\UserService.cs",
               "RelativeDocumentMoniker": "DomainService\\Service\\UserService.cs",
@@ -755,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\UserController.cs",
@@ -767,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ModbusTCPConfigResposity.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Respository\\ModbusTCPConfigResposity.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Respository\\ModbusTCPConfigResposity.cs",
@@ -779,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "IModbusTCPConfigResposity.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IModbusTCPConfigResposity.cs",
               "RelativeDocumentMoniker": "Infrastructure\\IRespository\\IModbusTCPConfigResposity.cs",
@@ -791,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "ModbusTCPController.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\ModbusTCPController.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\ModbusTCPController.cs",
@@ -803,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "IUserService.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\IService\\IUserService.cs",
               "RelativeDocumentMoniker": "DomainService\\IService\\IUserService.cs",
@@ -815,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "TestController.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\TestController.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\TestController.cs",
@@ -827,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "ModeuleGroupEnum.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\Enum\\ModeuleGroupEnum.cs",
               "RelativeDocumentMoniker": "Utility\\Enum\\ModeuleGroupEnum.cs",
@@ -839,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "IUserRespository.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\IRespository\\IUserRespository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\IRespository\\IUserRespository.cs",
@@ -851,7 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "ModbusTCPConfigDTO.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\DTO\\ModbusTCPConfigDTO.cs",
               "RelativeDocumentMoniker": "Model\\DTO\\ModbusTCPConfigDTO.cs",
@@ -863,7 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "ModbusTCPConfig.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\Entities\\ModbusTCPConfig.cs",
               "RelativeDocumentMoniker": "Model\\Entities\\ModbusTCPConfig.cs",
@@ -875,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "PLCCommunication_Model.csproj",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\PLCCommunication_Model.csproj",
               "RelativeDocumentMoniker": "Model\\PLCCommunication_Model.csproj",
@@ -887,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "ModbusTCPConfigService.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\Service\\ModbusTCPConfigService.cs",
               "RelativeDocumentMoniker": "DomainService\\Service\\ModbusTCPConfigService.cs",
@@ -899,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "20250315100838_S7Entity.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250315100838_S7Entity.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250315100838_S7Entity.cs",
@@ -911,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "AuthorizeController.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\Controllers\\AuthorizeController.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\Controllers\\AuthorizeController.cs",
@@ -923,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "CheckRequestInfo.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\Request\\CheckRequestInfo.cs",
               "RelativeDocumentMoniker": "Utility\\Request\\CheckRequestInfo.cs",
@@ -935,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\Identity\\User.cs",
               "RelativeDocumentMoniker": "Model\\Identity\\User.cs",
@@ -947,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "Role.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\Identity\\Role.cs",
               "RelativeDocumentMoniker": "Model\\Identity\\Role.cs",
@@ -959,7 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "UserToRole.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\APIModel\\UserToRole.cs",
               "RelativeDocumentMoniker": "Model\\APIModel\\UserToRole.cs",
@@ -971,7 +988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "CreateUserRequest.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\APIModel\\CreateUserRequest.cs",
               "RelativeDocumentMoniker": "Model\\APIModel\\CreateUserRequest.cs",
@@ -983,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "Model\\DTO\\UserDTO.cs",
@@ -995,7 +1012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "20250312110709_AddRoleDescription.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250312110709_AddRoleDescription.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250312110709_AddRoleDescription.cs",
@@ -1007,7 +1024,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "NLog.config",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\NLog.config",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\NLog.config",
@@ -1019,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "NLog.config",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\NLog.config",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\NLog.config",
@@ -1031,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "NotCheckJwtVersionAttribute.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PlugInUnit\\NotCheckJwtVersionAttribute.cs",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\PlugInUnit\\NotCheckJwtVersionAttribute.cs",
@@ -1043,7 +1060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "20250311130919_AddJwtVersionInUser.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250311130919_AddJwtVersionInUser.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250311130919_AddJwtVersionInUser.cs",
@@ -1055,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "DTOMapper.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\Mapper\\DTOMapper.cs",
               "RelativeDocumentMoniker": "Utility\\Mapper\\DTOMapper.cs",
@@ -1067,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "20250310143902_Identity.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310143902_Identity.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310143902_Identity.cs",
@@ -1079,7 +1096,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "20250310132019_ReUpdateModbusCig4.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310132019_ReUpdateModbusCig4.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310132019_ReUpdateModbusCig4.cs",
@@ -1091,7 +1108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "20250310130806_ReUpdateModbusCig3.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310130806_ReUpdateModbusCig3.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310130806_ReUpdateModbusCig3.cs",
@@ -1103,7 +1120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "20250310125827_ReUpdateModbusCig2.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310125827_ReUpdateModbusCig2.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310125827_ReUpdateModbusCig2.cs",
@@ -1115,7 +1132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "MyDbContextModelSnapshot.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\MyDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\MyDbContextModelSnapshot.cs",
@@ -1127,7 +1144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "20250310125409_ReUpdateModbusCig.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310125409_ReUpdateModbusCig.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310125409_ReUpdateModbusCig.cs",
@@ -1139,7 +1156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "20250310123209_UpdateModbuConfigId.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310123209_UpdateModbuConfigId.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310123209_UpdateModbuConfigId.cs",
@@ -1151,7 +1168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "20250310123328_UpdateModbuConfig.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310123328_UpdateModbuConfig.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310123328_UpdateModbuConfig.cs",
@@ -1163,7 +1180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "20250310124114_ReCreateTable.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310124114_ReCreateTable.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310124114_ReCreateTable.cs",
@@ -1175,7 +1192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "20250310124326_ReCreatetableagain.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310124326_ReCreatetableagain.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310124326_ReCreatetableagain.cs",
@@ -1187,7 +1204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "20250309081042_InitialCreate.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250309081042_InitialCreate.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250309081042_InitialCreate.cs",
@@ -1199,7 +1216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "20250310125644_ReUpdateModbusCig1.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250310125644_ReUpdateModbusCig1.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250310125644_ReUpdateModbusCig1.cs",
@@ -1210,7 +1227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "20250309151712_UpdateModbuConfigEntity.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250309151712_UpdateModbuConfigEntity.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250309151712_UpdateModbuConfigEntity.cs",
@@ -1222,7 +1239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "20250309084156_UpdateConfig.cs",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\Migrations\\20250309084156_UpdateConfig.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20250309084156_UpdateConfig.cs",
@@ -1234,7 +1251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "PLCCommunication_DomainService.csproj",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\DomainService\\PLCCommunication_DomainService.csproj",
               "RelativeDocumentMoniker": "DomainService\\PLCCommunication_DomainService.csproj",
@@ -1246,7 +1263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "PLCCommunication_API",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PLCCommunication_API.csproj",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\PLCCommunication_API.csproj",
@@ -1257,7 +1274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "PLCCommunication_API.csproj",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\PLCCommunication_API.csproj",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\PLCCommunication_API.csproj",
@@ -1269,7 +1286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\PLCCommunicationAPI\\appsettings.Development.json",
               "RelativeDocumentMoniker": "PLCCommunicationAPI\\appsettings.Development.json",

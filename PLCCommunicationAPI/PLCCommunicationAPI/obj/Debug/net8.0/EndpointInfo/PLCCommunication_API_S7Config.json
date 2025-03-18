@@ -305,6 +305,131 @@
           }
         }
       }
+    },
+    "/api/S7/EditS7ById": {
+      "put": {
+        "tags": [
+          "S7"
+        ],
+        "summary": "编辑/修改S7数据点",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ProxyName": {
+                    "type": "string"
+                  },
+                  "IP": {
+                    "type": "string"
+                  },
+                  "Port": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DBID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Address": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Length": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "bit": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Remark": {
+                    "type": "string"
+                  },
+                  "IsOpen": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "ProxyName": {
+                  "style": "form"
+                },
+                "IP": {
+                  "style": "form"
+                },
+                "Port": {
+                  "style": "form"
+                },
+                "DBID": {
+                  "style": "form"
+                },
+                "Address": {
+                  "style": "form"
+                },
+                "Type": {
+                  "style": "form"
+                },
+                "Length": {
+                  "style": "form"
+                },
+                "bit": {
+                  "style": "form"
+                },
+                "Remark": {
+                  "style": "form"
+                },
+                "IsOpen": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {

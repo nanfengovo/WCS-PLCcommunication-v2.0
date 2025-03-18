@@ -465,9 +465,6 @@ const EditForm = ref({
     isOpen: true,
 })
 
-const saveS7Config = async () => {
-
-}
 
 
 

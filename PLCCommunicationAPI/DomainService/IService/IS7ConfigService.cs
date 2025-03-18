@@ -28,5 +28,7 @@ namespace PLCCommunication_DomainService.IService
         public Task<bool> Getstate(int id);
         public Task<bool> Enable(int id);
         public Task<bool> Disable(int id);
+
+        public Task<bool> UpdateAsync(S7Config isExist,S7Config s7Config);
     }
 }

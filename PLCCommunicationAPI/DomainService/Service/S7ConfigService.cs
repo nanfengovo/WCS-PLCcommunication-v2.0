@@ -67,5 +67,10 @@ namespace PLCCommunication_DomainService.Service
         {
             return await _s7ConfigResposity.Disable(id);
         }
+
+        public async Task<bool> UpdateAsync(S7Config isExist, S7Config s7Config)
+        {
+            return await _s7ConfigResposity.UpdateAsync(isExist,s7Config);
+        }
     }
 }

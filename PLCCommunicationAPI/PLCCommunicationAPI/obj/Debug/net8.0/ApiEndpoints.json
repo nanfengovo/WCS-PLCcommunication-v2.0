@@ -231,6 +231,87 @@
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
+    "Method": "EditS7ById",
+    "RelativePath": "api/S7/EditS7ById",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProxyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IP",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Port",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DBID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Address",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Remark",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsOpen",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
     "Method": "Enable",
     "RelativePath": "api/S7/Enable",
     "HttpMethod": "PUT",
