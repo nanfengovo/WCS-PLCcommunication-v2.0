@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="content">
-            <el-scrollbar max-height="400px" class="scrollbar-demo-item">
+            <el-scrollbar max-height="400px">
                 <el-table border style="width: 100%" :data="currentPageData" ref="multipleTableRef">
                     <el-table-column align="center" type="selection" width="40px" />
                     <el-table-column align="center" label="操作" width="320">
@@ -68,16 +68,16 @@
                 </el-table>
             </el-scrollbar>
 
-
+            <!-- 分页 -->
+            <!-- 分页控件 -->
+            <!-- arr.slice((当前页数-1)*每页条数，当前页数 *当前条数)-->
+            <el-pagination :current-page="page" :page-size="limit" :page-sizes="[10, 20, 30, 40, 50]" background
+                layout="total, sizes, prev, pager, next, jumper" :total="total" @size-change="handleSizechange"
+                @current-change="handleCurrentChange" />
         </div>
 
 
-        <!-- 分页 -->
-        <!-- 分页控件 -->
-        <!-- arr.slice((当前页数-1)*每页条数，当前页数 *当前条数)-->
-        <el-pagination :current-page="page" :page-size="limit" :page-sizes="[10, 20, 30, 40, 50]" background
-            layout="total, sizes, prev, pager, next, jumper" :total="total" @size-change="handleSizechange"
-            @current-change="handleCurrentChange" />
+
 
     </div>
 
@@ -578,7 +578,7 @@ const WriteS7 = async (row: any) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 50px;
     margin: 10px;
     text-align: center;
     border-radius: 4px;

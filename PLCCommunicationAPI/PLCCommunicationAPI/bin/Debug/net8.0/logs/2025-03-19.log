@@ -8,3 +8,34 @@
 2025-03-19 00:18:13.4294|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
 2025-03-19 00:18:13.4303|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2025-03-19 00:18:13.4303|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 00:21:33.2490|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 0:21:33 
+2025-03-19 00:22:15.5527|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 0:22:15 
+2025-03-19 00:22:41.4704|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为string的S7配置成功！ 
+2025-03-19 00:22:41.4804|INFO|PLCCommunication_API.Controllers.S7Controller|删除配置名为测试的S7配置成功！ 
+2025-03-19 00:22:52.7234|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 0:22:52 
+2025-03-19 00:23:22.0266|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 0:23:22 
+2025-03-19 00:23:41.9757|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 0:23:41 
+2025-03-19 13:06:47.8123|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 13:06:47.8321|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 13:06:47.8808|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 13:06:47.8808|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 13:06:47.8808|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 13:06:53.7436|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:06:53 
+2025-03-19 13:07:00.7984|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:07:00 
+2025-03-19 13:08:23.3781|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:08:23 
+2025-03-19 13:09:08.5011|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:09:08 
+2025-03-19 13:09:10.1806|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:09:10 
+2025-03-19 13:12:48.7601|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:12:48 
+2025-03-19 13:12:54.0766|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:12:54 
+2025-03-19 13:12:57.4079|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:12:57 
+2025-03-19 13:12:58.1131|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:12:58 
+2025-03-19 13:12:59.4246|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 13:12:59 
+2025-03-19 19:22:35.3070|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:22:35 
+2025-03-19 19:28:29.3941|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:28:29 
+2025-03-19 19:28:51.0237|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:28:51 
+2025-03-19 19:29:11.4649|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:29:11 
+2025-03-19 19:29:14.6088|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:29:14 
+2025-03-19 19:33:05.5742|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:33:05 
+2025-03-19 19:43:14.4454|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:43:14 
+2025-03-19 19:45:58.3846|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:45:58 
+2025-03-19 19:50:30.1197|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:50:30 

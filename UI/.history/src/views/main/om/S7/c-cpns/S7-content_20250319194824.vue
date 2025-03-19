@@ -578,7 +578,7 @@ const WriteS7 = async (row: any) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 50px;
     margin: 10px;
     text-align: center;
     border-radius: 4px;

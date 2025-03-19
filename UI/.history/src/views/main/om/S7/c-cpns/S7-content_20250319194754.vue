@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="content">
-            <el-scrollbar max-height="400px" class="scrollbar-demo-item">
+            <el-scrollbar max-height="400px">
                 <el-table border style="width: 100%" :data="currentPageData" ref="multipleTableRef">
                     <el-table-column align="center" type="selection" width="40px" />
                     <el-table-column align="center" label="操作" width="320">
@@ -578,7 +578,7 @@ const WriteS7 = async (row: any) => {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 50px;
     margin: 10px;
     text-align: center;
     border-radius: 4px;
