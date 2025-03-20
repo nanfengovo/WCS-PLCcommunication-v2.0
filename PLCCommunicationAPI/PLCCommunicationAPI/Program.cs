@@ -19,6 +19,7 @@ using Microsoft.AspNetCore.Mvc;
 using PLCCommunication_Infrastructure.Migrations;
 using PLCCommunication_API.PlugInUnit;
 using NLog.Web;
+using ScheduledTasksService.S7;
 
 namespace PLCCommunicationAPI
 {
@@ -113,17 +114,27 @@ namespace PLCCommunicationAPI
             builder.Services.AddDbContext<MyDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+          
+
             //注入filter服务
             builder.Services.Configure<MvcOptions>(opt =>
             {
                 opt.Filters.Add<JwtVersionCheckFilter>();
             });
 
+
+
             //自定义依赖注入
             builder.Services.AddCustomIOC();
 
+            //注入后台线程
+            // 注册 S7TaskService
+            builder.Services.AddHostedService<S7TaskService>();
+
             //Identity注入
             builder.Services.AddIdentityIOC();
+
+            
 
             var app = builder.Build();
 
@@ -143,6 +154,7 @@ namespace PLCCommunicationAPI
             // 应用 CORS 策略
             app.UseCors("DevCors");
 
+            
             //授权
             app.UseAuthorization();
 

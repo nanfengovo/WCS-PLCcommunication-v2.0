@@ -1047,6 +1047,35 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Polly/8.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Polly.Core": "8.5.2"
+        },
+        "compile": {
+          "lib/net6.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Polly.Core/8.5.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Polly.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Polly.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "S7netplus/0.20.0": {
         "type": "package",
         "compile": {
@@ -1726,6 +1755,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
           "NLog.Web.AspNetCore": "5.4.0",
           "PLCCommunication_Model": "1.0.0",
+          "Polly": "8.5.2",
           "S7netplus": "0.20.0"
         },
         "compile": {
@@ -1761,6 +1791,20 @@
         },
         "runtime": {
           "bin/placeholder/PLCCommunication_Utility.dll": {}
+        }
+      },
+      "ScheduledTasksService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "PLCCommunication_Infrastructure": "1.0.0",
+          "PLCCommunication_Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ScheduledTasksService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ScheduledTasksService.dll": {}
         }
       }
     }
@@ -3513,6 +3557,59 @@
         "nlog.web.aspnetcore.nuspec"
       ]
     },
+    "Polly/8.5.2": {
+      "sha512": "vbXsGgkG86nG+TOwY+SmtrGrRHmHH0DQaxtILx//d3Dz/ocJ8izSNYzdvU2gEtWa/LDD8zJLvD3HdjEkdlvkhg==",
+      "type": "package",
+      "path": "polly/8.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Polly.dll",
+        "lib/net462/Polly.pdb",
+        "lib/net462/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/net6.0/Polly.dll",
+        "lib/net6.0/Polly.pdb",
+        "lib/net6.0/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "package-icon.png",
+        "package-readme.md",
+        "polly.8.5.2.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
+    "Polly.Core/8.5.2": {
+      "sha512": "1MJKdxv4zwDmiWvYvVN24DsrWUfgQ4F83voH8bhbtLMdPuGy8CfTUzsgQhvyrl1a7hrM6f/ydwLVdVUI0xooUw==",
+      "type": "package",
+      "path": "polly.core/8.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Polly.Core.dll",
+        "lib/net462/Polly.Core.pdb",
+        "lib/net462/Polly.Core.xml",
+        "lib/net472/Polly.Core.dll",
+        "lib/net472/Polly.Core.pdb",
+        "lib/net472/Polly.Core.xml",
+        "lib/net6.0/Polly.Core.dll",
+        "lib/net6.0/Polly.Core.pdb",
+        "lib/net6.0/Polly.Core.xml",
+        "lib/net8.0/Polly.Core.dll",
+        "lib/net8.0/Polly.Core.pdb",
+        "lib/net8.0/Polly.Core.xml",
+        "lib/netstandard2.0/Polly.Core.dll",
+        "lib/netstandard2.0/Polly.Core.pdb",
+        "lib/netstandard2.0/Polly.Core.xml",
+        "package-icon.png",
+        "package-readme.md",
+        "polly.core.8.5.2.nupkg.sha512",
+        "polly.core.nuspec"
+      ]
+    },
     "S7netplus/0.20.0": {
       "sha512": "XAubZ076bhWHQZlnBkzwQO4WxqF5ofwhrkDxfBhGbeD1JC1jBDn3EbWIqMLW6+G0RsxzxirSjLERCQZPfjwGdw==",
       "type": "package",
@@ -4596,6 +4693,11 @@
       "type": "project",
       "path": "../Utility/PLCCommunication_Utility.csproj",
       "msbuildProject": "../Utility/PLCCommunication_Utility.csproj"
+    },
+    "ScheduledTasksService/1.0.0": {
+      "type": "project",
+      "path": "../ScheduledTasksService/ScheduledTasksService.csproj",
+      "msbuildProject": "../ScheduledTasksService/ScheduledTasksService.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4603,7 +4705,9 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.13",
+      "NLog >= 5.4.0",
       "PLCCommunication_Utility >= 1.0.0",
+      "ScheduledTasksService >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -4639,6 +4743,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\ScheduledTasksService\\ScheduledTasksService.csproj": {
+              "projectPath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\ScheduledTasksService\\ScheduledTasksService.csproj"
+            },
             "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\PLCCommunication_Utility.csproj": {
               "projectPath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Utility\\PLCCommunication_Utility.csproj"
             }
@@ -4676,6 +4783,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.13, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[5.4.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

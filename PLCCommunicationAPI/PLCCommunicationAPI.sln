@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PLCCommunication_DomainServ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{028C9514-2BCF-42BF-8776-0C49C55E5664}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduledTasks", "ScheduledTasks\ScheduledTasks.csproj", "{7C6B32C0-0582-4A5B-9241-1F125FCC7574}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduledTasksService", "ScheduledTasksService\ScheduledTasksService.csproj", "{9BBCD820-553D-4593-8FA8-82FB961C8F04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{A655692B-A2C7-48FB-9F9E-B2DE3D000472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A655692B-A2C7-48FB-9F9E-B2DE3D000472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A655692B-A2C7-48FB-9F9E-B2DE3D000472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C6B32C0-0582-4A5B-9241-1F125FCC7574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C6B32C0-0582-4A5B-9241-1F125FCC7574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C6B32C0-0582-4A5B-9241-1F125FCC7574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C6B32C0-0582-4A5B-9241-1F125FCC7574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBCD820-553D-4593-8FA8-82FB961C8F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBCD820-553D-4593-8FA8-82FB961C8F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBCD820-553D-4593-8FA8-82FB961C8F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBCD820-553D-4593-8FA8-82FB961C8F04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

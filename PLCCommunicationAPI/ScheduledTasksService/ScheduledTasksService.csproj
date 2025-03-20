@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\PLCCommunication_Infrastructure.csproj" />
+    <ProjectReference Include="..\Model\PLCCommunication_Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ModbusTcp\" />
+  </ItemGroup>
+
+</Project>

@@ -228,6 +228,49 @@ namespace PLCCommunication_Infrastructure.Migrations
                     b.ToTable("T_S7Configs", (string)null);
                 });
 
+            modelBuilder.Entity("PLCCommunication_Model.Entities.S7ReadTask", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("Createtime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DBaddr")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IP")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsOpen")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Port")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Result")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("S7ReadTask", (string)null);
+                });
+
             modelBuilder.Entity("PLCCommunication_Model.Entities.S7ReadWriteRecord", b =>
                 {
                     b.Property<int>("Id")

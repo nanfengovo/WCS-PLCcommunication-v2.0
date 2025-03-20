@@ -72,6 +72,10 @@
               "target": "Package",
               "version": "[5.4.0, )"
             },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.5.2, )"
+            },
             "S7netplus": {
               "target": "Package",
               "version": "[0.20.0, )"

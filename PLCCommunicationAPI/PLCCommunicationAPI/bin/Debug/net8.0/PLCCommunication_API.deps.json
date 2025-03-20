@@ -11,7 +11,9 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.13",
           "Microsoft.EntityFrameworkCore.Design": "8.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.13",
+          "NLog": "5.4.0",
           "PLCCommunication_Utility": "1.0.0",
+          "ScheduledTasksService": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
@@ -752,6 +754,25 @@
           }
         }
       },
+      "Polly/8.5.2": {
+        "dependencies": {
+          "Polly.Core": "8.5.2"
+        },
+        "runtime": {
+          "lib/net6.0/Polly.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.2.4319"
+          }
+        }
+      },
+      "Polly.Core/8.5.2": {
+        "runtime": {
+          "lib/net8.0/Polly.Core.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.5.2.4319"
+          }
+        }
+      },
       "S7netplus/0.20.0": {
         "runtime": {
           "lib/net7.0/S7.Net.dll": {
@@ -1069,6 +1090,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
           "NLog.Web.AspNetCore": "5.4.0",
           "PLCCommunication_Model": "1.0.0",
+          "Polly": "8.5.2",
           "S7netplus": "0.20.0"
         },
         "runtime": {
@@ -1097,6 +1119,18 @@
         },
         "runtime": {
           "PLCCommunication_Utility.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ScheduledTasksService/1.0.0": {
+        "dependencies": {
+          "PLCCommunication_Infrastructure": "1.0.0",
+          "PLCCommunication_Model": "1.0.0"
+        },
+        "runtime": {
+          "ScheduledTasksService.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1467,6 +1501,20 @@
       "path": "nlog.web.aspnetcore/5.4.0",
       "hashPath": "nlog.web.aspnetcore.5.4.0.nupkg.sha512"
     },
+    "Polly/8.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vbXsGgkG86nG+TOwY+SmtrGrRHmHH0DQaxtILx//d3Dz/ocJ8izSNYzdvU2gEtWa/LDD8zJLvD3HdjEkdlvkhg==",
+      "path": "polly/8.5.2",
+      "hashPath": "polly.8.5.2.nupkg.sha512"
+    },
+    "Polly.Core/8.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MJKdxv4zwDmiWvYvVN24DsrWUfgQ4F83voH8bhbtLMdPuGy8CfTUzsgQhvyrl1a7hrM6f/ydwLVdVUI0xooUw==",
+      "path": "polly.core/8.5.2",
+      "hashPath": "polly.core.8.5.2.nupkg.sha512"
+    },
     "S7netplus/0.20.0": {
       "type": "package",
       "serviceable": true,
@@ -1742,6 +1790,11 @@
       "sha512": ""
     },
     "PLCCommunication_Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ScheduledTasksService/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

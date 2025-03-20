@@ -39,3 +39,66 @@
 2025-03-19 19:43:14.4454|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:43:14 
 2025-03-19 19:45:58.3846|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:45:58 
 2025-03-19 19:50:30.1197|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 19:50:30 
+2025-03-19 20:12:39.0660|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-19 20:12:50.1723|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-19 20:12:52.2765|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 1.
+Message: 向一个无法连接的网络尝试了一个套接字操作。 
+2025-03-19 20:12:52.9999|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 2.
+Message: 向一个无法连接的网络尝试了一个套接字操作。 
+2025-03-19 20:12:53.5128|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-19 20:12:54.6256|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 3.
+Message: 向一个无法连接的网络尝试了一个套接字操作。 
+2025-03-19 20:12:57.5920|ERROR|PLCCommunication_Infrastructure.Respository.S7ReadWriteResposity|Couldn't establish the connection to 127.0.0.1.
+Message: 由于目标计算机积极拒绝，无法连接。 
+2025-03-19 20:21:22.2480|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 20:21:22 
+2025-03-19 23:11:59.6588|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 23:11:59.6740|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 23:11:59.7160|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 23:11:59.7160|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 23:11:59.7160|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 23:12:49.0000|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 23:12:49.0146|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 23:12:49.0521|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 23:12:49.0521|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 23:12:49.0521|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 23:13:05.8450|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 23:13:05 
+2025-03-19 23:13:07.2319|INFO|PLCCommunication_API.Controllers.S7Controller|获取所有的S7配置-获取一次所有的S7配置2025/3/19 23:13:07 
+2025-03-19 23:33:09.4044|ERROR|ScheduledTasksService.S7.S7TaskService|初始化自动任务数据库失败！ 
+2025-03-19 23:33:09.6302|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 23:33:09.6302|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 23:33:09.6838|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 23:33:09.6838|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 23:33:09.6838|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 23:34:33.6654|ERROR|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start System.InvalidOperationException: No service for type 'PLCCommunication_Infrastructure.Respository.S7ReadTaskResposity' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at ScheduledTasksService.S7.S7TaskService.StartAsync(CancellationToken cancellationToken) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\S7\S7TaskService.cs:line 48
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-03-19 23:35:25.0166|ERROR|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start System.InvalidOperationException: No service for type 'PLCCommunication_Infrastructure.Respository.S7ReadTaskResposity' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at ScheduledTasksService.S7.S7TaskService.StartAsync(CancellationToken cancellationToken) in E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\S7\S7TaskService.cs:line 48
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-03-19 23:40:05.5190|ERROR|ScheduledTasksService.S7.S7TaskService|初始化自动任务数据库失败！ 
+2025-03-19 23:40:05.7465|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 23:40:05.7465|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 23:40:05.8000|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 23:40:05.8000|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 23:40:05.8000|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 23:42:51.2519|ERROR|ScheduledTasksService.S7.S7TaskService|初始化自动任务数据库失败！ 
+2025-03-19 23:42:57.4844|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 23:42:57.4894|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 23:42:57.5374|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 23:42:57.5374|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 23:42:57.5374|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 
+2025-03-19 23:50:20.8053|INFO|ScheduledTasksService.S7.S7TaskService|初始化自动任务数据库成功！ 
+2025-03-19 23:50:28.9709|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:8888 
+2025-03-19 23:50:28.9811|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:8899 
+2025-03-19 23:50:29.0824|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2025-03-19 23:50:29.0824|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2025-03-19 23:50:29.0824|INFO|Microsoft.Hosting.Lifetime|Content root path: E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI 

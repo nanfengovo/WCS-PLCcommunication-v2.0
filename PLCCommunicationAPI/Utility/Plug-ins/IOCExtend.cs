@@ -28,6 +28,11 @@ namespace PLCCommunication_Utility.Plug_ins
             services.AddScoped<IUserRespository, UserRespository>();
             services.AddScoped<IS7ConfigResposity, S7ConfigResposity>();
             services.AddScoped<IS7ReadWriteResposity, S7ReadWriteResposity>();
+            services.AddScoped<IS7ReadTaskResposity, S7ReadTaskResposity>();
+            services.AddSingleton<IPlcConnectionFactory, PlcConnectionFactory>();
+            services.AddScoped<S7ProxyToTask>();
+            
+            
 
 
             //注入服务层
