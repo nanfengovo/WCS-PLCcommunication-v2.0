@@ -93,9 +93,9 @@ namespace PLCCommunication_Infrastructure.Respository
             throw new NotImplementedException();
         }
 
-        Task<List<S7ReadTask>> IBaseRespository<S7ReadTask>.FindAllAsync()
+        async Task<List<S7ReadTask>> IBaseRespository<S7ReadTask>.FindAllAsync()
         {
-            throw new NotImplementedException();
+           return await _myDbContext.s7ReadTasks.ToListAsync();
         }
 
         Task<S7ReadTask> IBaseRespository<S7ReadTask>.FindEntityByIdAsync(Guid id)
@@ -167,7 +167,8 @@ namespace PLCCommunication_Infrastructure.Respository
                     _logger.LogWarning("从PLC {TaskName} 读取到空数据", task.Name);
                     return;
                 }
-
+                  task.Result = result.ToString();
+                   await _myDbContext.SaveChangesAsync();
                 _logger.LogInformation("DB块读取成功：{TaskName}，结果：{Result}",
                     task.Name, result);
             }
@@ -177,8 +178,76 @@ namespace PLCCommunication_Infrastructure.Respository
             }
         }
 
+        /// <summary>
+        /// 根据id删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<bool> DeleteAsync(int id)
+        {
+            //开启的后台线程不能直接删
+            var task = await _myDbContext.s7ReadTasks.FirstOrDefaultAsync(x => x.Id == id);
+            if (task == null)
+            {
+                _logger.LogError("删除后台线程——未找到对应的后台线程！");
+                return false;
+            }
+            else
+            {
+                if (task.IsOpen)
+                {
+                    _logger.LogError("删除后台线程——正在启用的后台线程不允许删除请先禁用再尝试！");
+                    return false;
+                }
+                task.IsDeleted = true;
+                return await _myDbContext.SaveChangesAsync() > 0;
+            }
+           
 
 
+        }
 
+        /// <summary>
+        /// 添加S7定时任务
+        /// </summary>
+        /// <param name="s7Task"></param>
+        /// <returns></returns>
+        public async Task<bool> AddAsync(S7ReadTask s7Task)
+        {
+            var isExist = await _myDbContext.s7ReadTasks.FirstOrDefaultAsync(x => x.Name == s7Task.Name);
+            if (isExist != null)
+            {
+                _logger.LogWarning($"新增S7配置-将要新增的配置名{s7Task.Name}已存在！！配置不能重名！");
+                return false;
+            }
+            else
+            {
+                _myDbContext.s7ReadTasks.Add(s7Task);
+                return await _myDbContext.SaveChangesAsync() > 0;
+            }
+        }
+
+        /// <summary>
+        /// 禁用S7定时任务
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public Task<bool> ModifystatusS7TaskByid(int id)
+        {
+            var task = _myDbContext.s7ReadTasks.FirstOrDefault(x => x.Id == id && x.IsDeleted == false);
+            if (task.IsOpen)
+            {
+                task.IsOpen = false;
+                return Task.FromResult(_myDbContext.SaveChanges() > 0);
+            }
+            else
+            {
+                task.IsOpen = true;
+                return Task.FromResult(_myDbContext.SaveChanges() > 0);
+
+            }
+        }
     }
 }

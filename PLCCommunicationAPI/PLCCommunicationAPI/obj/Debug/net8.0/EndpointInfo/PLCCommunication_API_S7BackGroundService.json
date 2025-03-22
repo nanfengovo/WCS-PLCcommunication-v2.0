@@ -1,0 +1,277 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WCS管理系统",
+    "description": "Vue3+WebAPI",
+    "contact": {
+      "name": "nanfengovo",
+      "url": "https://github.com/nanfengovo"
+    },
+    "version": "V2.0"
+  },
+  "paths": {
+    "/api/S7BackGroundService/GetAllTask": {
+      "get": {
+        "tags": [
+          "S7BackGroundService"
+        ],
+        "summary": "获取所有的S7任务",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/S7BackGroundService/DelById": {
+      "delete": {
+        "tags": [
+          "S7BackGroundService"
+        ],
+        "summary": "删除线程",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/S7BackGroundService/AddS7Task": {
+      "post": {
+        "tags": [
+          "S7BackGroundService"
+        ],
+        "summary": "添加S7任务",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "DBaddr",
+                  "Name"
+                ],
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "IP": {
+                    "type": "string"
+                  },
+                  "Port": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DBaddr": {
+                    "type": "string"
+                  },
+                  "Result": {
+                    "type": "string"
+                  },
+                  "IsOpen": {
+                    "type": "boolean"
+                  },
+                  "IsDeleted": {
+                    "type": "boolean"
+                  },
+                  "Createtime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "LastModified": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Name": {
+                  "style": "form"
+                },
+                "IP": {
+                  "style": "form"
+                },
+                "Port": {
+                  "style": "form"
+                },
+                "DBaddr": {
+                  "style": "form"
+                },
+                "Result": {
+                  "style": "form"
+                },
+                "IsOpen": {
+                  "style": "form"
+                },
+                "IsDeleted": {
+                  "style": "form"
+                },
+                "Createtime": {
+                  "style": "form"
+                },
+                "LastModified": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/S7BackGroundService/ModifystatusS7Task": {
+      "post": {
+        "tags": [
+          "S7BackGroundService"
+        ],
+        "summary": "修改任务状态",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Result": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "msg": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Authorization": {
+        "type": "apiKey",
+        "description": "Authorization header \r\n Example:'Bearer xxxxxx'",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Authorization": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "S7BackGroundService",
+      "description": "S7BackGroundServiceController中是关于和S7后台任务相关的"
+    }
+  ]
+}

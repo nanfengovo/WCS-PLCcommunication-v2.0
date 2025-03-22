@@ -616,3 +616,105 @@
 2025-03-20 23:30:55.8104 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
 2025-03-20 23:30:55.8246 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
 2025-03-20 23:30:55.8341 Info Configuration initialized.
+2025-03-21 12:15:52.9237 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 12:15:52.9385 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 12:15:52.9385 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 12:15:52.9418 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 12:15:52.9418 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 12:15:52.9606 Info Configuration initialized.
+2025-03-21 12:26:54.0055 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 12:26:54.0184 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 12:26:54.0206 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 12:26:54.0206 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 12:26:54.0206 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 12:26:54.0418 Info Configuration initialized.
+2025-03-21 21:03:08.8609 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 21:03:08.8773 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 21:03:08.8794 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 21:03:08.8794 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 21:03:08.8794 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 21:03:08.9038 Info Configuration initialized.
+2025-03-21 21:08:51.0176 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 21:08:51.0331 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 21:08:51.0331 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 21:08:51.0371 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 21:08:51.0371 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 21:08:51.0576 Info Configuration initialized.
+2025-03-21 21:10:55.6767 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 21:10:55.6939 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 21:10:55.6939 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 21:10:55.6939 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 21:10:55.7103 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 21:10:55.7232 Info Configuration initialized.
+2025-03-21 22:20:14.6725 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 22:20:14.6897 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 22:20:14.6912 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 22:20:14.6912 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 22:20:14.6912 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 22:20:14.7116 Info Configuration initialized.
+2025-03-21 22:26:24.2766 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 22:26:24.2912 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 22:26:24.2912 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 22:26:24.2912 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 22:26:24.3108 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 22:26:24.3207 Info Configuration initialized.
+2025-03-21 22:45:07.5156 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 22:45:07.5291 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 22:45:07.5291 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 22:45:07.5291 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 22:45:07.5428 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 22:45:07.5527 Info Configuration initialized.
+2025-03-21 22:49:47.1331 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 22:49:47.1502 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 22:49:47.1502 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 22:49:47.1502 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 22:49:47.1680 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 22:49:47.1847 Info Configuration initialized.
+2025-03-21 22:52:41.7022 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 22:52:41.7173 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 22:52:41.7173 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 22:52:41.7173 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 22:52:41.7295 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 22:52:41.7388 Info Configuration initialized.
+2025-03-21 22:55:23.3876 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 22:55:23.4046 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 22:55:23.4046 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 22:55:23.4046 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 22:55:23.4183 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 22:55:23.4284 Info Configuration initialized.
+2025-03-21 22:57:02.3393 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 22:57:02.3612 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 22:57:02.3638 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 22:57:02.3638 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 22:57:02.3638 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 22:57:02.3889 Info Configuration initialized.
+2025-03-21 23:11:15.6303 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 23:11:15.6516 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 23:11:15.6516 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 23:11:15.6516 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 23:11:15.6645 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 23:11:15.6645 Info Configuration initialized.
+2025-03-21 23:14:52.5563 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-21 23:14:52.5728 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-21 23:14:52.5728 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-21 23:14:52.5728 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-21 23:14:52.5870 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-21 23:14:52.6033 Info Configuration initialized.
+2025-03-22 10:58:46.8847 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-22 10:58:46.9000 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-22 10:58:46.9000 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-22 10:58:46.9000 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-22 10:58:46.9142 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-22 10:58:46.9257 Info Configuration initialized.
+2025-03-22 11:03:40.8130 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-22 11:03:40.8289 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-22 11:03:40.8289 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-22 11:03:40.8331 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-22 11:03:40.8331 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-22 11:03:40.8518 Info Configuration initialized.
+2025-03-22 11:31:15.6054 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-03-22 11:31:15.6156 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'lifetimeConsole' not found for logging rule: Microsoft.Hosting.Lifetime*.
+2025-03-22 11:31:15.6156 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Target 'console' not found for logging rule: *.
+2025-03-22 11:31:15.6156 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-22 11:31:15.6156 Info Validating config: TargetNames=logfile, ConfigItems=19, FilePath=E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\nlog.config
+2025-03-22 11:31:15.6382 Info Configuration initialized.

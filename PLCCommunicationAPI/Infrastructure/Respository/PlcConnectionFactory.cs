@@ -44,6 +44,10 @@ namespace PLCCommunication_Infrastructure.Respository
 
             var lazyPlc = _connections.GetOrAdd(key, k =>
                 new Lazy<Plc>(() => CreatePlcConnection(ip, port)));
+            if(lazyPlc == null)
+            {
+                return null;
+            }
 
             UpdateConnectionInfo(key, true);
 
@@ -61,28 +65,40 @@ namespace PLCCommunication_Infrastructure.Respository
             var key = GenerateKey(ip, port);
 
             var policy = Policy
-                .Handle<PlcException>()
-                .WaitAndRetry(MaxRetryCount,
+                .Handle<Exception>() // 捕获所有异常
+                .WaitAndRetry(
+                    MaxRetryCount,
                     retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                     (ex, timeSpan, retryCount, context) =>
                     {
-                        _logger.LogWarning(ex,
-                            $"PLC连接失败 ({key})，正在第 {retryCount} 次重试");
+                        _logger.LogWarning(ex, $"PLC连接失败 ({key})，第 {retryCount} 次重试");
+                        // 关闭可能残留的半开连接
+                        if (plc.IsConnected)
+                        {
+                            plc.Close();
+                        }
                     });
 
-            policy.Execute(() =>
+            try
             {
-                if (!plc.IsConnected)
+                policy.Execute(() =>
                 {
-                    plc.Open();
-                    StartHeartbeat(plc, key);
-                    _logger.LogInformation($"成功建立PLC连接：{key}");
-                }
-            });
-
-            return plc;
+                    if (!plc.IsConnected)
+                    {
+                        plc.Open();
+                        StartHeartbeat(plc, key);
+                        _logger.LogInformation($"成功建立PLC连接：{key}");
+                    }
+                });
+                return plc;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"PLC连接最终失败 ({key})，错误: {ex.Message}");
+                plc.Close(); // 确保资源释放
+                return null ; // 或抛出更友好的异常
+            }
         }
-
         private void MaintainConnection(Plc plc, string key)
         {
             lock (_syncRoot)

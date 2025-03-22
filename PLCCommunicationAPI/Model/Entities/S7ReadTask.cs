@@ -52,7 +52,7 @@ namespace PLCCommunication_Model.Entities
         /// <summary>
         /// 软删除
         /// </summary>
-        public bool IsDeleted { get; set; }
+        public bool IsDeleted { get; set; } = false;
 
 
         /// <summary>

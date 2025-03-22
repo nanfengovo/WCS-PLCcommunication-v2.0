@@ -34,6 +34,38 @@
             <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
             <returns>A result indicating success or failure.</returns>
         </member>
+        <member name="T:PLCCommunication_API.Controllers.S7BackGroundServiceController">
+            <summary>
+            S7BackGroundServiceController中是关于和S7后台任务相关的
+            </summary>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7BackGroundServiceController.GetAllTask">
+            <summary>
+            获取所有的S7任务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7BackGroundServiceController.DelById(System.Int32)">
+            <summary>
+            删除线程
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7BackGroundServiceController.AddS7Task(PLCCommunication_Model.Entities.S7ReadTask)">
+            <summary>
+            添加S7任务
+            </summary>
+            <param name="s7Task"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7BackGroundServiceController.ModifystatusS7Task(System.Int32)">
+            <summary>
+            修改任务状态
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:PLCCommunication_API.Controllers.S7Controller">
             <summary>
             S7Controller用来处理和S7协议相关的

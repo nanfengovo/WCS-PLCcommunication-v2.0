@@ -19,5 +19,8 @@ namespace PLCCommunication_Infrastructure.IRespository
         public Task<bool> UpdateAsync(S7ReadTask isExist, S7ReadTask s7ReadTask);
 
         public  Task<IActionResult> ReadAsync();
+        public Task<bool> DeleteAsync(int id);
+        public Task<bool> AddAsync(S7ReadTask s7Task);
+        public Task<bool> ModifystatusS7TaskByid(int id);
     }
 }
