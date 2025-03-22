@@ -7,6 +7,7 @@ using PLCCommunication_Infrastructure.BaseRespository;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IBaseRespository;
 using PLCCommunication_Infrastructure.IRespository;
+using PLCCommunication_Model.DTO;
 using PLCCommunication_Model.Entities;
 using S7.Net;
 using System;
@@ -20,7 +21,7 @@ namespace PLCCommunication_Infrastructure.Respository
 {
     public class S7ReadTaskResposity : BaseRespository<S7Config>, IS7ReadTaskResposity
     {
-       
+
 
         private readonly MyDbContext _myDbContext;
 
@@ -95,7 +96,7 @@ namespace PLCCommunication_Infrastructure.Respository
 
         async Task<List<S7ReadTask>> IBaseRespository<S7ReadTask>.FindAllAsync()
         {
-           return await _myDbContext.s7ReadTasks.ToListAsync();
+            return await _myDbContext.s7ReadTasks.ToListAsync();
         }
 
         Task<S7ReadTask> IBaseRespository<S7ReadTask>.FindEntityByIdAsync(Guid id)
@@ -103,9 +104,9 @@ namespace PLCCommunication_Infrastructure.Respository
             throw new NotImplementedException();
         }
 
-        Task<S7ReadTask> IBaseRespository<S7ReadTask>.FindEntityByIdAsync(int id)
+        async Task<S7ReadTask> IBaseRespository<S7ReadTask>.FindEntityByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _myDbContext.s7ReadTasks.FindAsync(id);
         }
 
 
@@ -167,8 +168,8 @@ namespace PLCCommunication_Infrastructure.Respository
                     _logger.LogWarning("从PLC {TaskName} 读取到空数据", task.Name);
                     return;
                 }
-                  task.Result = result.ToString();
-                   await _myDbContext.SaveChangesAsync();
+                task.Result = result.ToString();
+                await _myDbContext.SaveChangesAsync();
                 _logger.LogInformation("DB块读取成功：{TaskName}，结果：{Result}",
                     task.Name, result);
             }
@@ -203,7 +204,7 @@ namespace PLCCommunication_Infrastructure.Respository
                 task.IsDeleted = true;
                 return await _myDbContext.SaveChangesAsync() > 0;
             }
-           
+
 
 
         }
@@ -248,6 +249,32 @@ namespace PLCCommunication_Infrastructure.Respository
                 return Task.FromResult(_myDbContext.SaveChanges() > 0);
 
             }
+        }
+
+        /// <summary>
+        /// 修改
+        /// </summary>
+        /// <param name="s7task"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<bool> EditAsync(S7ReadTask isExit, S7TaskDTO s7task)
+        {
+
+            if (isExit.IsOpen)
+            {
+                _logger.LogError("修改S7自动任务-正在启用的任务不允许修改！");
+                return false;
+            }
+            else
+            {
+                isExit.Name = s7task.Name;
+                isExit.IP = s7task.IP;
+                isExit.Port = s7task.Port;
+                isExit.DBaddr = s7task.DBaddr;
+                isExit.LastModified = DateTime.Now;
+                return await _myDbContext.SaveChangesAsync() > 0;
+            }
+
         }
     }
 }

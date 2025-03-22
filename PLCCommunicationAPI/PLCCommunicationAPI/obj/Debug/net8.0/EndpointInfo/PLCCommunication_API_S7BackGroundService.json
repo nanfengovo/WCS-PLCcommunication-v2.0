@@ -192,7 +192,7 @@
         }
       }
     },
-    "/api/S7BackGroundService/ModifystatusS7Task": {
+    "/api/S7BackGroundService/ChangeS7TaskStatus": {
       "post": {
         "tags": [
           "S7BackGroundService"
@@ -209,6 +209,94 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/S7BackGroundService/EditS7Task": {
+      "put": {
+        "tags": [
+          "S7BackGroundService"
+        ],
+        "summary": "修改任务",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "DBaddr",
+                  "Name"
+                ],
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "IP": {
+                    "type": "string"
+                  },
+                  "Port": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DBaddr": {
+                    "type": "string"
+                  },
+                  "IsOpen": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "IP": {
+                  "style": "form"
+                },
+                "Port": {
+                  "style": "form"
+                },
+                "DBaddr": {
+                  "style": "form"
+                },
+                "IsOpen": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",

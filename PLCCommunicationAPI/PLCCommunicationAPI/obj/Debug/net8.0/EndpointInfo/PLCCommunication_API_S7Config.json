@@ -22,10 +22,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "Id": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
                   "ProxyName": {
                     "type": "string"
                   },
@@ -63,9 +59,6 @@
                 }
               },
               "encoding": {
-                "Id": {
-                  "style": "form"
-                },
                 "ProxyName": {
                   "style": "form"
                 },
@@ -329,10 +322,6 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "Id": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
                   "ProxyName": {
                     "type": "string"
                   },
@@ -370,9 +359,6 @@
                 }
               },
               "encoding": {
-                "Id": {
-                  "style": "form"
-                },
                 "ProxyName": {
                   "style": "form"
                 },

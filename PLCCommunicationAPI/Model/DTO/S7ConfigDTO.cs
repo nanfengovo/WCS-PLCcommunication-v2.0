@@ -10,10 +10,7 @@ namespace PLCCommunication_Model.DTO
 {
     public class S7ConfigDTO
     {
-        /// <summary>
-        /// id
-        /// </summary>
-        public int Id { get; set; }
+       
 
         /// <summary>
         /// 配置名

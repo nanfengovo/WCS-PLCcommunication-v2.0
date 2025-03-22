@@ -59,11 +59,18 @@
             <param name="s7Task"></param>
             <returns></returns>
         </member>
-        <member name="M:PLCCommunication_API.Controllers.S7BackGroundServiceController.ModifystatusS7Task(System.Int32)">
+        <member name="M:PLCCommunication_API.Controllers.S7BackGroundServiceController.ChangeS7TaskStatus(System.Int32)">
             <summary>
             修改任务状态
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7BackGroundServiceController.EditS7Task(System.Int32,PLCCommunication_Model.DTO.S7TaskDTO)">
+            <summary>
+            修改任务
+            </summary>
+            <param name="s7task"></param>
             <returns></returns>
         </member>
         <member name="T:PLCCommunication_API.Controllers.S7Controller">

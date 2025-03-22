@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 using PLCCommunication_DomainService.IService;
+using PLCCommunication_DomainService.Service;
 using PLCCommunication_Infrastructure.IRespository;
+using PLCCommunication_Model.DTO;
 using PLCCommunication_Model.Entities;
 using PLCCommunication_Utility.APIHelper;
 using PLCCommunication_Utility.Enum;
@@ -47,7 +50,7 @@ namespace PLCCommunication_API.Controllers
         public async Task<Result> DelById(int id)
         {
             var result = await _s7ReadTaskResposity.DeleteAsync(id);
-            if(result)
+            if (result)
             {
                 return new Result { Code = 200, Data = result, Msg = "删除成功！" };
             }
@@ -55,7 +58,7 @@ namespace PLCCommunication_API.Controllers
             {
                 return new Result { Code = 400, Data = result, Msg = "删除失败！" };
             }
-            
+
         }
 
 
@@ -65,7 +68,7 @@ namespace PLCCommunication_API.Controllers
         /// <param name="s7Task"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<Result> AddS7Task([FromForm]S7ReadTask s7Task)
+        public async Task<Result> AddS7Task([FromForm] S7ReadTask s7Task)
         {
             var result = await _s7ReadTaskResposity.AddAsync(s7Task);
             if (result)
@@ -85,7 +88,7 @@ namespace PLCCommunication_API.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<Result> ModifystatusS7Task(int id)
+        public async Task<Result> ChangeS7TaskStatus(int id)
         {
             var result = await _s7ReadTaskResposity.ModifystatusS7TaskByid(id);
             if (result)
@@ -95,6 +98,42 @@ namespace PLCCommunication_API.Controllers
             else
             {
                 return new Result { Code = 400, Data = result, Msg = "状态修改失败！" };
+            }
+        }
+
+        /// <summary>
+        /// 修改任务
+        /// </summary>
+        /// <param name="s7task"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<Result> EditS7Task(int id, [FromForm]S7TaskDTO s7task)
+        {
+            //根据id找到需要修改的对象
+            var isExist = await _s7ReadTaskResposity.FindEntityByIdAsync(id);
+            if (isExist == null)
+            {
+                _logger.LogWarning($"需要修改的id为{id}的对象不存在！！请检查传入的id");
+                return new Result { Code = 404, Msg = $"需要修改的id为{id}的对象不存在！！请检查传入的id" };
+            }
+            //var task = new S7ReadTask
+            //{
+            //    Name = s7task.Name,
+            //    IP = s7task.IP,
+            //    Port = s7task.Port,
+            //    DBaddr = s7task.DBaddr,
+            //    IsOpen = s7task.IsOpen,
+            //    LastModified = DateAndTime.Now
+            //};
+
+            var result = await _s7ReadTaskResposity.EditAsync(isExist, s7task);
+            if (result)
+            {
+                return new Result { Code = 200, Data = result, Msg = "修改成功！" };
+            }
+            else
+            {
+                return new Result { Code = 400, Data = result, Msg = "修改失败！" };
             }
         }
     }

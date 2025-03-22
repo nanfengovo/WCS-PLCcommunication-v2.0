@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PLCCommunication_Infrastructure.IBaseRespository;
+using PLCCommunication_Model.DTO;
 using PLCCommunication_Model.Entities;
 using System;
 using System.Collections.Generic;
@@ -22,5 +23,6 @@ namespace PLCCommunication_Infrastructure.IRespository
         public Task<bool> DeleteAsync(int id);
         public Task<bool> AddAsync(S7ReadTask s7Task);
         public Task<bool> ModifystatusS7TaskByid(int id);
+        public Task<bool> EditAsync(S7ReadTask isExit, S7TaskDTO s7task);
     }
 }
