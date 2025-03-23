@@ -27,12 +27,19 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.CreateModbusTCPConfig(System.String,System.String,System.Int32,System.Byte,System.Byte,System.UInt16,System.UInt16)">
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.CreateModbusTCPConfig(PLCCommunication_Model.DTO.ModbusTCPConfigDTO)">
             <summary>
             新建ModbusTCP配置
             </summary>
             <param name="modbusTCPConfig">The Modbus TCP configuration to create.</param>
             <returns>A result indicating success or failure.</returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.DeletedById(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
         </member>
         <member name="T:PLCCommunication_API.Controllers.S7BackGroundServiceController">
             <summary>

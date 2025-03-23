@@ -2,12 +2,14 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 using PLCCommunication_DomainService.IService;
 using PLCCommunication_DomainService.Service;
 using PLCCommunication_Model.DTO;
 using PLCCommunication_Model.Entities;
 using PLCCommunication_Utility.APIHelper;
 using PLCCommunication_Utility.Enum;
+using System.Data;
 
 namespace PLCCommunication_API.Controllers
 {
@@ -48,26 +50,47 @@ namespace PLCCommunication_API.Controllers
         /// <returns>A result indicating success or failure.</returns>
         [HttpPost]
         [Authorize]
-        public async Task<Result> CreateModbusTCPConfig(string proxyName, string ip,int port,byte SlaveID,byte FunctionCode,ushort StartAddress,ushort Num)
+        public async Task<Result> CreateModbusTCPConfig([FromForm]ModbusTCPConfigDTO modbusTCP)
         {
-            ModbusTCPConfig modbusTCPConfig = new ModbusTCPConfig
+            var modbus = new ModbusTCPConfig()
             {
-                ProxyName = proxyName,
-                IP = ip,
-                Port = port,
-                FunctionCode = FunctionCode,
-                StartAddress = StartAddress,
-                Num = Num
+                ProxyName = modbusTCP.ProxyName,
+                IP = modbusTCP.IP,
+                Port = modbusTCP.Port,
+                SlaveID = modbusTCP.SlaveID,
+                FunctionCode = modbusTCP.FunctionCode,
+                StartAddress = modbusTCP.StartAddress,
+                Num = modbusTCP.Num,
+                IsOpen = modbusTCP.IsOpen,
+                IsDeleted = false,
+                Createtime = DateAndTime.Now,
+                LastModified = DateAndTime.Now,
             };
-
-            bool res = await _modbusTCPConfigService.CreateAsync(modbusTCPConfig);
-            // 使用 AutoMapper 将实体对象映射到 DTO
-            ModbusTCPConfigDTO modbusTCPConfigDTO = _mapper.Map<ModbusTCPConfigDTO>(modbusTCPConfig);
+            bool res = await _modbusTCPConfigService.CreateAsync(modbus);
             if (res)
             {
                 return new Result { Code = 200, Msg = "新建配置成功！" };
             }
             return new Result { Code = 400, Msg = "创建失败！！！" };
+        }
+
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete]
+        public async Task<Result> DeletedById(List<int> ids)
+        {
+            var result = await _modbusTCPConfigService.DeletedById(ids);
+            if (result)
+            {
+                return new Result { Code = 200, Msg = "删除成功！" };
+            }
+            else
+            {
+                return new Result { Code = 404, Msg = "删除失败！" };
+            }
         }
     }
 }

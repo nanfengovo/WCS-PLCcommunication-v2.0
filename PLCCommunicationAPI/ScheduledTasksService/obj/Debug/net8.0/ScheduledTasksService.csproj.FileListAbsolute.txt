@@ -1,3 +1,9 @@
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.csproj.AssemblyReference.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.AssemblyInfoInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.AssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.csproj.CoreCompileInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.sourcelink.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\bin\Debug\net8.0\ScheduledTasksService.deps.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\bin\Debug\net8.0\ScheduledTasksService.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\bin\Debug\net8.0\ScheduledTasksService.pdb
@@ -5,12 +11,6 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\Scheduled
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\bin\Debug\net8.0\PLCCommunication_Model.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\bin\Debug\net8.0\PLCCommunication_Infrastructure.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\bin\Debug\net8.0\PLCCommunication_Model.pdb
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.csproj.AssemblyReference.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.GeneratedMSBuildEditorConfig.editorconfig
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.AssemblyInfoInputs.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.AssemblyInfo.cs
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.csproj.CoreCompileInputs.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.sourcelink.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\Schedule.366FB036.Up2Date
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\ScheduledTasksService.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasksService\obj\Debug\net8.0\refint\ScheduledTasksService.dll

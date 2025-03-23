@@ -19,6 +19,11 @@ namespace PLCCommunication_DomainService.BaseService
             return await _respository.CreateAsync(entity);
         }
 
+        public Task<bool> DeleteAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<bool> DeletedAsync(TEntity entity)
         {
             return await _respository.DeletedAsync(entity);

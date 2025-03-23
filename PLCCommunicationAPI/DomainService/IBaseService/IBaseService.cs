@@ -23,6 +23,8 @@ namespace PLCCommunication_DomainService.IBaseService
         /// <returns></returns>
         public Task<bool> DeletedAsync(TEntity entity);
 
+        public Task<bool> DeleteAsync(int id);
+
         /// <summary>
         /// 修改
         /// </summary>

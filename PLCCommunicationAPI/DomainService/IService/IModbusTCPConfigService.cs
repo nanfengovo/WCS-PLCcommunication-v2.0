@@ -10,6 +10,6 @@ namespace PLCCommunication_DomainService.IService
 {
     public interface IModbusTCPConfigService:IBaseService<ModbusTCPConfig>  
     {
-         
+        public Task<bool> DeletedById(List<int> ids);
     }
 }

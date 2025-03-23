@@ -8,10 +8,7 @@ namespace PLCCommunication_Model.DTO
 {
     public class ModbusTCPConfigDTO
     {
-        /// <summary>
-        /// id
-        /// </summary>
-        public int Id { get; set; }
+        
 
         /// <summary>
         /// 别名
@@ -53,6 +50,16 @@ namespace PLCCommunication_Model.DTO
         /// 个数
         /// </summary>
         public ushort Num { get; set; }
+
+        /// <summary>
+        /// 创建时间
+        /// </summary>
+        public DateTime? Createtime { get; set; }
+
+        /// <summary>
+        /// 最后修改时间
+        /// </summary>
+        public DateTime? LastModified { get; set; }
 
     }
 }

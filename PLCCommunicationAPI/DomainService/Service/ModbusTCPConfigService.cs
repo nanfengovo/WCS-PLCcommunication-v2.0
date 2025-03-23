@@ -35,5 +35,10 @@ namespace PLCCommunication_DomainService.Service
         {
             return await base._respository.CreateAsync(modbusTCPConfig);
         }
+
+        public async Task<bool> DeletedById(List<int> ids)
+        {
+            return await _modbusTCPConfigResposity.DeletedByIdAsync(ids);
+        }
     }
 }

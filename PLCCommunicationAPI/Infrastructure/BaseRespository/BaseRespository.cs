@@ -28,6 +28,16 @@ namespace PLCCommunication_Infrastructure.BaseRespository
             return await UpdateAsync(entity);
         }
 
+        public Task<bool> DeletedAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeletedByIdAsync(List<int> ids)
+        {
+            throw new NotImplementedException();
+        }
+
         public virtual async Task<List<TEntity>> FindAllAsync()
         {
             return await _ctx.Set<TEntity>().ToListAsync();

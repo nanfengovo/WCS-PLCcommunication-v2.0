@@ -10,6 +10,8 @@ namespace PLCCommunication_Infrastructure.IRespository
 {
     public interface IModbusTCPConfigResposity:IBaseRespository<ModbusTCPConfig>
     {
+        public  Task<bool> CreateAsync(ModbusTCPConfig modbusTCP);
 
+        public Task<bool> DeletedByIdAsync(List<int> ids);
     }
 }

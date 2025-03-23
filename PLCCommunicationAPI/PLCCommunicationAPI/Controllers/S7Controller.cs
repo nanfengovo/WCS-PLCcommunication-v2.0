@@ -100,13 +100,18 @@ namespace PLCCommunication_API.Controllers
                     // return new Result { Code = 404, Msg = $"根据id删除-删除失败，不存在id为{id}的S7配置" };
                     continue; // 否则，继续处理下一个 ID
                 }
-
+                if(isExist.IsOpen)
+                {
+                    _logger.LogWarning($"根据id删除-删除配置名为{isExist.ProxyName}的S7配置失败！，因为还在启动状态！");
+                    //return new Result { Code = 408, Msg = $"删除配置名为{isExist.ProxyName}的S7配置失败！，因为还在启动状态！" };
+                    continue; // 否则，继续处理下一个 ID
+                }
                 var result = await _s7ConfigService.DeletedAsync(isExist);
                 if (!result)
                 {
                     _logger.LogWarning($"根据id删除-删除配置名为{isExist.ProxyName}的S7配置失败！");
                     // 如果您希望一旦删除失败就返回错误，可以在这里返回
-                     return new Result { Code = 407, Msg = $"删除配置名为{isExist.ProxyName}的S7配置失败！" };
+                    // return new Result { Code = 407, Msg = $"删除配置名为{isExist.ProxyName}的S7配置失败！" };
                     continue; // 否则，继续处理下一个 ID
                 }
                 _logger.LogInformation($"删除配置名为{isExist.ProxyName}的S7配置成功！");

@@ -23,6 +23,8 @@ namespace PLCCommunication_Infrastructure.IBaseRespository
         /// <returns></returns>
         public Task<bool> DeletedAsync(TEntity entity);
 
+        public Task<bool> DeletedByIdAsync(List<int> ids);
+
         /// <summary>
         /// 修改
         /// </summary>

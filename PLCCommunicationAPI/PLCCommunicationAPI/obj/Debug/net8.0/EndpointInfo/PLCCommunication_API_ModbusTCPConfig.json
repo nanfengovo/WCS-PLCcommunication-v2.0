@@ -46,62 +46,147 @@
           "ModbusTCP"
         ],
         "summary": "新建ModbusTCP配置",
-        "parameters": [
-          {
-            "name": "proxyName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "ip",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "port",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "SlaveID",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "FunctionCode",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "StartAddress",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "Num",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int32"
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ProxyName": {
+                    "type": "string"
+                  },
+                  "IP": {
+                    "type": "string"
+                  },
+                  "Port": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "SlaveID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "FunctionCode": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "IsOpen": {
+                    "type": "boolean"
+                  },
+                  "StartAddress": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Num": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Createtime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "LastModified": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              },
+              "encoding": {
+                "ProxyName": {
+                  "style": "form"
+                },
+                "IP": {
+                  "style": "form"
+                },
+                "Port": {
+                  "style": "form"
+                },
+                "SlaveID": {
+                  "style": "form"
+                },
+                "FunctionCode": {
+                  "style": "form"
+                },
+                "IsOpen": {
+                  "style": "form"
+                },
+                "StartAddress": {
+                  "style": "form"
+                },
+                "Num": {
+                  "style": "form"
+                },
+                "Createtime": {
+                  "style": "form"
+                },
+                "LastModified": {
+                  "style": "form"
+                }
+              }
             }
           }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/DeletedById": {
+      "delete": {
+        "tags": [
+          "ModbusTCP"
         ],
+        "summary": "删除",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK",

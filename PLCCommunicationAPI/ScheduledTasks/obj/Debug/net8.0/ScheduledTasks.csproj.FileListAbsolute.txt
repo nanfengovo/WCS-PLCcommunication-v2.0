@@ -1,0 +1,6 @@
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasks\obj\Debug\net8.0\ScheduledTasks.csproj.AssemblyReference.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasks\obj\Debug\net8.0\ScheduledTasks.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasks\obj\Debug\net8.0\ScheduledTasks.AssemblyInfoInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasks\obj\Debug\net8.0\ScheduledTasks.AssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasks\obj\Debug\net8.0\ScheduledTasks.csproj.CoreCompileInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\ScheduledTasks\obj\Debug\net8.0\ScheduledTasks.sourcelink.json
