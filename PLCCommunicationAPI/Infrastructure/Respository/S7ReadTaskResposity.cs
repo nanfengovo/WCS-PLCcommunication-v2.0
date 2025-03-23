@@ -230,7 +230,7 @@ namespace PLCCommunication_Infrastructure.Respository
         }
 
         /// <summary>
-        /// 禁用S7定时任务
+        /// 修改S7定时任务启用和禁用
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

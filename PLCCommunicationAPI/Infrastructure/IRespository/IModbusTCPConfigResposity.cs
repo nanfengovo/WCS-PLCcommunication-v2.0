@@ -13,5 +13,7 @@ namespace PLCCommunication_Infrastructure.IRespository
         public  Task<bool> CreateAsync(ModbusTCPConfig modbusTCP);
 
         public Task<bool> DeletedByIdAsync(List<int> ids);
+
+        public Task<bool> UpdateAsync(ModbusTCPConfig isExist, ModbusTCPConfig modbusTCPConfig);
     }
 }

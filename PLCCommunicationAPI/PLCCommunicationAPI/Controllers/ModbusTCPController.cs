@@ -24,10 +24,13 @@ namespace PLCCommunication_API.Controllers
         private readonly IModbusTCPConfigService _modbusTCPConfigService;
 
         private readonly IMapper _mapper;
-        public ModbusTCPController(IModbusTCPConfigService modbusTCPConfigService, IMapper mapper)
+
+        private readonly ILogger<ModbusTCPController> _logger;
+        public ModbusTCPController(IModbusTCPConfigService modbusTCPConfigService, IMapper mapper, ILogger<ModbusTCPController> logger)
         {
             _modbusTCPConfigService = modbusTCPConfigService;
             _mapper = mapper;
+            _logger = logger;
         }
 
 
@@ -91,6 +94,66 @@ namespace PLCCommunication_API.Controllers
             {
                 return new Result { Code = 404, Msg = "删除失败！" };
             }
+        }
+
+
+        /// <summary>
+        /// 编辑/修改ModbusTCP数据点
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="ModbusTCPConfigDTO"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<Result> EditModbusTCPConfigById(int id, [FromForm] ModbusTCPConfigDTO modbusTCPConfigDTO)
+        {
+            //根据id找到需要修改的对象
+            var isExist = await _modbusTCPConfigService.FindEntityByIdAsync(id);
+            if (isExist == null)
+            {
+               _logger.LogWarning($"需要修改的id为{id}的对象不存在！！请检查传入的id");
+                return new Result { Code = 404, Msg = $"需要修改的id为{id}的对象不存在！！请检查传入的id" };
+            }
+            if(isExist.IsOpen)
+            {
+                _logger.LogWarning($"需要修改的id为{id}的对象是启用状态不能修改！！请检查传入的id");
+                return new Result { Code = 408, Msg = $"需要修改的id为{id}的对象是启用状态不能修改！！请先禁用" };
+            }
+            //DTO转实体
+            var modbus = new ModbusTCPConfig
+            {
+                ProxyName = modbusTCPConfigDTO.ProxyName,
+                IP = modbusTCPConfigDTO.IP,
+                Port = modbusTCPConfigDTO.Port,
+                SlaveID = modbusTCPConfigDTO.SlaveID,
+                FunctionCode = modbusTCPConfigDTO.FunctionCode,
+                IsOpen = modbusTCPConfigDTO.IsOpen,
+                StartAddress = modbusTCPConfigDTO.StartAddress,
+                Num = modbusTCPConfigDTO.Num,
+                LastModified = DateTime.Now,
+            };
+
+            //赋值完成修改
+            var result = await _modbusTCPConfigService.UpdateAsync(isExist, modbus);
+            return new Result { Code = 200, Msg = "修改成功！" };
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<Result> UpdateModbusTCPConfigIsOpenById(int id)
+        {
+            var isExist = await _modbusTCPConfigService.FindEntityByIdAsync(id);
+            if (isExist == null)
+            {
+                _logger.LogWarning($"需要修改的id为{id}的对象不存在！！请检查传入的id");
+                return new Result { Code = 404, Msg = $"需要修改的id为{id}的对象不存在！！请检查传入的id" };
+            }
+            isExist.IsOpen = !isExist.IsOpen;
+            var result = await _modbusTCPConfigService.UpdateAsync(isExist, isExist);
+            return new Result { Code = 200, Msg = "修改成功！" };
         }
     }
 }

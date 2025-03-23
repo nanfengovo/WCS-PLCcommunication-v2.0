@@ -139,5 +139,20 @@ namespace PLCCommunication_Infrastructure.Respository
         {
             return base.FindEntityByIdAsync(id);
         }
+
+        public async Task<bool> UpdateAsync(ModbusTCPConfig isExist, ModbusTCPConfig modbusTCPConfig)
+        {
+            isExist.ProxyName = modbusTCPConfig.ProxyName;
+            isExist.IP = modbusTCPConfig.IP;
+            isExist.Port = modbusTCPConfig.Port;
+            isExist.SlaveID = modbusTCPConfig.SlaveID;
+            isExist.FunctionCode = modbusTCPConfig.FunctionCode;
+            isExist.IsOpen = modbusTCPConfig.IsOpen;
+            isExist.StartAddress = modbusTCPConfig.StartAddress;
+            isExist.Num = modbusTCPConfig.Num;
+            isExist.LastModified = DateTime.Now;
+
+            return await _dbContext.SaveChangesAsync() > 0;
+        }
     }
 }

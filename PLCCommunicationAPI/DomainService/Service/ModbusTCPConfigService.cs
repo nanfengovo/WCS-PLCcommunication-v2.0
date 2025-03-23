@@ -1,6 +1,7 @@
 ﻿using PLCCommunication_DomainService.BaseService;
 using PLCCommunication_DomainService.IService;
 using PLCCommunication_Infrastructure.IRespository;
+using PLCCommunication_Infrastructure.Respository;
 using PLCCommunication_Model.Entities;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,11 @@ namespace PLCCommunication_DomainService.Service
         public async Task<bool> DeletedById(List<int> ids)
         {
             return await _modbusTCPConfigResposity.DeletedByIdAsync(ids);
+        }
+
+        public async Task<bool> UpdateAsync(ModbusTCPConfig isExist, ModbusTCPConfig modbusTCPConfig)
+        {
+            return await _modbusTCPConfigResposity.UpdateAsync(isExist,modbusTCPConfig);
         }
     }
 }

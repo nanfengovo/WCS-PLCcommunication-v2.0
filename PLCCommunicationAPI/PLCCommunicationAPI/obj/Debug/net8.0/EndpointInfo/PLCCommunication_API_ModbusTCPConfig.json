@@ -210,6 +210,168 @@
           }
         }
       }
+    },
+    "/api/ModbusTCP/EditModbusTCPConfigById": {
+      "put": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "编辑/修改ModbusTCP数据点",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ProxyName": {
+                    "type": "string"
+                  },
+                  "IP": {
+                    "type": "string"
+                  },
+                  "Port": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "SlaveID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "FunctionCode": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "IsOpen": {
+                    "type": "boolean"
+                  },
+                  "StartAddress": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Num": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Createtime": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "LastModified": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              },
+              "encoding": {
+                "ProxyName": {
+                  "style": "form"
+                },
+                "IP": {
+                  "style": "form"
+                },
+                "Port": {
+                  "style": "form"
+                },
+                "SlaveID": {
+                  "style": "form"
+                },
+                "FunctionCode": {
+                  "style": "form"
+                },
+                "IsOpen": {
+                  "style": "form"
+                },
+                "StartAddress": {
+                  "style": "form"
+                },
+                "Num": {
+                  "style": "form"
+                },
+                "Createtime": {
+                  "style": "form"
+                },
+                "LastModified": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/UpdateModbusTCPConfigIsOpenById": {
+      "put": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
