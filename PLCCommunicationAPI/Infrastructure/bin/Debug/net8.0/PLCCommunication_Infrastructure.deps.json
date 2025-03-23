@@ -12,6 +12,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "8.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
           "NLog.Web.AspNetCore": "5.4.0",
+          "NModbus": "3.0.81",
           "PLCCommunication_Model": "1.0.0",
           "Polly": "8.5.2",
           "S7netplus": "0.20.0"
@@ -726,6 +727,14 @@
           }
         }
       },
+      "NModbus/3.0.81": {
+        "runtime": {
+          "lib/net6.0/NModbus.dll": {
+            "assemblyVersion": "3.0.81.0",
+            "fileVersion": "3.0.81.0"
+          }
+        }
+      },
       "Polly/8.5.2": {
         "dependencies": {
           "Polly.Core": "8.5.2"
@@ -1374,6 +1383,13 @@
       "sha512": "sha512-Le6rbipSqeGVygbLGgRwZNMsbjJ+YnoAMJdZVhgjQimXwmYbDNkSswK6Mb32bKoC5aIg5mhw+hpAmgWdegs4Eg==",
       "path": "nlog.web.aspnetcore/5.4.0",
       "hashPath": "nlog.web.aspnetcore.5.4.0.nupkg.sha512"
+    },
+    "NModbus/3.0.81": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EzKEp7CHD8ErBL36iMts+6IrZZ9FEqllaD7Y5XzhoRjlxt5yXRughQ1bxPs99QFYFkW5xfkANB0Qs1gAmYGP8Q==",
+      "path": "nmodbus/3.0.81",
+      "hashPath": "nmodbus.3.0.81.nupkg.sha512"
     },
     "Polly/8.5.2": {
       "type": "package",

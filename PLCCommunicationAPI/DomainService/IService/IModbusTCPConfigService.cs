@@ -11,6 +11,10 @@ namespace PLCCommunication_DomainService.IService
     public interface IModbusTCPConfigService:IBaseService<ModbusTCPConfig>  
     {
         public Task<bool> DeletedById(List<int> ids);
+        public Task<bool[]> ReadCoilsAsync(int id);
+        public Task<bool[]> ReadDiscreteInputsAsync(int id);
+        public Task<ushort[]> ReadHoldingRegistersAsync(int id);
         public Task<bool> UpdateAsync(ModbusTCPConfig isExist, ModbusTCPConfig modbusTCPConfig);
+        public Task<bool> WriteSingCoilsAsync(int id, bool value);
     }
 }

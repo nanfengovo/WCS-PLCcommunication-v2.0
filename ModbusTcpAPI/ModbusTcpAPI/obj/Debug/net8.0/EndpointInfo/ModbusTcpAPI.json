@@ -34,6 +34,51 @@
         }
       }
     },
+    "/api/ModbusTCP/ReadCoils": {
+      "get": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/WriteCoils": {
+      "post": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "parameters": [
+          {
+            "name": "value",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/ReadDiscreteInputs": {
+      "get": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/ModbusTCP/ReadHoldingRegisters": {
       "get": {
         "tags": [

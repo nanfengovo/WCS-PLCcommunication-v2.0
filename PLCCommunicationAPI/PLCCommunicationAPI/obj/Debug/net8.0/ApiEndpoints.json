@@ -220,6 +220,84 @@
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
+    "Method": "ReadCoils",
+    "RelativePath": "api/ModbusTCP/ReadCoils",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
+    "Method": "ReadDiscreteInputs",
+    "RelativePath": "api/ModbusTCP/ReadDiscreteInputs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
+    "Method": "ReadHoldingRegisters",
+    "RelativePath": "api/ModbusTCP/ReadHoldingRegisters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
     "Method": "UpdateModbusTCPConfigIsOpenById",
     "RelativePath": "api/ModbusTCP/UpdateModbusTCPConfigIsOpenById",
     "HttpMethod": "PUT",
@@ -243,6 +321,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
+    "Method": "WriteSingleCoil",
+    "RelativePath": "api/ModbusTCP/WriteSingleCoil",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "value",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.S7Controller",

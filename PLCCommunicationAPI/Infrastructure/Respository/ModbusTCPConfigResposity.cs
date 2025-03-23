@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using NModbus;
 using PLCCommunication_Infrastructure.BaseRespository;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
@@ -8,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -140,6 +142,138 @@ namespace PLCCommunication_Infrastructure.Respository
             return base.FindEntityByIdAsync(id);
         }
 
+        /// <summary>
+        /// 读取线圈
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<bool[]> ReadCoilsAsync(int id)
+        {
+            //1、根据id先判断是否存在
+            var modbustcp = _dbContext.modbusTCPConfigs.FirstOrDefault(x => x.Id == id);
+            if (modbustcp == null)
+            {
+                _logger.LogError("读取线圈——未找到对应的ModbusTCP配置！");
+                return null;
+            }
+            //2、根据配置信息拿到对应的ip和端口
+            var ip = modbustcp.IP;
+            var port = modbustcp.Port;
+            //3、根据ip和端口建立对应的plc连接
+            try
+            {
+                using (var client = new TcpClient(ip,port))
+                {
+                    var factory = new ModbusFactory();
+                    var master = factory.CreateMaster(client);
+
+                    ushort startAddress = modbustcp.StartAddress;
+                    ushort numRegisters = modbustcp.Num; // 读取的寄存器数量
+
+                    var result = await master.ReadCoilsAsync(modbustcp.SlaveID, startAddress, numRegisters);
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError(ex, "读取线圈——读取线圈时发生错误！");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 读取离散寄存器
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<bool[]> ReadDiscreteInputsAsync(int id)
+        {
+            //1、根据id先判断是否存在
+            var modbustcp = _dbContext.modbusTCPConfigs.FirstOrDefault(x => x.Id == id);
+            if (modbustcp == null)
+            {
+                _logger.LogError("读取离散寄存器——未找到对应的ModbusTCP配置！");
+                return null;
+            }
+            //2、根据配置信息拿到对应的ip和端口
+            var ip = modbustcp.IP;
+            var port = modbustcp.Port;
+            //3、根据ip和端口建立对应的plc连接
+            try
+            {
+                using (var client = new TcpClient(ip, port))
+                {
+                    var factory = new ModbusFactory();
+                    var master = factory.CreateMaster(client);
+
+                    ushort startAddress = modbustcp.StartAddress;
+                    ushort numRegisters = modbustcp.Num; // 读取的寄存器数量
+
+                    var result = await master.ReadInputsAsync(modbustcp.SlaveID, startAddress, numRegisters);
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError(ex, "读取离散寄存器——读取线圈时发生错误！");
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// 读取保持寄存器
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<ushort[]> ReadHoldingRegistersAsync(int id)
+        {
+            //1、根据id先判断是否存在
+            var modbustcp = _dbContext.modbusTCPConfigs.FirstOrDefault(x => x.Id == id);
+            if (modbustcp == null)
+            {
+                _logger.LogError("读取保持寄存器——未找到对应的ModbusTCP配置！");
+                return null;
+            }
+            //2、根据配置信息拿到对应的ip和端口
+            var ip = modbustcp.IP;
+            var port = modbustcp.Port;
+            //3、根据ip和端口建立对应的plc连接
+            try
+            {
+                using (var client = new TcpClient(ip, port))
+                {
+                    var factory = new ModbusFactory();
+                    var master = factory.CreateMaster(client);
+
+                    ushort startAddress = modbustcp.StartAddress;
+                    ushort numRegisters = modbustcp.Num; // 读取的寄存器数量
+
+                    var result = await master.ReadHoldingRegistersAsync(modbustcp.SlaveID, startAddress, numRegisters);
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError(ex, "读取保持寄存器——读取线圈时发生错误！");
+                return null;
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// 编辑
+        /// </summary>
+        /// <param name="isExist"></param>
+        /// <param name="modbusTCPConfig"></param>
+        /// <returns></returns>
         public async Task<bool> UpdateAsync(ModbusTCPConfig isExist, ModbusTCPConfig modbusTCPConfig)
         {
             isExist.ProxyName = modbusTCPConfig.ProxyName;
@@ -153,6 +287,48 @@ namespace PLCCommunication_Infrastructure.Respository
             isExist.LastModified = DateTime.Now;
 
             return await _dbContext.SaveChangesAsync() > 0;
+        }
+
+        /// <summary>
+        /// 写线圈
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<bool> WriteSingCoilsAsync(int id, bool value)
+        {
+            //1、根据id先判断是否存在
+            var modbustcp = _dbContext.modbusTCPConfigs.FirstOrDefault(x => x.Id == id);
+            if (modbustcp == null)
+            {
+                _logger.LogError("写线圈——未找到对应的ModbusTCP配置！");
+                return false;
+            }
+            //2、根据配置信息拿到对应的ip和端口
+            var ip = modbustcp.IP;
+            var port = modbustcp.Port;
+            //3、根据ip和端口建立对应的plc连接
+            try
+            {
+                using (var client = new TcpClient(ip, port))
+                {
+                    var factory = new ModbusFactory();
+                    var master = factory.CreateMaster(client);
+
+                    ushort startAddress = modbustcp.StartAddress;
+                    ushort numRegisters = modbustcp.Num; // 读取的寄存器数量
+
+                    await master.WriteSingleCoilAsync(modbustcp.SlaveID,startAddress,value);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                _logger.LogError(ex, "写线圈——读取线圈时发生错误！");
+                return false;
+            }
         }
     }
 }

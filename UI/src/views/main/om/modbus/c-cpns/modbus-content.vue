@@ -25,9 +25,9 @@
                                 {{ scope.row.isOpen ? '禁用' : '启用' }}
                             </el-button>
                             <el-button type="success" size="small" text icon="View"
-                                @click="ReadS7(scope.row)">读取</el-button>
+                                @click="ReadModbus(scope.row)">读取</el-button>
                             <el-button type="success" size="small" text icon="EditPen"
-                                @click="WriteS7(scope.row)">写入</el-button>
+                                @click="WriteModbus(scope.row)">写入</el-button>
                         </template>
                     </el-table-column>
                     <el-table-column align="center" prop="result" label="读写详情" width="400px">
@@ -433,6 +433,69 @@ const handleClick = (row: any) => {
             ElMessage.error('修改失败');
         }
     })
+}
+//#endregion
+
+
+//#region ---读取
+const ReadModbus = async (row: any) => {
+    if (row.functionCode === 1) {
+        //读取线圈
+        await axios.get(`http://localhost:8888/api/ModbusTCP/ReadCoils?id=${row.id}`, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
+        }).then((response) => {
+            if (response.data.code === 200) {
+                ElMessage.success('读取成功');
+                row.result = response.data.data;
+            } else {
+                ElMessage.error('读取失败');
+            }
+        })
+    }
+    else if (row.functionCode === 2) {
+        //读取离散输入
+        await axios.get(`http://localhost:8888/api/ModbusTCP/ReadDiscreteInputs?id=${row.id}`, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
+        }).then((response) => {
+            if (response.data.code === 200) {
+                ElMessage.success('读取成功');
+                row.result = response.data.data;
+            } else {
+                ElMessage.error('读取失败');
+            }
+        })
+    }
+}
+//#endregion
+
+//#region ---写入
+const WriteModbus = async (row: any) => {
+    if (row.functionCode === 1) {
+        //写入单个线圈
+        console.log(row.result);
+        // const value = row.result === true ? 1 : 0;
+        const value = ref(false);
+        if (row.result === '1') {
+            value.value = true;
+        } else {
+            value.value = false;
+        }
+        await axios.post(`http://localhost:8888/api/ModbusTCP/WriteSingleCoil?id=${row.id}&value=${value.value}`, null, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem('token')}`,
+            },
+        }).then((response) => {
+            if (response.data.code === 200) {
+                ElMessage.success('写入成功');
+            } else {
+                ElMessage.error('写入失败');
+            }
+        })
+    }
 }
 //#endregion
 </script>

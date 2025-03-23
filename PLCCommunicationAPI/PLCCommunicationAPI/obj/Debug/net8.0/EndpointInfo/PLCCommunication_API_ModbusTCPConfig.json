@@ -337,7 +337,162 @@
         "tags": [
           "ModbusTCP"
         ],
-        "summary": "",
+        "summary": "修改状态",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/ReadCoils": {
+      "get": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "读取线圈 对应的功能码是读线圈寄存器 --01 Read Coils(0x)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/WriteSingleCoil": {
+      "post": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "写入线圈 对应的功能码是写线圈寄存器 --05 Write Single Coil(0x)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "value",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/ReadDiscreteInputs": {
+      "get": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "读取离散寄存器 对应的功能码是读离散寄存器 --02 Read Discrete Inputs(1x)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ModbusTCP/ReadHoldingRegisters": {
+      "get": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "读取保持寄存器 对应的功能码是读保持寄存器 --03 Read Holding Registers(4x)",
         "parameters": [
           {
             "name": "id",

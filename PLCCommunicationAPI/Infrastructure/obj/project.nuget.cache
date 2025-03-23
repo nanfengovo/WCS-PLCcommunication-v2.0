@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mMEz4N/gpwE=",
+  "dgSpecHash": "xhGfMq1xpcI=",
   "success": true,
   "projectFilePath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\PLCCommunication_Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -53,6 +53,7 @@
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog\\5.4.0\\nlog.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.extensions.logging\\5.4.0\\nlog.extensions.logging.5.4.0.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\nlog.web.aspnetcore\\5.4.0\\nlog.web.aspnetcore.5.4.0.nupkg.sha512",
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\nmodbus\\3.0.81\\nmodbus.3.0.81.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\polly\\8.5.2\\polly.8.5.2.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\polly.core\\8.5.2\\polly.core.8.5.2.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\s7netplus\\0.20.0\\s7netplus.0.20.0.nupkg.sha512",

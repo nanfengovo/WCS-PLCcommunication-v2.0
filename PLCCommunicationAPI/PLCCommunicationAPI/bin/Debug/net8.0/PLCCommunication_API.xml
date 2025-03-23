@@ -51,7 +51,36 @@
         </member>
         <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.UpdateModbusTCPConfigIsOpenById(System.Int32)">
             <summary>
-            
+            修改状态
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.ReadCoils(System.Int32)">
+            <summary>
+            读取线圈 对应的功能码是读线圈寄存器 --01 Read Coils(0x)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.WriteSingleCoil(System.Int32,System.Boolean)">
+            <summary>
+            写入线圈 对应的功能码是写线圈寄存器 --05 Write Single Coil(0x)
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.ReadDiscreteInputs(System.Int32)">
+            <summary>
+            读取离散寄存器 对应的功能码是读离散寄存器 --02 Read Discrete Inputs(1x)
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.ReadHoldingRegisters(System.Int32)">
+            <summary>
+            读取保持寄存器 对应的功能码是读保持寄存器 --03 Read Holding Registers(4x)
             </summary>
             <param name="id"></param>
             <returns></returns>

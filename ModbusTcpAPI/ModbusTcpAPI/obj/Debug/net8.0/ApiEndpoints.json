@@ -1,6 +1,26 @@
 [
   {
     "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",
+    "Method": "ReadCoils",
+    "RelativePath": "api/ModbusTCP/ReadCoils",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",
+    "Method": "ReadDiscreteInputs",
+    "RelativePath": "api/ModbusTCP/ReadDiscreteInputs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",
     "Method": "ReadHoldingRegisters",
     "RelativePath": "api/ModbusTCP/ReadHoldingRegisters",
     "HttpMethod": "GET",
@@ -28,6 +48,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",
+    "Method": "WriteCoils",
+    "RelativePath": "api/ModbusTCP/WriteCoils",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "value",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "ModbusTcpAPI.Controllers.ModbusTCPController",

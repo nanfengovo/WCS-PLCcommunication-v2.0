@@ -138,7 +138,7 @@ namespace PLCCommunication_API.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 修改状态
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -155,5 +155,74 @@ namespace PLCCommunication_API.Controllers
             var result = await _modbusTCPConfigService.UpdateAsync(isExist, isExist);
             return new Result { Code = 200, Msg = "修改成功！" };
         }
+
+        /// <summary>
+        /// 读取线圈 对应的功能码是读线圈寄存器 --01 Read Coils(0x)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<Result> ReadCoils(int id)
+        {
+            var result = await _modbusTCPConfigService.ReadCoilsAsync(id);
+            if(result == null)
+            {
+                return new Result { Code = 404, Msg = "读取失败！" };
+            }
+            return new Result { Code = 200, Data = result, Msg = "读取成功！" };
+        }
+
+        /// <summary>
+        /// 写入线圈 对应的功能码是写线圈寄存器 --05 Write Single Coil(0x)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> WriteSingleCoil(int id , bool value)
+        {
+            var result = await _modbusTCPConfigService.WriteSingCoilsAsync(id, value);
+            if (result)
+            {
+                return Ok(new Result { Code = 200, Msg = "写入成功！" });
+            }
+            return Ok(new Result { Code = 404, Msg = "写入失败！" });
+        }
+
+        /// <summary>
+        /// 读取离散寄存器 对应的功能码是读离散寄存器 --02 Read Discrete Inputs(1x)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<Result> ReadDiscreteInputs(int id)
+        {
+            var result = await _modbusTCPConfigService.ReadDiscreteInputsAsync(id);
+            if (result == null)
+            {
+                return new Result { Code = 404, Msg = "读取失败！" };
+            }
+            return new Result { Code = 200, Data = result, Msg = "读取成功！" };
+        }
+
+        /// <summary>
+        /// 读取保持寄存器 对应的功能码是读保持寄存器 --03 Read Holding Registers(4x)
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<Result> ReadHoldingRegisters(int id)
+        {
+            var result = await _modbusTCPConfigService.ReadHoldingRegistersAsync(id);
+            if (result == null)
+            {
+                return new Result { Code = 404, Msg = "读取失败！" };
+            }
+            return new Result { Code = 200, Data = result, Msg = "读取成功！" };
+        }
+
+
+
+
     }
 }

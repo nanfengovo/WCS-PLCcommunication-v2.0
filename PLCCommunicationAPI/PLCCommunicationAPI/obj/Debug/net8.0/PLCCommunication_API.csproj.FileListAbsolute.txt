@@ -1,3 +1,10 @@
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.csproj.AssemblyReference.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.AssemblyInfoInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.AssemblyInfo.cs
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.csproj.CoreCompileInputs.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.MvcApplicationPartsAssemblyInfo.cache
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.sourcelink.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\NLog.config
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\appsettings.Development.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\appsettings.json
@@ -51,6 +58,7 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommun
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\NLog.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\NLog.Extensions.Logging.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
+E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\NModbus.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Polly.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\Polly.Core.dll
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\S7.Net.dll
@@ -146,14 +154,6 @@ E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommun
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_DomainService.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_Infrastructure.pdb
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\bin\Debug\net8.0\PLCCommunication_Model.pdb
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.csproj.AssemblyReference.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.GeneratedMSBuildEditorConfig.editorconfig
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.AssemblyInfoInputs.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.AssemblyInfo.cs
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.csproj.CoreCompileInputs.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.MvcApplicationPartsAssemblyInfo.cs
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.MvcApplicationPartsAssemblyInfo.cache
-E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\PLCCommunication_API.sourcelink.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\scopedcss\bundle\PLCCommunication_API.styles.css
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\staticwebassets.build.json
 E:\Code\前后端分离\WCS(PLCcommunication) v2.0\PLCCommunicationAPI\PLCCommunicationAPI\obj\Debug\net8.0\staticwebassets.development.json

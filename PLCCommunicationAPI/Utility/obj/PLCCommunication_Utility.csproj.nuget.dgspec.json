@@ -141,6 +141,10 @@
               "target": "Package",
               "version": "[5.4.0, )"
             },
+            "NModbus": {
+              "target": "Package",
+              "version": "[3.0.81, )"
+            },
             "Polly": {
               "target": "Package",
               "version": "[8.5.2, )"

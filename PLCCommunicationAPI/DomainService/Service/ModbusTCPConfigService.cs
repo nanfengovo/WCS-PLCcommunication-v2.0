@@ -46,5 +46,38 @@ namespace PLCCommunication_DomainService.Service
         {
             return await _modbusTCPConfigResposity.UpdateAsync(isExist,modbusTCPConfig);
         }
+
+        public Task<bool[]> ReadCoilsAsync(int id)
+        {
+            return _modbusTCPConfigResposity.ReadCoilsAsync(id);
+        }
+
+        public async Task<bool[]> ReadDiscreteInputsAsync(int id)
+        {
+            return await _modbusTCPConfigResposity.ReadDiscreteInputsAsync(id);
+        }
+
+        /// <summary>
+        /// 读取保持寄存器
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<ushort[]> ReadHoldingRegistersAsync(int id)
+        {
+            return await _modbusTCPConfigResposity.ReadHoldingRegistersAsync(id);
+        }
+
+        /// <summary>
+        /// 写入线圈
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public async Task<bool> WriteSingCoilsAsync(int id, bool value)
+        {
+            return await _modbusTCPConfigResposity.WriteSingCoilsAsync(id, value);
+        }
     }
 }

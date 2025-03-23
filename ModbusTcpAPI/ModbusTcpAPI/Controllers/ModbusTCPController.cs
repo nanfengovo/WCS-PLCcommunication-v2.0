@@ -34,6 +34,55 @@ namespace ModbusTcpAPI.Controllers
         }
 
         /// <summary>
+        /// 读取线圈寄存器
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> ReadCoils()
+        {
+            var res = await _modbusTCPServer.ReadCoils();
+            foreach (var item in res)
+            {
+                _logger.LogInformation(item.ToString());
+            }
+            return Ok(res);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> WriteCoils(bool value)
+        {
+            var res = await _modbusTCPServer.WriteCoils(value);
+            if (res)
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest();
+            }
+        }
+
+        /// <summary>
+        /// 读取离散寄存器
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> ReadDiscreteInputs()
+        {
+            var res = await _modbusTCPServer.ReadDiscreteInputsAsync();
+            foreach (var item in res)
+            {
+                _logger.LogInformation(item.ToString());
+            }
+            return Ok(res);
+        }
+
+        /// <summary>
         /// 读取保持寄存器
         /// </summary>
         /// <returns></returns>
