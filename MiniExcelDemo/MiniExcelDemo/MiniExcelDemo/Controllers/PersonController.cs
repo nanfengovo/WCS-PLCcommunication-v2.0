@@ -31,8 +31,6 @@ namespace MiniExcelDemo.Controllers
                 Console.WriteLine(s7.Length);
                 Console.WriteLine(s7.bit);
                 Console.WriteLine(s7.Remark);
-
-
             }
             return Ok("File import successfully");
         }

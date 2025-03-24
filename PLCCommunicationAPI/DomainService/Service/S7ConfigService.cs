@@ -79,7 +79,11 @@ namespace PLCCommunication_DomainService.Service
             return await _s7ConfigResposity.UpdateAsync(isExist,s7Config);
         }
 
-
+        /// <summary>
+        /// 导入S7配置
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
         public async Task<ImportResult> ImportConfigsAsync(IFormFile file)
         {
             var result = new ImportResult();

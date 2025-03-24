@@ -253,6 +253,7 @@ namespace PLCCommunication_API.Controllers
 
             return Ok(new
             {
+                Code = 200,
                 result.TotalCount,
                 result.SuccessCount,
                 ErrorCount = result.ErrorMessages.Count,
