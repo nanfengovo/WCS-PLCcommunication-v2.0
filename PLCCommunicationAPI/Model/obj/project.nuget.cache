@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KloAis9BBfo=",
+  "dgSpecHash": "vIqcWD+frJE=",
   "success": true,
   "projectFilePath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Model\\PLCCommunication_Model.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,8 @@
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
-    "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\nanfengqaq\\.nuget\\packages\\miniexcel\\1.39.0\\miniexcel.1.39.0.nupkg.sha512"
   ],
   "logs": []
 }

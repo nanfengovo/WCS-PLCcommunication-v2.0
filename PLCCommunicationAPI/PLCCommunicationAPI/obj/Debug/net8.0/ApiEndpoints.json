@@ -570,6 +570,16 @@
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
+    "Method": "Export",
+    "RelativePath": "api/S7/Export/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
     "Method": "GetAllS7Configs",
     "RelativePath": "api/S7/GetAllS7Configs",
     "HttpMethod": "GET",
@@ -587,6 +597,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
+    "Method": "Import",
+    "RelativePath": "api/S7/Import/import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.S7BackGroundServiceController",

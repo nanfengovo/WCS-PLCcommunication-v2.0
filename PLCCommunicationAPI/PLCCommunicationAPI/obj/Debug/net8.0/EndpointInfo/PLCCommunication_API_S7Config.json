@@ -416,6 +416,52 @@
           }
         }
       }
+    },
+    "/api/S7/Import/import": {
+      "post": {
+        "tags": [
+          "S7"
+        ],
+        "summary": "导入S7配置",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/S7/Export/export": {
+      "get": {
+        "tags": [
+          "S7"
+        ],
+        "summary": "导出S7配置",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

@@ -5,6 +5,8 @@ using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
 using PLCCommunication_Model.Entities;
 using PLCCommunication_Model.Identity;
+using PLCCommunication_Model.MiniExcelModel;
+using Polly;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -108,5 +110,69 @@ namespace PLCCommunication_Infrastructure.Respository
 
             return await _dbContext.SaveChangesAsync() > 0;
         }
+
+
+        public async Task BulkUpsertAsync(IEnumerable<S7Excel> configs)
+        {
+            foreach (var config in configs)
+            {
+                var existing = await _dbContext.s7Configs
+                    .FirstOrDefaultAsync(c => c.ProxyName == config.ProxyName);
+
+                if (existing != null)
+                {
+                    // 更新逻辑
+                    existing.IP = config.IP;
+                    existing.Port = config.Port;
+                    existing.DBID = config.DBID;
+                    existing.Address = config.Address;
+                    existing.Type = config.Type;
+                    existing.Length = config.Length;
+                    existing.bit = config.bit;
+                    existing.Remark = config.Remark;
+                    existing.LastModified = DateTime.Now;
+
+                }
+                else
+                {
+                    // 新增逻辑
+                    var newConfig = new S7Config
+                    {
+                        ProxyName = config.ProxyName,
+                        IP = config.IP,
+                        Port = config.Port,
+                        DBID = config.DBID,
+                        Address = config.Address,
+                        Type = config.Type,
+                        Length = config.Length,
+                        bit = config.bit,
+                        Remark = config.Remark,
+                        IsOpen = true,
+                        IsDeleted =false,
+                        Createtime = DateTime.Now,
+                        LastModified = DateTime.Now
+
+                    };
+                    await _dbContext.s7Configs.AddAsync(newConfig);
+                }
+            }
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<S7Config>> GetAllAsync()
+        {
+            return await _dbContext.s7Configs
+                .AsNoTracking()
+                .OrderBy(c => c.ProxyName)
+                .ToListAsync();
+        }
+
+        public async Task<bool> ExistsByProxyName(string proxyName)
+        {
+            return await _dbContext.s7Configs
+                .AnyAsync(c => c.ProxyName == proxyName);
+        }
+
+       
     }
 }

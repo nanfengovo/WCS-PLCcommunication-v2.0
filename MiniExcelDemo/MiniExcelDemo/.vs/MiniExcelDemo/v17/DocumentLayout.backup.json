@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\MiniExcelDemo\\MiniExcelDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5967C743-05E2-4E41-9388-5DF4C7E5EC61}|MiniExcelDemo\\MiniExcelDemo.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\miniexceldemo\\miniexceldemo\\miniexceldemo\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5967C743-05E2-4E41-9388-5DF4C7E5EC61}|MiniExcelDemo\\MiniExcelDemo.csproj|solutionrelative:miniexceldemo\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5967C743-05E2-4E41-9388-5DF4C7E5EC61}|MiniExcelDemo\\MiniExcelDemo.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\miniexceldemo\\miniexceldemo\\miniexceldemo\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5967C743-05E2-4E41-9388-5DF4C7E5EC61}|MiniExcelDemo\\MiniExcelDemo.csproj|solutionrelative:miniexceldemo\\model\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5967C743-05E2-4E41-9388-5DF4C7E5EC61}|MiniExcelDemo\\MiniExcelDemo.csproj|e:\\code\\\u524D\u540E\u7AEF\u5206\u79BB\\wcs(plccommunication) v2.0\\miniexceldemo\\miniexceldemo\\miniexceldemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5967C743-05E2-4E41-9388-5DF4C7E5EC61}|MiniExcelDemo\\MiniExcelDemo.csproj|solutionrelative:miniexceldemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Person.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\MiniExcelDemo\\MiniExcelDemo\\MiniExcelDemo\\Model\\Person.cs",
+              "RelativeDocumentMoniker": "MiniExcelDemo\\Model\\Person.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\MiniExcelDemo\\MiniExcelDemo\\MiniExcelDemo\\Model\\Person.cs",
+              "RelativeToolTip": "MiniExcelDemo\\Model\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T13:40:05.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\MiniExcelDemo\\MiniExcelDemo\\MiniExcelDemo\\Program.cs",
+              "RelativeDocumentMoniker": "MiniExcelDemo\\Program.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\MiniExcelDemo\\MiniExcelDemo\\MiniExcelDemo\\Program.cs",
+              "RelativeToolTip": "MiniExcelDemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T13:40:41.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\MiniExcelDemo\\MiniExcelDemo\\MiniExcelDemo\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "MiniExcelDemo\\Controllers\\PersonController.cs",
+              "ToolTip": "E:\\Code\\\u524D\u540E\u7AEF\u5206\u79BB\\WCS(PLCcommunication) v2.0\\MiniExcelDemo\\MiniExcelDemo\\MiniExcelDemo\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "MiniExcelDemo\\Controllers\\PersonController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T13:41:16.258Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

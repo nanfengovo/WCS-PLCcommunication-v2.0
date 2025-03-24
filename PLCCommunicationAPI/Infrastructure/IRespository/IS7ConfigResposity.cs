@@ -1,5 +1,6 @@
 ﻿using PLCCommunication_Infrastructure.IBaseRespository;
 using PLCCommunication_Model.Entities;
+using PLCCommunication_Model.MiniExcelModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +21,9 @@ namespace PLCCommunication_Infrastructure.IRespository
         public Task<bool> Disable(int id);
 
         public Task<bool> UpdateAsync(S7Config isExist, S7Config s7Config);
+
+        Task BulkUpsertAsync(IEnumerable<S7Excel> configs);
+        Task<IEnumerable<S7Config>> GetAllAsync();
+        Task<bool> ExistsByProxyName(string proxyName);
     }
 }

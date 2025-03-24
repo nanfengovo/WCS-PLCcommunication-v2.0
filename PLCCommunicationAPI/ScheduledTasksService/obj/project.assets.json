@@ -646,6 +646,15 @@
           }
         }
       },
+      "MiniExcel/1.39.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/MiniExcel.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/MiniExcel.dll": {}
+        }
+      },
       "NLog/5.4.0": {
         "type": "package",
         "compile": {
@@ -1179,6 +1188,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "8.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
+          "MiniExcel": "1.39.0",
           "NLog.Web.AspNetCore": "5.4.0",
           "NModbus": "3.0.81",
           "PLCCommunication_Model": "1.0.0",
@@ -1196,7 +1206,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13",
+          "MiniExcel": "1.39.0"
         },
         "compile": {
           "bin/placeholder/PLCCommunication_Model.dll": {}
@@ -2169,6 +2180,22 @@
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "MiniExcel/1.39.0": {
+      "sha512": "gCDw6JTvCkvO3ptdDPWOzgH6RosuECZ9R5J3Ipt4DWu5JF86kmG/Npv2NXxamCd0br4KnpiCiU/Dn8nfHAYkww==",
+      "type": "package",
+      "path": "miniexcel/1.39.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net45/MiniExcel.dll",
+        "lib/net8.0/MiniExcel.dll",
+        "lib/netstandard2.0/MiniExcel.dll",
+        "miniexcel.1.39.0.nupkg.sha512",
+        "miniexcel.nuspec"
       ]
     },
     "NLog/5.4.0": {

@@ -171,6 +171,19 @@
             <param name="s7ConfigDTO"></param>
             <returns></returns>
         </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.Import(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入S7配置
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLCCommunication_API.Controllers.S7Controller.Export">
+            <summary>
+            导出S7配置
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:PLCCommunication_API.Controllers.S7ReadWriteController.Read(System.Int32)">
             <summary>
             读取

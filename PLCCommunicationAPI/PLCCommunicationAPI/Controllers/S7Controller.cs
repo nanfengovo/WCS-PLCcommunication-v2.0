@@ -233,6 +233,46 @@ namespace PLCCommunication_API.Controllers
             return new Result { Code = 200, Msg = "修改成功！" };
         }
 
+
+        /// <summary>
+        /// 导入S7配置
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        [HttpPost("import")]
+        [RequestSizeLimit(50_000_000)] // 50MB限制
+        public async Task<IActionResult> Import(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("请上传有效文件");
+
+            if (!Path.GetExtension(file.FileName).Equals(".xlsx", StringComparison.OrdinalIgnoreCase))
+                return BadRequest("仅支持.xlsx文件");
+
+            var result = await _s7ConfigService.ImportConfigsAsync(file);
+
+            return Ok(new
+            {
+                result.TotalCount,
+                result.SuccessCount,
+                ErrorCount = result.ErrorMessages.Count,
+                result.ErrorMessages
+            });
+        }
+
+        /// <summary>
+        /// 导出S7配置
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("export")]
+        public async Task<IActionResult> Export()
+        {
+            var stream = await _s7ConfigService.ExportConfigsAsync();
+            return File(stream,
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                $"S7Configs_{DateTime.Now:yyyyMMddHHmmss}.xlsx");
+        }
+
     }
 
 

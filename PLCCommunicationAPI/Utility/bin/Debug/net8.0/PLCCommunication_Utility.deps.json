@@ -438,6 +438,14 @@
           }
         }
       },
+      "MiniExcel/1.39.0": {
+        "runtime": {
+          "lib/net8.0/MiniExcel.dll": {
+            "assemblyVersion": "1.39.0.0",
+            "fileVersion": "1.39.0.0"
+          }
+        }
+      },
       "NLog/5.4.0": {
         "runtime": {
           "lib/netstandard2.0/NLog.dll": {
@@ -700,6 +708,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "8.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.13",
+          "MiniExcel": "1.39.0",
           "NLog.Web.AspNetCore": "5.4.0",
           "NModbus": "3.0.81",
           "PLCCommunication_Model": "1.0.0",
@@ -715,7 +724,8 @@
       },
       "PLCCommunication_Model/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.13",
+          "MiniExcel": "1.39.0"
         },
         "runtime": {
           "PLCCommunication_Model.dll": {
@@ -997,6 +1007,13 @@
       "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "MiniExcel/1.39.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gCDw6JTvCkvO3ptdDPWOzgH6RosuECZ9R5J3Ipt4DWu5JF86kmG/Npv2NXxamCd0br4KnpiCiU/Dn8nfHAYkww==",
+      "path": "miniexcel/1.39.0",
+      "hashPath": "miniexcel.1.39.0.nupkg.sha512"
     },
     "NLog/5.4.0": {
       "type": "package",

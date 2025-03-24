@@ -1,6 +1,8 @@
-﻿using PLCCommunication_DomainService.IBaseService;
+﻿using Microsoft.AspNetCore.Http;
+using PLCCommunication_DomainService.IBaseService;
 using PLCCommunication_Infrastructure.Migrations;
 using PLCCommunication_Model.Entities;
+using PLCCommunication_Utility.MiniExcelHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,5 +32,8 @@ namespace PLCCommunication_DomainService.IService
         public Task<bool> Disable(int id);
 
         public Task<bool> UpdateAsync(S7Config isExist,S7Config s7Config);
+
+        Task<ImportResult> ImportConfigsAsync(IFormFile file);
+        Task<Stream> ExportConfigsAsync();
     }
 }

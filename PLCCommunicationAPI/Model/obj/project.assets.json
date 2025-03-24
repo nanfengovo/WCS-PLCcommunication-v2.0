@@ -316,6 +316,15 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "MiniExcel/1.39.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/MiniExcel.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/MiniExcel.dll": {}
+        }
       }
     }
   },
@@ -807,11 +816,28 @@
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MiniExcel/1.39.0": {
+      "sha512": "gCDw6JTvCkvO3ptdDPWOzgH6RosuECZ9R5J3Ipt4DWu5JF86kmG/Npv2NXxamCd0br4KnpiCiU/Dn8nfHAYkww==",
+      "type": "package",
+      "path": "miniexcel/1.39.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net45/MiniExcel.dll",
+        "lib/net8.0/MiniExcel.dll",
+        "lib/netstandard2.0/MiniExcel.dll",
+        "miniexcel.1.39.0.nupkg.sha512",
+        "miniexcel.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.13"
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.13",
+      "MiniExcel >= 1.39.0"
     ]
   },
   "packageFolders": {
@@ -867,6 +893,10 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.13, )"
+          },
+          "MiniExcel": {
+            "target": "Package",
+            "version": "[1.39.0, )"
           }
         },
         "imports": [
