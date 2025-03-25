@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using PLCCommunication_Infrastructure.IBaseRespository;
 using PLCCommunication_Model.DTO;
 using PLCCommunication_Model.Entities;
@@ -24,5 +25,6 @@ namespace PLCCommunication_Infrastructure.IRespository
         public Task<bool> AddAsync(S7ReadTask s7Task);
         public Task<bool> ModifystatusS7TaskByid(int id);
         public Task<bool> EditAsync(S7ReadTask isExit, S7TaskDTO s7task);
+        Task ImportConfigsAsync(IFormFile file);
     }
 }

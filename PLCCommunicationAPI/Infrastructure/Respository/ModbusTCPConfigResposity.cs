@@ -5,6 +5,7 @@ using PLCCommunication_Infrastructure.BaseRespository;
 using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
 using PLCCommunication_Model.Entities;
+using PLCCommunication_Model.MiniExcelModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -329,6 +330,57 @@ namespace PLCCommunication_Infrastructure.Respository
                 _logger.LogError(ex, "写线圈——读取线圈时发生错误！");
                 return false;
             }
+        }
+
+
+
+        public async Task<bool> ExistsByProxyName(string proxyName)
+        {
+            return await _dbContext.modbusTCPConfigs
+                .AnyAsync(c => c.ProxyName == proxyName);
+        }
+
+        public async Task BulkUpsertAsync(IEnumerable<ModbusTCPExcel> configs)
+        {
+            foreach (var config in configs)
+            {
+                var existing = await _dbContext.modbusTCPConfigs
+                    .FirstOrDefaultAsync(c => c.ProxyName == config.ProxyName);
+
+                if (existing != null)
+                {
+                    // 更新逻辑
+                    existing.IP = config.IP;
+                    existing.Port = config.Port;
+                    existing.SlaveID = config.SlaveID;
+                    existing.FunctionCode = config.FunctionCode;
+                    existing.StartAddress = config.StartAddress;
+                    existing.Num = config.Num;
+                    existing.LastModified = DateTime.Now;
+
+                }
+                else
+                {
+                    // 新增逻辑
+                    var newConfig = new ModbusTCPConfig
+                    {
+                        ProxyName = config.ProxyName,
+                        IP = config.IP,
+                        Port = config.Port,
+                        SlaveID = config.SlaveID,
+                        FunctionCode = config.FunctionCode,
+                        StartAddress = config.StartAddress,
+                        Num = config.Num,
+                        IsOpen = true,
+                        IsDeleted = false,
+                        Createtime = DateTime.Now,
+                        LastModified = DateTime.Now
+
+                    };
+                    await _dbContext.modbusTCPConfigs.AddAsync(newConfig);
+                }
+            }
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

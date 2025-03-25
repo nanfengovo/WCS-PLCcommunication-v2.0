@@ -239,26 +239,33 @@ namespace PLCCommunication_API.Controllers
         /// </summary>
         /// <param name="file"></param>
         /// <returns></returns>
-        [HttpPost("import")]
+        [HttpPost]
         [RequestSizeLimit(50_000_000)] // 50MB限制
-        public async Task<IActionResult> Import(IFormFile file)
+        public async Task<Result> Import(IFormFile file)
         {
             if (file == null || file.Length == 0)
-                return BadRequest("请上传有效文件");
+                return new Result { Code = 400, Msg = "文件不能为空" };
 
             if (!Path.GetExtension(file.FileName).Equals(".xlsx", StringComparison.OrdinalIgnoreCase))
-                return BadRequest("仅支持.xlsx文件");
+                return new Result { Code = 400, Msg = "文件格式不正确" };
 
             var result = await _s7ConfigService.ImportConfigsAsync(file);
 
-            return Ok(new
+            //处理上传的逻辑
+            if(result.SuccessCount == result.TotalCount)
             {
-                Code = 200,
-                result.TotalCount,
-                result.SuccessCount,
-                ErrorCount = result.ErrorMessages.Count,
-                result.ErrorMessages
-            });
+                return new Result { Code = 200, Msg = "全部导入成功！" };
+            }
+            else if(result.SuccessCount != 0 && result.ErrorMessages.Count > 0)
+            {
+                return new Result { Code = 201, Msg = $"部分导入成功！导入失败的条数为{result.ErrorMessages.Count}"};
+            }
+            else
+            {
+                return new Result { Code = 400, Msg = "导入失败！" };
+            }
+
+                
         }
 
         /// <summary>

@@ -12,6 +12,7 @@ namespace PLCCommunication_Utility.Enum
     public enum CodeEnum
     {
         Success = 200, //成功
+        PartSuccess = 201, //部分成功
         Notfound = 404, //不存在
         BadRequest = 400,//由于语法错误，服务器无法理解该请求 
         IsExist = 405,//存在，不能重复

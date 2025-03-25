@@ -85,6 +85,13 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:PLCCommunication_API.Controllers.ModbusTCPController.Import(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入Modbus配置
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
         <member name="T:PLCCommunication_API.Controllers.S7BackGroundServiceController">
             <summary>
             S7BackGroundServiceController中是关于和S7后台任务相关的

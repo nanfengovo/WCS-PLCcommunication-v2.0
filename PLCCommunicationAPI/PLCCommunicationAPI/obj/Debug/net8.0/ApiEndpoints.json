@@ -220,6 +220,32 @@
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
+    "Method": "Import",
+    "RelativePath": "api/ModbusTCP/Import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PLCCommunication_API.Controllers.ModbusTCPController",
     "Method": "ReadCoils",
     "RelativePath": "api/ModbusTCP/ReadCoils",
     "HttpMethod": "GET",
@@ -601,7 +627,7 @@
   {
     "ContainingType": "PLCCommunication_API.Controllers.S7Controller",
     "Method": "Import",
-    "RelativePath": "api/S7/Import/import",
+    "RelativePath": "api/S7/Import",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -612,7 +638,17 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "PLCCommunication_Utility.APIHelper.Result",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "PLCCommunication_API.Controllers.S7BackGroundServiceController",

@@ -1,5 +1,6 @@
 ﻿using PLCCommunication_Infrastructure.IBaseRespository;
 using PLCCommunication_Model.Entities;
+using PLCCommunication_Model.MiniExcelModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,5 +19,9 @@ namespace PLCCommunication_Infrastructure.IRespository
         public Task<ushort[]> ReadHoldingRegistersAsync(int id);
         public Task<bool> UpdateAsync(ModbusTCPConfig isExist, ModbusTCPConfig modbusTCPConfig);
         public Task<bool> WriteSingCoilsAsync(int id, bool value);
+
+        Task BulkUpsertAsync(IEnumerable<ModbusTCPExcel> configs);
+
+        Task<bool> ExistsByProxyName(string proxyName);
     }
 }

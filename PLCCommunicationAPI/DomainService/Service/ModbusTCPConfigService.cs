@@ -1,11 +1,17 @@
-﻿using PLCCommunication_DomainService.BaseService;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using MiniExcelLibs;
+using PLCCommunication_DomainService.BaseService;
 using PLCCommunication_DomainService.IService;
 using PLCCommunication_Infrastructure.IRespository;
 using PLCCommunication_Infrastructure.Respository;
 using PLCCommunication_Model.Entities;
+using PLCCommunication_Model.MiniExcelModel;
+using PLCCommunication_Utility.MiniExcelHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,10 +21,13 @@ namespace PLCCommunication_DomainService.Service
     {
         private readonly IModbusTCPConfigResposity _modbusTCPConfigResposity;
 
-        public ModbusTCPConfigService(IModbusTCPConfigResposity modbusTCPConfigResposity)
+        private readonly ILogger<ModbusTCPConfigService> _logger;
+
+        public ModbusTCPConfigService(IModbusTCPConfigResposity modbusTCPConfigResposity, ILogger<ModbusTCPConfigService> logger)
         {
             base._respository = modbusTCPConfigResposity;
             _modbusTCPConfigResposity = modbusTCPConfigResposity;
+            _logger = logger;
         }
 
 
@@ -78,6 +87,79 @@ namespace PLCCommunication_DomainService.Service
         public async Task<bool> WriteSingCoilsAsync(int id, bool value)
         {
             return await _modbusTCPConfigResposity.WriteSingCoilsAsync(id, value);
+        }
+
+
+
+        /// <summary>
+        /// 导入Modbus配置
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        public async Task<ImportResult> ImportConfigsAsync(IFormFile file)
+        {
+            var result = new ImportResult();
+
+            try
+            {
+                var stream = new MemoryStream();
+                file.CopyTo(stream);
+                var configs = stream.Query<ModbusTCPExcel>().ToList();
+                result.TotalCount = configs.Count;
+
+                var errors = new List<string>();
+                var validConfigs = new List<ModbusTCPExcel>();
+
+                // 数据验证
+                for (int i = 0; i < configs.Count; i++)
+                {
+                    var config = configs[i];
+                    var rowNumber = i + 2; // Excel行号从第2行开始
+
+                    try
+                    {
+                        // 基本验证
+                        if (string.IsNullOrWhiteSpace(config.ProxyName))
+                            throw new Exception("配置名不能为空");
+                        _logger.LogError("导入Modbus配置文件——配置名不能为空");
+
+                        if (!IPAddress.TryParse(config.IP, out _))
+                            throw new Exception("IP地址格式无效");
+                        _logger.LogError("导入Modbus配置文件——IP地址格式无效");
+
+                        if (config.Port < 1 || config.Port > 65535)
+                            throw new Exception("端口号无效");
+                        _logger.LogError("导入Modbus配置文件——端口号无效");
+
+                        // 业务验证
+                        if (await _modbusTCPConfigResposity.ExistsByProxyName(config.ProxyName))
+                            throw new Exception("配置名已存在");
+                        _logger.LogError("导入Modbus配置文件——配置名已存在");
+
+                        validConfigs.Add(config);
+                    }
+                    catch (Exception ex)
+                    {
+                        errors.Add($"第{rowNumber}行错误: {ex.Message}");
+                    }
+                }
+
+                // 批量操作
+                if (validConfigs.Any())
+                {
+                    await _modbusTCPConfigResposity.BulkUpsertAsync(validConfigs);
+                    result.SuccessCount = validConfigs.Count;
+                }
+
+                result.ErrorMessages = errors;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Modbus配置导入失败");
+                result.ErrorMessages.Add($"系统错误: {ex.Message}");
+            }
+
+            return result;
         }
     }
 }
