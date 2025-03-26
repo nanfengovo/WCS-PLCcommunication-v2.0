@@ -1,7 +1,7 @@
 # WCS-PLCcommunication--v2.0
 架构图：
 ![image](https://github.com/user-attachments/assets/5d4bc35a-1937-4c35-bd13-35f2cff12a13)
-* 技术栈：
+# * 技术栈：
        * 前端：
             1、vue3
             2、TypeScript
