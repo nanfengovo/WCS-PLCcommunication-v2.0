@@ -13,6 +13,7 @@ namespace PLCCommunication_DomainService.IService
     public interface IModbusTCPConfigService:IBaseService<ModbusTCPConfig>  
     {
         public Task<bool> DeletedById(List<int> ids);
+        Task<Stream> ExportConfigsAsync();
         Task<ImportResult> ImportConfigsAsync(IFormFile file);
         public Task<bool[]> ReadCoilsAsync(int id);
         public Task<bool[]> ReadDiscreteInputsAsync(int id);

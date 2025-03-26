@@ -467,7 +467,7 @@
         }
       }
     },
-    "/api/S7/Export/export": {
+    "/api/S7/Export": {
       "get": {
         "tags": [
           "S7"

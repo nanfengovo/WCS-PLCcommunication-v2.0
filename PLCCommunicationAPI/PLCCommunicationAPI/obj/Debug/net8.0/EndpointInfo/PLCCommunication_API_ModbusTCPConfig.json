@@ -577,6 +577,19 @@
           }
         }
       }
+    },
+    "/api/ModbusTCP/Export": {
+      "get": {
+        "tags": [
+          "ModbusTCP"
+        ],
+        "summary": "导出Modbus配置",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

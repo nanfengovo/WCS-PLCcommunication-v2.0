@@ -161,5 +161,37 @@ namespace PLCCommunication_DomainService.Service
 
             return result;
         }
+
+        /// <summary>
+        /// 导出
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Stream> ExportConfigsAsync()
+        {
+            var configs = await _modbusTCPConfigResposity.GetAllAsync();
+            var stream = new MemoryStream();
+            // 修改后：添加映射步骤
+            var excelModels = configs.Select(config => MapToExcelModel(config)).ToList();
+            MiniExcel.SaveAs(stream, excelModels);
+
+            stream.Seek(0, SeekOrigin.Begin);
+            return stream;
+        }
+
+
+        private object MapToExcelModel(ModbusTCPConfig config)
+        {
+            return new ModbusTCPExcel
+            {
+                ProxyName = config.ProxyName,
+                IP = config.IP,
+                Port = config.Port,
+                SlaveID = config.SlaveID,
+                FunctionCode = config.FunctionCode,
+                StartAddress = config.StartAddress,
+                Num = config.Num,
+
+            };
+        }
     }
 }

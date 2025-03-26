@@ -240,7 +240,7 @@ namespace PLCCommunication_API.Controllers
         /// <param name="file"></param>
         /// <returns></returns>
         [HttpPost]
-        [RequestSizeLimit(50_000_000)] // 50MB限制
+        [RequestSizeLimit(50_000_000)] // 50MB限制    
         public async Task<Result> Import(IFormFile file)
         {
             if (file == null || file.Length == 0)
@@ -272,7 +272,7 @@ namespace PLCCommunication_API.Controllers
         /// 导出S7配置
         /// </summary>
         /// <returns></returns>
-        [HttpGet("export")]
+        [HttpGet]
         public async Task<IActionResult> Export()
         {
             var stream = await _s7ConfigService.ExportConfigsAsync();

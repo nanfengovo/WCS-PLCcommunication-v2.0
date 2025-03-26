@@ -255,6 +255,19 @@ namespace PLCCommunication_API.Controllers
 
         }
 
+        /// <summary>
+        /// 导出Modbus配置
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IActionResult> Export()
+        {
+            var stream = await _modbusTCPConfigService.ExportConfigsAsync();
+            return File(stream,
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                $"modbusTCPConfig_{DateTime.Now:yyyyMMddHHmmss}.xlsx");
+        }
+
 
 
     }

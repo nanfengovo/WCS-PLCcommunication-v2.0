@@ -23,5 +23,6 @@ namespace PLCCommunication_Infrastructure.IRespository
         Task BulkUpsertAsync(IEnumerable<ModbusTCPExcel> configs);
 
         Task<bool> ExistsByProxyName(string proxyName);
+        Task<IEnumerable<ModbusTCPConfig>> GetAllAsync();
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using MiniExcelLibs;
 using NLog;
 using PLCCommunication_Infrastructure.BaseRespository;
 using PLCCommunication_Infrastructure.DBContexts;
@@ -9,11 +10,14 @@ using PLCCommunication_Infrastructure.IBaseRespository;
 using PLCCommunication_Infrastructure.IRespository;
 using PLCCommunication_Model.DTO;
 using PLCCommunication_Model.Entities;
+using PLCCommunication_Model.MiniExcelModel;
+using PLCCommunication_Utility.MiniExcelHelper;
 using S7.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -275,6 +279,173 @@ namespace PLCCommunication_Infrastructure.Respository
                 return await _myDbContext.SaveChangesAsync() > 0;
             }
 
+        }
+
+
+        /// <summary>
+        /// 导入S7自动任务配置
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        public async Task<ImportResult> ImportConfigsAsync(IFormFile file)
+        {
+            var result = new ImportResult();
+
+            try
+            {
+                var stream = new MemoryStream();
+                file.CopyTo(stream);
+                var configs = stream.Query<S7BackgroundServiceExcel>().ToList();
+                result.TotalCount = configs.Count;
+
+                var errors = new List<string>();
+                var validConfigs = new List<S7BackgroundServiceExcel>();
+
+                // 数据验证
+                for (int i = 0; i < configs.Count; i++)
+                {
+                    var config = configs[i];
+                    var rowNumber = i + 2; // Excel行号从第2行开始
+
+                    try
+                    {
+                        // 基本验证
+                        if (string.IsNullOrWhiteSpace(config.Name))
+                            throw new Exception("配置名不能为空");
+                        _logger.LogError("导入导入S7自动任务配置——配置名不能为空");
+
+                        if (!IPAddress.TryParse(config.IP, out _))
+                            throw new Exception("IP地址格式无效");
+                        _logger.LogError("导入导入S7自动任务配置——IP地址格式无效");
+
+                        if (config.Port < 1 || config.Port > 65535)
+                            throw new Exception("端口号无效");
+                        _logger.LogError("导入导入S7自动任务配置件——端口号无效");
+
+                        // 业务验证
+                        if (await isExist(config))
+                            throw new Exception("配置名已存在");
+                        _logger.LogError("导入S7自动任务配置——配置名已存在");
+
+                        validConfigs.Add(config);
+                    }
+                    catch (Exception ex)
+                    {
+                        errors.Add($"第{rowNumber}行错误: {ex.Message}");
+                    }
+                }
+
+                // 批量操作
+                if (validConfigs.Any())
+                {
+                    await  BulkUpsertAsync(validConfigs);
+                    result.SuccessCount = validConfigs.Count;
+                }
+
+                result.ErrorMessages = errors;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "S7自动任务配置导入失败");
+                result.ErrorMessages.Add($"系统错误: {ex.Message}");
+            }
+
+            return result;
+        }
+
+        private async Task<bool> isExist(S7BackgroundServiceExcel config)
+        {
+            var result = await _myDbContext.s7ReadTasks.Where(x => x.Name == config.Name).ToListAsync();
+            if (result.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+        /// <summary>
+        /// 导入S7自动任务配置
+        /// </summary>
+        /// <param name="configs"></param>
+        /// <returns></returns>
+        public async Task BulkUpsertAsync(IEnumerable<S7BackgroundServiceExcel> configs)
+        {
+            foreach (var config in configs)
+            {
+                var existing = await _myDbContext.s7ReadTasks
+                    .FirstOrDefaultAsync(c => c.Name == config.Name);
+
+                if (existing != null)
+                {
+                    // 更新逻辑
+                    existing.IP = config.IP;
+                    existing.Port = config.Port;
+                    existing.DBaddr = config.DBaddr;
+                    existing.IsOpen = true;
+                    existing.IsDeleted = false;
+                    existing.LastModified = DateTime.Now;
+
+                }
+                else
+                {
+                    // 新增逻辑
+                    var newConfig = new S7ReadTask
+                    {
+                        Name = config.Name,
+                        IP = config.IP,
+                        Port = config.Port,
+                        DBaddr = config.DBaddr,
+                        IsOpen = true,
+                        IsDeleted = false,
+                        Createtime = DateTime.Now,
+                        LastModified = DateTime.Now
+
+                    };
+                    await _myDbContext.s7ReadTasks.AddAsync(newConfig);
+                }
+            }
+            await _myDbContext.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// 导出
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Stream> ExportConfigsAsync()
+        {
+            var configs = await GetAllAsync();
+            var stream = new MemoryStream();
+            // 修改后：添加映射步骤
+            var excelModels = configs.Select(config => MapToExcelModel(config)).ToList();
+            MiniExcel.SaveAs(stream, excelModels);
+
+            stream.Seek(0, SeekOrigin.Begin);
+            return stream;
+        }
+
+        public async Task<IEnumerable<S7ReadTask>> GetAllAsync()
+        {
+            return await _myDbContext.s7ReadTasks
+                .AsNoTracking()
+                .OrderBy(c => c.Name)
+                .ToListAsync();
+        }
+
+        private object MapToExcelModel(S7ReadTask config)
+        {
+            return new S7BackgroundServiceExcel
+            {
+               Name = config.Name,
+                IP = config.IP,
+                Port = config.Port,
+                DBaddr = config.DBaddr
+
+            };
         }
     }
 }

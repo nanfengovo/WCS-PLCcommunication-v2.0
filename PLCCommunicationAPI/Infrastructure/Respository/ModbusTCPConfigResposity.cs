@@ -382,5 +382,14 @@ namespace PLCCommunication_Infrastructure.Respository
             }
             await _dbContext.SaveChangesAsync();
         }
+
+
+        public async Task<IEnumerable<ModbusTCPConfig>> GetAllAsync()
+        {
+            return await _dbContext.modbusTCPConfigs
+                .AsNoTracking()
+                .OrderBy(c => c.ProxyName)
+                .ToListAsync();
+        }
     }
 }
