@@ -12,6 +12,8 @@
             7、xlsx
             8、dayjs
             9、normalize.css
+            10、three.js
+            11、echarts
        * 后端：
             1、ASP.NET Core 8.0 Webapi
             2、EntityFramekCore（8.0.13）
@@ -20,7 +22,10 @@
             5、NModbus(3.0.81）
             6、MiniEXcel（1.39.0）
             7、Polly(8.5.2)
-            8、quartz
+            8、quartz.net
+            9、Redis(待加入)
+            10、SingIR(待加入)
+            11、Identity(待加入)
 # 文件夹说明：
 ![image](https://github.com/user-attachments/assets/826feb49-4fe5-475d-a3ff-d8fd352da37a)
 
