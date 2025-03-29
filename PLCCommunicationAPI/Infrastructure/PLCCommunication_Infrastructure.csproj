@@ -17,6 +17,7 @@
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.4.0" />
     <PackageReference Include="NModbus" Version="3.0.81" />
     <PackageReference Include="Polly" Version="8.5.2" />
+    <PackageReference Include="Quartz" Version="3.14.0" />
     <PackageReference Include="S7netplus" Version="0.20.0" />
   </ItemGroup>
 

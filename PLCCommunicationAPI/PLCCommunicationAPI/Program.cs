@@ -20,14 +20,35 @@ using PLCCommunication_Infrastructure.Migrations;
 using PLCCommunication_API.PlugInUnit;
 using NLog.Web;
 using ScheduledTasksService.S7;
+using Quartz.Impl;
+using Quartz;
+using ScheduledTasks.ModbusTcp;
+using static Quartz.Logging.OperationName;
 
 namespace PLCCommunicationAPI
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+
+            //IJobDetail job = JobBuilder.Create<Initialize>()
+            //    .WithIdentity("job1", "group1")
+            //    .Build();
+
+            //ITrigger trigger = TriggerBuilder.Create()
+            //    .WithIdentity("trigger1", "group1")
+            //    .StartNow()
+            //    .WithSimpleSchedule(x => x
+            //        .WithIntervalInSeconds(1))
+            //    .Build();
+
+            //StdSchedulerFactory factory = new StdSchedulerFactory();
+            //IScheduler scheduler = await factory.GetScheduler();
+            //await scheduler.Start();
+            //await scheduler.ScheduleJob(job, trigger);
 
             // 添加 CORS 策略服务
             builder.Services.AddCors(options =>
@@ -131,6 +152,8 @@ namespace PLCCommunicationAPI
             // 注册 S7TaskService
             builder.Services.AddHostedService<S7TaskService>();
 
+            builder.Services.AddHostedService<Initialize>();
+
             //Identity注入
             builder.Services.AddIdentityIOC();
 
@@ -159,6 +182,9 @@ namespace PLCCommunicationAPI
             app.UseAuthorization();
 
             app.MapControllers();
+
+
+           
 
             app.Run();
 

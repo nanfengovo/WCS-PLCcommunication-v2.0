@@ -6,6 +6,7 @@ using PLCCommunication_Infrastructure.DBContexts;
 using PLCCommunication_Infrastructure.IRespository;
 using PLCCommunication_Infrastructure.Respository;
 using PLCCommunication_Model.Identity;
+using ScheduledTasks.ModbusTcp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,6 +34,7 @@ namespace PLCCommunication_Utility.Plug_ins
             services.AddScoped<S7ProxyToTask>();
             
             
+            
 
 
             //注入服务层
@@ -40,6 +42,7 @@ namespace PLCCommunication_Utility.Plug_ins
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IS7ConfigService, S7ConfigService>();
             services.AddScoped<IS7ReadWriteService, S7ReadWriteService>();
+            services.AddScoped<IModbusTCP,ModbusTCP>();
 
             return services;
         }

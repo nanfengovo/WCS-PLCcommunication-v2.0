@@ -19,6 +19,8 @@ namespace PLCCommunication_Infrastructure.DBContexts
 
         public DbSet<S7ReadTask> s7ReadTasks { get; set; }
 
+        public DbSet<ModbusTCPBackgroundService> modbusTCPBackgroundServices { get; set; }
+
         public MyDbContext(DbContextOptions options) : base(options)
         {
         }
@@ -36,6 +38,9 @@ namespace PLCCommunication_Infrastructure.DBContexts
         .HasKey(m => m.Id);
 
             modelBuilder.Entity<S7ReadTask>()
+        .HasKey(m => m.Id);
+
+            modelBuilder.Entity<ModbusTCPBackgroundService>()
         .HasKey(m => m.Id);
 
             //把当前程序集中实现了IEntityTypeConfiguration接口的类加载进来，配置sql

@@ -747,6 +747,22 @@
           }
         }
       },
+      "Quartz/3.14.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "lib/net8.0/Quartz.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Quartz.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "S7netplus/0.20.0": {
         "type": "package",
         "compile": {
@@ -1193,6 +1209,7 @@
           "NModbus": "3.0.81",
           "PLCCommunication_Model": "1.0.0",
           "Polly": "8.5.2",
+          "Quartz": "3.14.0",
           "S7netplus": "0.20.0"
         },
         "compile": {
@@ -1214,20 +1231,6 @@
         },
         "runtime": {
           "bin/placeholder/PLCCommunication_Model.dll": {}
-        }
-      },
-      "ScheduledTasksService/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "PLCCommunication_Infrastructure": "1.0.0",
-          "PLCCommunication_Model": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ScheduledTasksService.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ScheduledTasksService.dll": {}
         }
       }
     }
@@ -2362,6 +2365,29 @@
         "polly.core.nuspec"
       ]
     },
+    "Quartz/3.14.0": {
+      "sha512": "j8mY6S0FWbtuEFbStUEZAkkGpZLbSuTT0us1w0DUQqhi+vwg/7XXS36TeH3o34zZoqYGyXvk6jrKnW/p6kS8sg==",
+      "type": "package",
+      "path": "quartz/3.14.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Quartz.dll",
+        "lib/net462/Quartz.xml",
+        "lib/net472/Quartz.dll",
+        "lib/net472/Quartz.xml",
+        "lib/net8.0/Quartz.dll",
+        "lib/net8.0/Quartz.xml",
+        "lib/net9.0/Quartz.dll",
+        "lib/net9.0/Quartz.xml",
+        "lib/netstandard2.0/Quartz.dll",
+        "lib/netstandard2.0/Quartz.xml",
+        "quartz-logo-small.png",
+        "quartz.3.14.0.nupkg.sha512",
+        "quartz.nuspec",
+        "quick-start.md"
+      ]
+    },
     "S7netplus/0.20.0": {
       "sha512": "XAubZ076bhWHQZlnBkzwQO4WxqF5ofwhrkDxfBhGbeD1JC1jBDn3EbWIqMLW6+G0RsxzxirSjLERCQZPfjwGdw==",
       "type": "package",
@@ -3242,16 +3268,11 @@
       "type": "project",
       "path": "../Model/PLCCommunication_Model.csproj",
       "msbuildProject": "../Model/PLCCommunication_Model.csproj"
-    },
-    "ScheduledTasksService/1.0.0": {
-      "type": "project",
-      "path": "../ScheduledTasksService/ScheduledTasksService.csproj",
-      "msbuildProject": "../ScheduledTasksService/ScheduledTasksService.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "ScheduledTasksService >= 1.0.0"
+      "PLCCommunication_Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3286,8 +3307,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\ScheduledTasksService\\ScheduledTasksService.csproj": {
-              "projectPath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\ScheduledTasksService\\ScheduledTasksService.csproj"
+            "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\PLCCommunication_Infrastructure.csproj": {
+              "projectPath": "E:\\Code\\前后端分离\\WCS(PLCcommunication) v2.0\\PLCCommunicationAPI\\Infrastructure\\PLCCommunication_Infrastructure.csproj"
             }
           }
         }

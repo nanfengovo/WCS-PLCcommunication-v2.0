@@ -125,6 +125,53 @@ namespace PLCCommunication_Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("PLCCommunication_Model.Entities.ModbusTCPBackgroundService", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("Createtime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte>("FunctionCode")
+                        .HasColumnType("tinyint");
+
+                    b.Property<string>("IP")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsOpen")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModified")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Num")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Port")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProxyName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte>("SlaveID")
+                        .HasColumnType("tinyint");
+
+                    b.Property<int>("StartAddress")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ModbusTCPBackgroundService", (string)null);
+                });
+
             modelBuilder.Entity("PLCCommunication_Model.Entities.ModbusTCPConfig", b =>
                 {
                     b.Property<int>("Id")

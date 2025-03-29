@@ -386,7 +386,7 @@ namespace PLCCommunication_Infrastructure.Respository
                     existing.IP = config.IP;
                     existing.Port = config.Port;
                     existing.DBaddr = config.DBaddr;
-                    existing.IsOpen = true;
+                    existing.IsOpen = false;
                     existing.IsDeleted = false;
                     existing.LastModified = DateTime.Now;
 
@@ -400,7 +400,7 @@ namespace PLCCommunication_Infrastructure.Respository
                         IP = config.IP,
                         Port = config.Port,
                         DBaddr = config.DBaddr,
-                        IsOpen = true,
+                        IsOpen = false,
                         IsDeleted = false,
                         Createtime = DateTime.Now,
                         LastModified = DateTime.Now

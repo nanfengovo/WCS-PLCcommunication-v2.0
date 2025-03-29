@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ScheduledTasksService\ScheduledTasksService.csproj" />
+    <Folder Include="S7\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ModbusTcp\" />
-    <Folder Include="S7\" />
+    <ProjectReference Include="..\Infrastructure\PLCCommunication_Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

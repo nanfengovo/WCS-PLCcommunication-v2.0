@@ -84,6 +84,10 @@
               "target": "Package",
               "version": "[8.5.2, )"
             },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
             "S7netplus": {
               "target": "Package",
               "version": "[0.20.0, )"
