@@ -32,6 +32,14 @@
  * UI里面是一个单独的前端的模板，支持动态的菜单，找到文件里面模拟后端返回的菜单数据后端传类似格式的就可以；支持Token（也是模拟的在F12后在应用中删掉token就需要重新登录）下面是效果图：
      ![image](https://github.com/user-attachments/assets/8adfe0a6-2d2b-4276-be30-b798a34c7984)
      ![image](https://github.com/user-attachments/assets/caa1df73-a1fc-4afd-9f60-b1f0e4cb554f)
+     ![image](https://github.com/user-attachments/assets/60fc32f3-beea-418e-8467-74b5c1bbad4e)
+     ![image](https://github.com/user-attachments/assets/efaaa1ab-edfa-4839-8eb9-74e348ee4286)
+     ![image](https://github.com/user-attachments/assets/0fd17c7d-c560-4d4a-8cf1-cc4d00acd31a)
+     ![image](https://github.com/user-attachments/assets/efc3ef01-540f-4466-870b-1cf1c7d3205a)
+
+
+
+
    * 前端文件夹说明：
      >前端启动：
      >1、npm install
