@@ -1,7 +1,26 @@
 # WCS-PLCcommunication--v2.0
 架构图：
 ![image](https://github.com/user-attachments/assets/5d4bc35a-1937-4c35-bd13-35f2cff12a13)
-
+# * 技术栈：
+       * 前端：
+            1、vue3
+            2、TypeScript
+            3、Pinia
+            4、Axios
+            5、element-plus（考虑后续加element-plus x）
+            6、vue-router
+            7、xlsx
+            8、dayjs
+            9、normalize.css
+       * 后端：
+            1、ASP.NET Core 8.0 Webapi
+            2、EntityFramekCore（8.0.13）
+            3、NLog (5.4.0)
+            4、S7.NET PLUS (0.20.0)
+            5、NModbus(3.0.81）
+            6、MiniEXcel（1.39.0）
+            7、Polly(8.5.2)
+            8、quartz
 # 文件夹说明：
 ![image](https://github.com/user-attachments/assets/826feb49-4fe5-475d-a3ff-d8fd352da37a)
 
