@@ -164,8 +164,8 @@ namespace PLCCommunicationAPI
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+               // app.UseSwagger();
+                //app.UseSwaggerUI();
                 //使用自定义swagger
                 app.InitSwagger();
             }

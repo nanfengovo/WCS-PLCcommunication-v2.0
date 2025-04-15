@@ -21,6 +21,8 @@ namespace PLCCommunication_Infrastructure.DBContexts
 
         public DbSet<ModbusTCPBackgroundService> modbusTCPBackgroundServices { get; set; }
 
+        public DbSet<SysMenu> sysMenus { get; set; }
+
         public MyDbContext(DbContextOptions options) : base(options)
         {
         }
@@ -43,6 +45,8 @@ namespace PLCCommunication_Infrastructure.DBContexts
             modelBuilder.Entity<ModbusTCPBackgroundService>()
         .HasKey(m => m.Id);
 
+            modelBuilder.Entity<SysMenu>()
+                .HasKey(m => m.Id);
             //把当前程序集中实现了IEntityTypeConfiguration接口的类加载进来，配置sql
             modelBuilder.ApplyConfigurationsFromAssembly(this.GetType().Assembly);
 
