@@ -150,7 +150,7 @@ namespace PLCCommunicationAPI
 
             //注入后台线程
             // 注册 S7TaskService
-            builder.Services.AddHostedService<S7TaskService>();
+            //builder.Services.AddHostedService<S7TaskService>();
 
             builder.Services.AddHostedService<Initialize>();
 
@@ -164,12 +164,12 @@ namespace PLCCommunicationAPI
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                //app.UseSwagger();
-                //app.UseSwaggerUI();
+                app.UseSwagger();
+                app.UseSwaggerUI();
                 //使用自定义swagger
                 app.InitSwagger();
             }
-
+            app.InitSwagger();
             //添加到管道中，在app.UseAuthorization();前添加
             //鉴权
             app.UseAuthentication();

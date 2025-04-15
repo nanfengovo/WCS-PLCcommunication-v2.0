@@ -79,7 +79,7 @@ namespace ScheduledTasksService.S7
             {
                 try
                 {
-                    using (var scope = _scopeFactory.CreateScope())
+                    using (IServiceScope? scope = _scopeFactory.CreateScope())
                     {
                         var repository = scope.ServiceProvider.GetRequiredService<IS7ReadTaskResposity>();
                         var result = await repository.ReadAsync();

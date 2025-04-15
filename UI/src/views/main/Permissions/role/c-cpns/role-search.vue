@@ -3,13 +3,13 @@
     <el-form label-width="80px" :model="searchForm" ref="formRef">
       <el-row :gutter="20" ref="formRef" justify="center">
         <el-col :span="8">
-          <el-form-item label="用户名:" prop="name">
-            <el-input type="text" v-model="searchForm.name" placeholder="请输入需要查询的用户名:" />
+          <el-form-item label="角色名:" prop="name">
+            <el-input type="text" v-model="searchForm.role" placeholder="请输入需要查询的角色名:" />
           </el-form-item>
         </el-col>
         <el-col :span="8">
-          <el-form-item label="角色:" prop="role">
-            <el-input type="text" v-model="searchForm.role" placeholder="请输入需要查询的角色:" />
+          <el-form-item label="权限:" prop="Permissions">
+            <el-input type="text" v-model="searchForm.Permissions" placeholder="请输入包含的权限查询:" />
           </el-form-item>
         </el-col>
         <el-col :span="8">
@@ -32,7 +32,7 @@ import { reactive, ref } from 'vue';
 
 const formRef = ref<InstanceType<typeof ElForm>>()
 const searchForm = reactive({
-  'name': '',
+  'Permissions': '',
   'role': ''
 })
 
