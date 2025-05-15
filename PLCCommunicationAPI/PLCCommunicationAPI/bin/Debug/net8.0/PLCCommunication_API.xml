@@ -225,6 +225,11 @@
             <param name="input"></param>
             <returns></returns>
         </member>
+        <member name="T:PLCCommunication_API.Controllers.SysMenuController">
+            <summary>
+            菜单管理
+            </summary>
+        </member>
         <member name="T:PLCCommunication_API.Controllers.UserController">
             <summary>
             用户管理的模块

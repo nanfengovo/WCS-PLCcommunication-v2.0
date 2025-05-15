@@ -948,6 +948,16 @@
     ]
   },
   {
+    "ContainingType": "PLCCommunication_API.Controllers.SysMenuController",
+    "Method": "GetAllMenu",
+    "RelativePath": "api/SysMenu/GetAllMenu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PLCCommunicationAPI.Controllers.TestController",
     "Method": "GetAllConfig",
     "RelativePath": "api/Test/GetAllConfig",

@@ -1,55 +1,70 @@
 <template>
-  <div class="main-menu">
-    <div class="logo">
-      <img src="@/assets/img/logo.png" alt="logo加载失败" class="logo-img" />
-    </div>
-    <div class="search">
-
-      <input type="text" placeholder="输入菜单名称进行搜索" class="search-input" />
-      <el-button type="primary" class="search-button">
-        <el-icon>
-          <Search />
-        </el-icon>
-      </el-button>
-    </div>
-    <div class="menu">
-      <el-menu text-color="#b7bdc3" active-text-color="#fff" background-color="#001529" default-active="3"
-        :collapse="isFold">
-
-        <!-- 动态菜单 -->
-        <!--遍历整个菜单数组-->
-        <template v-for="item in menuList" :key="item.id">
-          <el-sub-menu :index="item.id + ''">
-            <template #title>
-              <!--图标-->
-              <el-icon>
-                <component :is="item.icon.split('el-icon')[1]" />
-              </el-icon>
-              <span>
-                {{ item.name }}
-              </span>
-            </template>
-            <template v-for="subitem in item.children" :key="subitem.id">
-              <el-menu-item :index="subitem.id + ''" @click="handeleItemClick(subitem)">
-                <!--图标-->
+    <div class="main-menu">
+        <div class="logo">
+            <img
+                src="@/assets/img/logo.png"
+                alt="logo加载失败"
+                class="logo-img"
+            />
+        </div>
+        <div class="search">
+            <input
+                type="text"
+                placeholder="输入菜单名称进行搜索"
+                class="search-input"
+            />
+            <el-button type="primary" class="search-button">
                 <el-icon>
-                  <component :is="subitem.icon.split('el-icon')[1]" />
+                    <Search />
                 </el-icon>
-                {{ subitem.name }}
-              </el-menu-item>
-            </template>
-          </el-sub-menu>
+            </el-button>
+        </div>
+        <div class="menu">
+            <el-menu
+                text-color="#b7bdc3"
+                active-text-color="#fff"
+                background-color="#001529"
+                default-active="3"
+                :collapse="isFold"
+            >
+                <!-- 动态菜单 -->
+                <!--遍历整个菜单数组-->
+                <template v-for="item in menuList" :key="item.id">
+                    <el-sub-menu :index="item.id + ''">
+                        <template #title>
+                            <!--图标-->
+                            <el-icon>
+                                <component
+                                    :is="item.icon.split('el-icon')[1]"
+                                />
+                            </el-icon>
+                            <span>
+                                {{ item.name }}
+                            </span>
+                        </template>
+                        <template
+                            v-for="subitem in item.children"
+                            :key="subitem.id"
+                        >
+                            <el-menu-item
+                                :index="subitem.id + ''"
+                                @click="handeleItemClick(subitem)"
+                            >
+                                <!--图标-->
+                                <el-icon>
+                                    <component
+                                        :is="subitem.icon.split('el-icon')[1]"
+                                    />
+                                </el-icon>
+                                {{ subitem.name }}
+                            </el-menu-item>
+                        </template>
+                    </el-sub-menu>
+                </template>
 
-        </template>
-
-
-
-
-
-
-        <!-- 静态菜单 -->
-        <!-- 系统管理 -->
-        <!-- <el-sub-menu index="1">
+                <!-- 静态菜单 -->
+                <!-- 系统管理 -->
+                <!-- <el-sub-menu index="1">
                     <template #title>
                         <el-icon>
                             <Monitor />
@@ -82,8 +97,8 @@
 </el-menu-item>
 </el-sub-menu> -->
 
-        <!-- 库位管理 -->
-        <!-- <el-sub-menu index="2">
+                <!-- 库位管理 -->
+                <!-- <el-sub-menu index="2">
                     <template #title>
                         <el-icon>
                             <MapLocation />
@@ -108,8 +123,8 @@
                     </el-menu-item>
                 </el-sub-menu> -->
 
-        <!-- 任务管理 -->
-        <!-- <el-sub-menu index="3">
+                <!-- 任务管理 -->
+                <!-- <el-sub-menu index="3">
                     <template #title>
                         <el-icon>
                             <Odometer />
@@ -134,8 +149,8 @@
                     </el-menu-item>
                 </el-sub-menu> -->
 
-        <!-- 任务运维 -->
-        <!-- <el-sub-menu index="4">
+                <!-- 任务运维 -->
+                <!-- <el-sub-menu index="4">
                     <template #title>
                         <el-icon>
                             <Setting />
@@ -160,8 +175,8 @@
                     </el-menu-item>
                 </el-sub-menu> -->
 
-        <!-- 系统日志管理 -->
-        <!-- <el-sub-menu index="5">
+                <!-- 系统日志管理 -->
+                <!-- <el-sub-menu index="5">
                     <template #title>
                         <el-icon>
                             <TrendCharts />
@@ -194,8 +209,8 @@
                     </el-menu-item>
                 </el-sub-menu> -->
 
-        <!-- 权限管理 -->
-        <!-- <el-sub-menu index="6">
+                <!-- 权限管理 -->
+                <!-- <el-sub-menu index="6">
                     <template #title>
                         <el-icon>
                             <More />
@@ -219,286 +234,342 @@
                         </template>
                     </el-menu-item>
                 </el-sub-menu> -->
-      </el-menu>
+            </el-menu>
+        </div>
     </div>
-  </div>
 </template>
 <script setup lang="ts">
 import router from '@/router'
-
-
-
+import axios from 'axios'
+import { any } from 'three/tsl'
+import { onMounted, reactive, ref } from 'vue'
 
 //定义props接收父组件传递过来的数据
 defineProps({
-  isFold: {
-    type: Boolean,
-    default: false
-  }
+    isFold: {
+        type: Boolean,
+        default: false
+    }
 })
 
+// interface MenuItem {
+//     id: number
+//     name: string
+//     type: number
+//     url: string
+//     icon: string
+//     sort: number
+//     children: MenuItem[] | null
+//     parentId: number | null
+// }
+
+// // 响应式数据定义
+// const menuList = ref<MenuItem[]>([])
+// const loading = ref(false)
+// const errorMessage = ref('')
+
+// // 完整的获取菜单方法
+// const getMenuList = async () => {
+//     try {
+//         loading.value = true
+//         errorMessage.value = ''
+
+//         const response = await axios.get<{
+//             code: number
+//             data: MenuItem[]
+//             message: string
+//         }>('http://127.0.0.1:8888/api/SysMenu/GetAllMenu', {
+//             headers: {
+//                 Authorization: `Bearer ${localStorage.getItem('token')}`
+//             }
+//         })
+//         console.log(response.data)
+//         if (response.data.code === 200) {
+//             menuList.value = response.data.data
+//             console.log('获取菜单成功:', menuList.value)
+//             return response.data.data
+//         }
+
+//         // throw new Error(response.data.message || '未知错误')
+//     } catch (error: any) {
+//         errorMessage.value = `菜单加载失败: ${
+//             error.response?.data?.message || error.message || '未知错误'
+//         }`
+
+//         // 处理401未授权
+//         if (error.response?.status === 401) {
+//             router.push('/login')
+//         }
+
+//         throw error
+//     } finally {
+//         loading.value = false
+//     }
+// }
+// onMounted(() => {
+//     getMenuList()
+// })
 
 //监听菜单的点击
 function handeleItemClick(item: any) {
-  const url = item.url
-  router.push(url)
+    const url = item.url
+    router.push(url)
 }
 
 //模拟后端返回的菜单数组
 const menuList = [
-  {
-    'id': 1,
-    'name': '系统管理',
-    'type': 1,
-    'url': '/main/system',
-    'icon': 'el-icon-monitor',
-    'sort': 1,
-    'children': [
-      {
-        'id': 2,
-        'url': '/main/system/screen',
-        'name': '大屏数据展示',
-        'icon': 'el-icon-Platform',
-        'sort': 1,
-        'type': 2,
-        'children': null,
-        'parentId': 1
-      },
-      {
-        'id': 3,
-        'url': '/main/system/dashboard',
-        'name': '系统监控面板',
-        'icon': 'el-icon-Histogram',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 1
-      },
-      {
-        'id': 4,
-        'url': '/main/system/autoTask',
-        'name': '自动任务管理',
-        'icon': 'el-icon-Open',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 1
-      }
-
-    ]
-  },
-  {
-    'id': 5,
-    'name': '库位管理',
-    'type': 1,
-    'url': '/main/mapLocation',
-    'icon': 'el-icon-MapLocation',
-    'sort': 1,
-    'children': [
-      {
-        'id': 6,
-        'url': '/main/mapLocation/location',
-        'name': '平面库位展示',
-        'icon': 'el-icon-Location',
-        'sort': 1,
-        'type': 2,
-        'children': null,
-        'parentId': 5
-      },
-      {
-        'id': 7,
-        'url': '/main/mapLocation/3dLocation',
-        'name': '3D库位展示',
-        'icon': 'el-icon-AddLocation',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 5
-      }
-    ]
-  },
-  {
-    'id': 8,
-    'name': '任务管理',
-    'type': 1,
-    'url': '/main/task',
-    'icon': 'el-icon-Odometer',
-    'sort': 1,
-    'children': [
-      {
-        'id': 9,
-        'url': '/main/task/lift',
-        'name': '提升机任务管理',
-        'icon': 'el-icon-Clock',
-        'sort': 1,
-        'type': 2,
-        'children': null,
-        'parentId': 8
-      },
-      {
-        'id': 10,
-        'url': '/main/task/rgv',
-        'name': '四向车任务管理',
-        'icon': 'el-icon-PieChart',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 8
-      }
-    ]
-  },
-  {
-    'id': 11,
-    'name': '系统运维管理',
-    'type': 1,
-    'url': '/main/om',
-    'icon': 'el-icon-Setting',
-    'sort': 1,
-    'children': [
-      {
-        'id': 12,
-        'url': '/main/om/modbus',
-        'name': 'Modbus数据点运维',
-        'icon': 'el-icon-Link',
-        'sort': 1,
-        'type': 2,
-        'children': null,
-        'parentId': 11
-      },
-      {
-        'id': 13,
-        'url': '/main/om/S7',
-        'name': 'S7数据点运维',
-        'icon': 'el-icon-Cpu',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 11
-      }
-    ]
-  },
-  {
-    'id': 14,
-    'name': '系统日志管理',
-    'type': 1,
-    'url': '/main/log',
-    'icon': 'el-icon-TrendCharts',
-    'sort': 1,
-    'children': [
-      {
-        'id': 15,
-        'url': '/main/log/actionLog',
-        'name': '操作日志',
-        'icon': 'el-icon-Document',
-        'sort': 1,
-        'type': 2,
-        'children': null,
-        'parentId': 14
-      },
-      {
-        'id': 16,
-        'url': '/main/log/autoTaskLog',
-        'name': '自动任务日志',
-        'icon': 'el-icon-ChromeFilled',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 14
-      },
-      {
-        'id': 17,
-        'url': '/main/log/dbPointLog',
-        'name': '数据点读写日志',
-        'icon': 'el-icon-Aim',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 14
-      }
-    ]
-  },
-  {
-    'id': 18,
-    'name': '权限管理',
-    'type': 1,
-    'url': '/main/Permissions',
-    'icon': 'el-icon-Setting',
-    'sort': 1,
-    'children': [
-      {
-        'id': 19,
-        'url': '/main/Permissions/user',
-        'name': '用户',
-        'icon': 'el-icon-UserFilled',
-        'sort': 1,
-        'type': 2,
-        'children': null,
-        'parentId': 18
-      },
-      {
-        'id': 20,
-        'url': '/main/Permissions/role',
-        'name': '角色',
-        'icon': 'el-icon-Avatar',
-        'sort': 2,
-        'type': 2,
-        'children': null,
-        'parentId': 18
-      }
-    ]
-  }
+    {
+        id: 1,
+        name: '系统管理',
+        type: 1,
+        url: '/main/system',
+        icon: 'el-icon-monitor',
+        sort: 1,
+        children: [
+            {
+                id: 2,
+                url: '/main/system/screen',
+                name: '大屏数据展示',
+                icon: 'el-icon-Platform',
+                sort: 1,
+                type: 2,
+                children: null,
+                parentId: 1
+            },
+            {
+                id: 3,
+                url: '/main/system/dashboard',
+                name: '系统监控面板',
+                icon: 'el-icon-Histogram',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 1
+            },
+            {
+                id: 4,
+                url: '/main/system/autoTask',
+                name: '自动任务管理',
+                icon: 'el-icon-Open',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 1
+            }
+        ]
+    },
+    {
+        id: 5,
+        name: '库位管理',
+        type: 1,
+        url: '/main/mapLocation',
+        icon: 'el-icon-MapLocation',
+        sort: 1,
+        children: [
+            {
+                id: 6,
+                url: '/main/mapLocation/location',
+                name: '平面库位展示',
+                icon: 'el-icon-Location',
+                sort: 1,
+                type: 2,
+                children: null,
+                parentId: 5
+            },
+            {
+                id: 7,
+                url: '/main/mapLocation/3dLocation',
+                name: '3D库位展示',
+                icon: 'el-icon-AddLocation',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 5
+            }
+        ]
+    },
+    {
+        id: 8,
+        name: '任务管理',
+        type: 1,
+        url: '/main/task',
+        icon: 'el-icon-Odometer',
+        sort: 1,
+        children: [
+            {
+                id: 9,
+                url: '/main/task/lift',
+                name: '提升机任务管理',
+                icon: 'el-icon-Clock',
+                sort: 1,
+                type: 2,
+                children: null,
+                parentId: 8
+            },
+            {
+                id: 10,
+                url: '/main/task/rgv',
+                name: '四向车任务管理',
+                icon: 'el-icon-PieChart',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 8
+            }
+        ]
+    },
+    {
+        id: 11,
+        name: '系统运维管理',
+        type: 1,
+        url: '/main/om',
+        icon: 'el-icon-Setting',
+        sort: 1,
+        children: [
+            {
+                id: 12,
+                url: '/main/om/modbus',
+                name: 'Modbus数据点运维',
+                icon: 'el-icon-Link',
+                sort: 1,
+                type: 2,
+                children: null,
+                parentId: 11
+            },
+            {
+                id: 13,
+                url: '/main/om/S7',
+                name: 'S7数据点运维',
+                icon: 'el-icon-Cpu',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 11
+            }
+        ]
+    },
+    {
+        id: 14,
+        name: '系统日志管理',
+        type: 1,
+        url: '/main/log',
+        icon: 'el-icon-TrendCharts',
+        sort: 1,
+        children: [
+            {
+                id: 15,
+                url: '/main/log/actionLog',
+                name: '操作日志',
+                icon: 'el-icon-Document',
+                sort: 1,
+                type: 2,
+                children: null,
+                parentId: 14
+            },
+            {
+                id: 16,
+                url: '/main/log/autoTaskLog',
+                name: '自动任务日志',
+                icon: 'el-icon-ChromeFilled',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 14
+            },
+            {
+                id: 17,
+                url: '/main/log/dbPointLog',
+                name: '数据点读写日志',
+                icon: 'el-icon-Aim',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 14
+            }
+        ]
+    },
+    {
+        id: 18,
+        name: '权限管理',
+        type: 1,
+        url: '/main/Permissions',
+        icon: 'el-icon-Setting',
+        sort: 1,
+        children: [
+            {
+                id: 19,
+                url: '/main/Permissions/user',
+                name: '用户',
+                icon: 'el-icon-UserFilled',
+                sort: 1,
+                type: 2,
+                children: null,
+                parentId: 18
+            },
+            {
+                id: 20,
+                url: '/main/Permissions/role',
+                name: '角色',
+                icon: 'el-icon-Avatar',
+                sort: 2,
+                type: 2,
+                children: null,
+                parentId: 18
+            }
+        ]
+    }
 ]
-
 localStorage.setItem('menu', JSON.stringify(menuList))
+//从后端拿
+// 定义菜单类型
 </script>
 
 <style lang="less" scoped>
 .logo {
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  .logo-img {
-    height: 40px;
-  }
+    .logo-img {
+        height: 40px;
+    }
 }
 
 .search {
-  .search-input {
-    width: 80%;
+    .search-input {
+        width: 80%;
+        height: 30px;
+        border-radius: 5px;
+        font-size: small;
+    }
+
+    .search-button {
+        width: 20%;
+        height: 30px;
+    }
+
     height: 30px;
-    border-radius: 5px;
-    font-size: small;
-  }
-
-  .search-button {
-    width: 20%;
-    height: 30px;
-  }
-
-
-  height: 30px;
-  display: flex;
+    display: flex;
 }
 
 .el-menu {
-  border-right: none;
-  user-select: none;
+    border-right: none;
+    user-select: none;
 }
 
 .el-sub-menu {
-  .el-menu-item {
-    padding-left: 50px !important;
-    background-color: #0c2135;
-  }
+    .el-menu-item {
+        padding-left: 50px !important;
+        background-color: #0c2135;
+    }
 
-  .el-menu-item:hover {
-    color: #fff;
-  }
+    .el-menu-item:hover {
+        color: #fff;
+    }
 
-  .el-menu-item.is-active {
-    background-color: #0a60bd;
-  }
+    .el-menu-item.is-active {
+        background-color: #0a60bd;
+    }
 }
 </style>

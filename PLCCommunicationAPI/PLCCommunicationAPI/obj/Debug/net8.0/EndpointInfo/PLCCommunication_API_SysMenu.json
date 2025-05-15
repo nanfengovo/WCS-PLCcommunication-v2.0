@@ -9,7 +9,20 @@
     },
     "version": "V2.0"
   },
-  "paths": { },
+  "paths": {
+    "/api/SysMenu/GetAllMenu": {
+      "get": {
+        "tags": [
+          "SysMenu"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
   "components": {
     "securitySchemes": {
       "Authorization": {
@@ -23,6 +36,12 @@
   "security": [
     {
       "Authorization": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "SysMenu",
+      "description": "菜单管理"
     }
   ]
 }

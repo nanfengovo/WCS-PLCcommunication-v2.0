@@ -1,7 +1,7 @@
 <template>
     <div class="login-panel">
         <!--顶部标题-->
-        <h1 class="title">WCS管理系统</h1>
+        <!-- <h1 class="title">WCS管理系统</h1> -->
         <!--图标-->
         <img class="logo" src="@/assets/img/logo.png" alt="logo" />
         <!--选项卡-->
@@ -34,10 +34,16 @@
 
         <!--底部区域-->
         <div class="controls">
-            <el-checkbox v-model="isRemPassword" label="记住密码" size="large" />
+            <el-checkbox
+                v-model="isRemPassword"
+                label="记住密码"
+                size="large"
+            />
             <el-link type="primary">忘记密码</el-link>
         </div>
-        <el-button type="primary" class="login-btn" @click="handleLoginBtnClick">登录</el-button>
+        <el-button type="primary" class="login-btn" @click="handleLoginBtnClick"
+            >登录</el-button
+        >
     </div>
 </template>
 <script setup lang="ts">
@@ -62,7 +68,6 @@ function handleLoginBtnClick() {
         console.log('手机登录')
     }
 }
-
 </script>
 
 <style lang="less" scoped>
@@ -80,7 +85,9 @@ function handleLoginBtnClick() {
 
 .logo {
     width: 80%;
-    height: 15%;
+    height: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 10%;
 }
 
@@ -113,9 +120,7 @@ function handleLoginBtnClick() {
     margin-right: 25px;
 }
 
-
 .login-btn {
-
     margin-left: 5%;
     width: 90%;
 }
