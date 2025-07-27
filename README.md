@@ -1,4 +1,5 @@
 # WCS-PLCcommunication--v2.0
+文档：https://zread.ai/nanfengovo/WCS-PLCcommunication-v2.0/1-overview
 架构图：
 ![image](https://github.com/user-attachments/assets/5d4bc35a-1937-4c35-bd13-35f2cff12a13)
 # * 技术栈：
